@@ -131,8 +131,8 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                   ),
                   Expanded(
                     child: Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                      padding: const EdgeInsetsDirectional.fromSTEB(
+                          0.0, 12.0, 0.0, 0.0),
                       child: StreamBuilder<List<ActivityRecord>>(
                         stream: queryActivityRecord(
                           queryBuilder: (activityRecord) => activityRecord
@@ -162,9 +162,9 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                               child: SizedBox(
                                 width: MediaQuery.sizeOf(context).width * 0.5,
                                 child: const EmptyNotificationsWidget(
-                                  title: 'No Activity',
+                                  title: 'No hay actividades',
                                   bodyText:
-                                      'It seems you have no activity, create some projects and tasks to get started.',
+                                      'Parece que no tienes actividad, crea algunos proyectos y tareas para comenzar.',
                                 ),
                               ),
                             );
@@ -216,8 +216,8 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                                             BorderRadius.circular(8.0),
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
-                                            8.0, 12.0, 0.0, 12.0),
+                                        padding: const EdgeInsetsDirectional
+                                            .fromSTEB(8.0, 12.0, 0.0, 12.0),
                                         child: FutureBuilder<UsersRecord>(
                                           future: UsersRecord.getDocumentOnce(
                                               listViewActivityRecord
@@ -281,11 +281,8 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                                                       Padding(
                                                         padding:
                                                             const EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                    12.0,
-                                                                    0.0,
-                                                                    12.0,
-                                                                    0.0),
+                                                                .fromSTEB(12.0,
+                                                                0.0, 12.0, 0.0),
                                                         child: ClipRRect(
                                                           borderRadius:
                                                               BorderRadius
@@ -322,11 +319,8 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                                                       Padding(
                                                         padding:
                                                             const EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                    8.0,
-                                                                    0.0,
-                                                                    8.0,
-                                                                    0.0),
+                                                                .fromSTEB(8.0,
+                                                                0.0, 8.0, 0.0),
                                                         child: ClipRRect(
                                                           borderRadius:
                                                               BorderRadius
@@ -362,7 +356,7 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                                                     padding:
                                                         const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
-                                                                12.0, 0.0),
+                                                            12.0, 0.0),
                                                     child: Column(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -403,10 +397,10 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                                                               padding:
                                                                   const EdgeInsetsDirectional
                                                                       .fromSTEB(
-                                                                          0.0,
-                                                                          0.0,
-                                                                          12.0,
-                                                                          0.0),
+                                                                      0.0,
+                                                                      0.0,
+                                                                      12.0,
+                                                                      0.0),
                                                               child:
                                                                   SelectionArea(
                                                                       child:
@@ -441,10 +435,10 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                                                           padding:
                                                               const EdgeInsetsDirectional
                                                                   .fromSTEB(
-                                                                      0.0,
-                                                                      4.0,
-                                                                      0.0,
-                                                                      0.0),
+                                                                  0.0,
+                                                                  4.0,
+                                                                  0.0,
+                                                                  0.0),
                                                           child: Wrap(
                                                             spacing: 0.0,
                                                             runSpacing: 0.0,
@@ -469,10 +463,10 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                                                                 padding:
                                                                     const EdgeInsetsDirectional
                                                                         .fromSTEB(
-                                                                            0.0,
-                                                                            0.0,
-                                                                            2.0,
-                                                                            0.0),
+                                                                        0.0,
+                                                                        0.0,
+                                                                        2.0,
+                                                                        0.0),
                                                                 child: Text(
                                                                   listViewActivityRecord
                                                                       .activitySubText,
@@ -520,10 +514,10 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                                                           padding:
                                                               const EdgeInsetsDirectional
                                                                   .fromSTEB(
-                                                                      0.0,
-                                                                      8.0,
-                                                                      0.0,
-                                                                      0.0),
+                                                                  0.0,
+                                                                  8.0,
+                                                                  0.0,
+                                                                  0.0),
                                                           child: Text(
                                                             listViewActivityRecord
                                                                 .activityDescription,
@@ -551,10 +545,10 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                                                             padding:
                                                                 const EdgeInsetsDirectional
                                                                     .fromSTEB(
-                                                                        0.0,
-                                                                        8.0,
-                                                                        0.0,
-                                                                        0.0),
+                                                                    0.0,
+                                                                    8.0,
+                                                                    0.0,
+                                                                    0.0),
                                                             child: FutureBuilder<
                                                                 ProjectsRecord>(
                                                               future: ProjectsRecord
@@ -610,7 +604,8 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                                                                         Clip.none,
                                                                     children: [
                                                                       Padding(
-                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional
+                                                                            .fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             2.0,
@@ -633,7 +628,8 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                                                                         )),
                                                                       ),
                                                                       Padding(
-                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional
+                                                                            .fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             12.0,

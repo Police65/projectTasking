@@ -202,7 +202,8 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                               MainAxisAlignment.spaceBetween,
                                           children: [
                                             Padding(
-                                              padding: const EdgeInsets.all(12.0),
+                                              padding:
+                                                  const EdgeInsets.all(12.0),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 mainAxisAlignment:
@@ -235,7 +236,7 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                                     padding:
                                                         const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 12.0,
-                                                                0.0, 0.0),
+                                                            0.0, 0.0),
                                                     child: Text(
                                                       '${createTaskFormProjectsRecordList.length.toString()} tasks',
                                                       style:
@@ -517,8 +518,9 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                         .primaryBackground,
                                     borderWidth: 2.0,
                                     borderRadius: 8.0,
-                                    margin: const EdgeInsetsDirectional.fromSTEB(
-                                        24.0, 4.0, 12.0, 4.0),
+                                    margin:
+                                        const EdgeInsetsDirectional.fromSTEB(
+                                            24.0, 4.0, 12.0, 4.0),
                                     hidesUnderline: true,
                                     isSearchable: false,
                                     isMultiSelect: false,
@@ -535,9 +537,8 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                       if (_model.statusSelectValue ==
                                           'In Progress')
                                         Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 8.0, 0.0),
+                                          padding: const EdgeInsetsDirectional
+                                              .fromSTEB(0.0, 0.0, 8.0, 0.0),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
                                             focusColor: Colors.transparent,
@@ -585,8 +586,9 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                                 ),
                                               ),
                                               child: Padding(
-                                                padding: const EdgeInsetsDirectional
-                                                    .fromSTEB(
+                                                padding:
+                                                    const EdgeInsetsDirectional
+                                                        .fromSTEB(
                                                         12.0, 5.0, 12.0, 5.0),
                                                 child: Row(
                                                   mainAxisSize:
@@ -684,9 +686,8 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                             ),
                                           ),
                                           child: Padding(
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    12.0, 5.0, 12.0, 5.0),
+                                            padding: const EdgeInsetsDirectional
+                                                .fromSTEB(12.0, 5.0, 12.0, 5.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment:
@@ -818,7 +819,7 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                     owner: currentUserReference,
                                     taskRef: _model.taskCreated?.reference,
                                     note:
-                                        'Task has been created with the status of \"${_model.statusSelectValue}\".',
+                                        'La tarea ha sido creada con el estado de \"${_model.statusSelectValue}\".',
                                     timePosted: getCurrentTimestamp,
                                   ));
                                   _model.taskActivity =
@@ -828,7 +829,7 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                             taskRef:
                                                 _model.taskCreated?.reference,
                                             note:
-                                                'Task has been created with the status of \"${_model.statusSelectValue}\".',
+                                                'La tarea ha sido creada con el estado de \"${_model.statusSelectValue}\".',
                                             timePosted: getCurrentTimestamp,
                                           ),
                                           notesRecordReference);
@@ -854,7 +855,8 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                                           .titleMediumFamily),
                                             ),
                                       ),
-                                      duration: const Duration(milliseconds: 4000),
+                                      duration:
+                                          const Duration(milliseconds: 4000),
                                       backgroundColor:
                                           FlutterFlowTheme.of(context)
                                               .secondary,
@@ -883,8 +885,9 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                   height: 50.0,
                                   padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 0.0, 0.0, 0.0),
+                                  iconPadding:
+                                      const EdgeInsetsDirectional.fromSTEB(
+                                          0.0, 0.0, 0.0, 0.0),
                                   color: FlutterFlowTheme.of(context).primary,
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall

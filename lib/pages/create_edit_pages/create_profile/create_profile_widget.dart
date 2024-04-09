@@ -61,7 +61,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
           automaticallyImplyLeading: false,
           title: Text(
             FFLocalizations.of(context).getText(
-              'vyqdl7s3' /* Create Profile */,
+              'vyqdl7s3' /* Crear perfil */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: FlutterFlowTheme.of(context).headlineMediumFamily,
@@ -230,7 +230,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                             obscureText: false,
                             decoration: InputDecoration(
                               labelText: FFLocalizations.of(context).getText(
-                                'cnc5fmbk' /* Full Name */,
+                                'cnc5fmbk' /* Nombre completo */,
                               ),
                               hintStyle: FlutterFlowTheme.of(context)
                                   .bodySmall
@@ -299,7 +299,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                             obscureText: false,
                             decoration: InputDecoration(
                               labelText: FFLocalizations.of(context).getText(
-                                'cjyo6ik7' /* Title or Role */,
+                                'cjyo6ik7' /* Titulo o rol */,
                               ),
                               hintStyle: FlutterFlowTheme.of(context)
                                   .bodySmall
@@ -368,7 +368,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                             obscureText: false,
                             decoration: InputDecoration(
                               hintText: FFLocalizations.of(context).getText(
-                                'h398jj2j' /* Enter description here.. */,
+                                'h398jj2j' /* Agrega una descripcion.. */,
                               ),
                               hintStyle: FlutterFlowTheme.of(context)
                                   .bodySmall

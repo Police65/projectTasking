@@ -371,7 +371,7 @@ class _TeamMembersWidgetState extends State<TeamMembersWidget> {
                                           },
                                           text: FFLocalizations.of(context)
                                               .getText(
-                                            'prexm7ph' /* Remove */,
+                                            'prexm7ph' /* Remover */,
                                           ),
                                           options: FFButtonOptions(
                                             width: 130.0,

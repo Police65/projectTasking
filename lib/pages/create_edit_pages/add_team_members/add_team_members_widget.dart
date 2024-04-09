@@ -64,7 +64,7 @@ class _AddTeamMembersWidgetState extends State<AddTeamMembersWidget> {
           automaticallyImplyLeading: false,
           title: Text(
             FFLocalizations.of(context).getText(
-              'dzbojo7r' /* Invite User */,
+              'dzbojo7r' /* invitar usuario */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: FlutterFlowTheme.of(context).headlineMediumFamily,
@@ -245,7 +245,7 @@ class _AddTeamMembersWidgetState extends State<AddTeamMembersWidget> {
                                 decoration: InputDecoration(
                                   labelText:
                                       FFLocalizations.of(context).getText(
-                                    '5ilq7vbh' /* Full Name */,
+                                    '5ilq7vbh' /* Nombre completo */,
                                   ),
                                   hintStyle: FlutterFlowTheme.of(context)
                                       .bodySmall
@@ -395,7 +395,7 @@ class _AddTeamMembersWidgetState extends State<AddTeamMembersWidget> {
                                 decoration: InputDecoration(
                                   labelText:
                                       FFLocalizations.of(context).getText(
-                                    '64z5ta3b' /* Title or Role */,
+                                    '64z5ta3b' /* Titulo o rol */,
                                   ),
                                   hintStyle: FlutterFlowTheme.of(context)
                                       .bodySmall
@@ -492,7 +492,7 @@ class _AddTeamMembersWidgetState extends State<AddTeamMembersWidget> {
                                                   .bodyMediumFamily),
                                     ),
                                 hintText: FFLocalizations.of(context).getText(
-                                  'd6ul4ero' /* Select Team */,
+                                  'd6ul4ero' /* Seleccionar equipo */,
                                 ),
                                 icon: Icon(
                                   Icons.keyboard_arrow_down_rounded,
@@ -523,7 +523,7 @@ class _AddTeamMembersWidgetState extends State<AddTeamMembersWidget> {
                                 obscureText: false,
                                 decoration: InputDecoration(
                                   hintText: FFLocalizations.of(context).getText(
-                                    'oehnkpb9' /* Enter description here.. */,
+                                    'oehnkpb9' /* Añade una descripcion aqui.. */,
                                   ),
                                   hintStyle: FlutterFlowTheme.of(context)
                                       .bodySmall

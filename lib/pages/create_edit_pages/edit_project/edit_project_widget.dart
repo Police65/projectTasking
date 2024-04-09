@@ -68,7 +68,7 @@ class _EditProjectWidgetState extends State<EditProjectWidget> {
           automaticallyImplyLeading: false,
           title: Text(
             FFLocalizations.of(context).getText(
-              '7wmlszlo' /* Edit Project */,
+              '7wmlszlo' /* Editar Proyecto */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: FlutterFlowTheme.of(context).headlineMediumFamily,
@@ -134,7 +134,7 @@ class _EditProjectWidgetState extends State<EditProjectWidget> {
                                 decoration: InputDecoration(
                                   labelText:
                                       FFLocalizations.of(context).getText(
-                                    'wwzsnwbn' /* Project Name */,
+                                    'wwzsnwbn' /* Nombre de proyecto */,
                                   ),
                                   labelStyle: FlutterFlowTheme.of(context)
                                       .headlineSmall

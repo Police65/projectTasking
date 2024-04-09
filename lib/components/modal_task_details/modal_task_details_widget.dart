@@ -450,10 +450,10 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                           padding:
                                                               const EdgeInsetsDirectional
                                                                   .fromSTEB(
-                                                                      0.0,
-                                                                      0.0,
-                                                                      0.0,
-                                                                      5.0),
+                                                                  0.0,
+                                                                  0.0,
+                                                                  0.0,
+                                                                  5.0),
                                                           child: FFButtonWidget(
                                                             onPressed:
                                                                 () async {
@@ -590,7 +590,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                                     .taskRef
                                                                     ?.reference,
                                                                 note:
-                                                                    'Task has been moved to \"Complete\"',
+                                                                    'La tarea ha sido movida a \"Complete\"',
                                                                 timePosted:
                                                                     getCurrentTimestamp,
                                                               ));
@@ -603,7 +603,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                                             .taskRef
                                                                             ?.reference,
                                                                         note:
-                                                                            'Task has been moved to \"Complete\"',
+                                                                            'La tarea a sido movida a \"Completado\"',
                                                                         timePosted:
                                                                             getCurrentTimestamp,
                                                                       ),
@@ -670,17 +670,17 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                               padding:
                                                                   const EdgeInsetsDirectional
                                                                       .fromSTEB(
-                                                                          20.0,
-                                                                          0.0,
-                                                                          20.0,
-                                                                          0.0),
+                                                                      20.0,
+                                                                      0.0,
+                                                                      20.0,
+                                                                      0.0),
                                                               iconPadding:
                                                                   const EdgeInsetsDirectional
                                                                       .fromSTEB(
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0),
+                                                                      0.0,
+                                                                      0.0,
+                                                                      0.0,
+                                                                      0.0),
                                                               color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .alternate,
@@ -721,10 +721,10 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                           padding:
                                                               const EdgeInsetsDirectional
                                                                   .fromSTEB(
-                                                                      0.0,
-                                                                      0.0,
-                                                                      0.0,
-                                                                      5.0),
+                                                                  0.0,
+                                                                  0.0,
+                                                                  0.0,
+                                                                  5.0),
                                                           child: FFButtonWidget(
                                                             onPressed:
                                                                 () async {
@@ -842,7 +842,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                                     .taskRef
                                                                     ?.reference,
                                                                 note:
-                                                                    'Task has been moved to \"In Progress\"',
+                                                                    'Tarea ha sido movida a \"En progreso\"',
                                                                 timePosted:
                                                                     getCurrentTimestamp,
                                                               ));
@@ -855,7 +855,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                                             .taskRef
                                                                             ?.reference,
                                                                         note:
-                                                                            'Task has been moved to \"In Progress\"',
+                                                                            'Tarea ha sido movida a \"En progreso\"',
                                                                         timePosted:
                                                                             getCurrentTimestamp,
                                                                       ),
@@ -922,17 +922,17 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                               padding:
                                                                   const EdgeInsetsDirectional
                                                                       .fromSTEB(
-                                                                          20.0,
-                                                                          0.0,
-                                                                          20.0,
-                                                                          0.0),
+                                                                      20.0,
+                                                                      0.0,
+                                                                      20.0,
+                                                                      0.0),
                                                               iconPadding:
                                                                   const EdgeInsetsDirectional
                                                                       .fromSTEB(
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0),
+                                                                      0.0,
+                                                                      0.0,
+                                                                      0.0,
+                                                                      0.0),
                                                               color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .primary,
@@ -971,9 +971,8 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                               ],
                                             ),
                                           Padding(
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    16.0, 0.0, 8.0, 0.0),
+                                            padding: const EdgeInsetsDirectional
+                                                .fromSTEB(16.0, 0.0, 8.0, 0.0),
                                             child: FlutterFlowIconButton(
                                               borderColor: Colors.transparent,
                                               borderRadius: 30.0,
@@ -1020,8 +1019,8 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                       ).animateOnPageLoad(animationsMap[
                                           'textOnPageLoadAnimation2']!),
                                       Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 8.0, 0.0, 0.0),
+                                        padding: const EdgeInsetsDirectional
+                                            .fromSTEB(0.0, 8.0, 0.0, 0.0),
                                         child: FutureBuilder<ProjectsRecord>(
                                           future:
                                               ProjectsRecord.getDocumentOnce(
@@ -1087,7 +1086,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                     padding:
                                                         const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 12.0,
-                                                                0.0, 12.0),
+                                                            0.0, 12.0),
                                                     child: SelectionArea(
                                                         child: Text(
                                                       rowProjectsRecord
@@ -1113,8 +1112,8 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                   Padding(
                                                     padding:
                                                         const EdgeInsetsDirectional
-                                                            .fromSTEB(4.0, 0.0,
-                                                                0.0, 0.0),
+                                                            .fromSTEB(
+                                                            4.0, 0.0, 0.0, 0.0),
                                                     child: Icon(
                                                       Icons
                                                           .keyboard_arrow_right_rounded,
@@ -1145,8 +1144,9 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                         children: [
                                           Expanded(
                                             child: Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
+                                              padding:
+                                                  const EdgeInsetsDirectional
+                                                      .fromSTEB(
                                                       0.0, 12.0, 0.0, 0.0),
                                               child: Text(
                                                 FFLocalizations.of(context)
@@ -1230,10 +1230,12 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                               ),
                                             ),
                                             alignment:
-                                                const AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(
+                                                    0.0, 0.0),
                                             child: Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
+                                              padding:
+                                                  const EdgeInsetsDirectional
+                                                      .fromSTEB(
                                                       12.0, 0.0, 12.0, 0.0),
                                               child: Text(
                                                 widget.taskRef!.status,
@@ -1263,9 +1265,8 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           Padding(
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 12.0, 0.0, 0.0),
+                                            padding: const EdgeInsetsDirectional
+                                                .fromSTEB(0.0, 12.0, 0.0, 0.0),
                                             child: Text(
                                               dateTimeFormat(
                                                 'MMMEd',
@@ -1294,9 +1295,8 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                 'textOnPageLoadAnimation3']!),
                                           ),
                                           Padding(
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 12.0, 0.0, 0.0),
+                                            padding: const EdgeInsetsDirectional
+                                                .fromSTEB(0.0, 12.0, 0.0, 0.0),
                                             child: Text(
                                               FFLocalizations.of(context)
                                                   .getText(
@@ -1322,9 +1322,8 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                 'textOnPageLoadAnimation4']!),
                                           ),
                                           Padding(
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 12.0, 0.0, 0.0),
+                                            padding: const EdgeInsetsDirectional
+                                                .fromSTEB(0.0, 12.0, 0.0, 0.0),
                                             child: Text(
                                               dateTimeFormat(
                                                 'jm',
@@ -1355,8 +1354,8 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                         ],
                                       ),
                                       Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 12.0, 0.0, 0.0),
+                                        padding: const EdgeInsetsDirectional
+                                            .fromSTEB(0.0, 12.0, 0.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           mainAxisAlignment:
@@ -1441,8 +1440,9 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                         .secondaryBackground,
                                   ),
                                   child: Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 4.0, 0.0, 4.0),
+                                    padding:
+                                        const EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 4.0, 0.0, 4.0),
                                     child: Builder(
                                       builder: (context) {
                                         final members =
@@ -1457,8 +1457,9 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                             final membersItem =
                                                 members[membersIndex];
                                             return Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
+                                              padding:
+                                                  const EdgeInsetsDirectional
+                                                      .fromSTEB(
                                                       12.0, 12.0, 0.0, 12.0),
                                               child: FutureBuilder<UsersRecord>(
                                                 future:
@@ -1541,8 +1542,9 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                                 .circular(12.0),
                                                       ),
                                                       child: Padding(
-                                                        padding: const EdgeInsets.all(
-                                                            12.0),
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .all(12.0),
                                                         child: Row(
                                                           mainAxisSize:
                                                               MainAxisSize.max,
@@ -1570,10 +1572,10 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                                 padding:
                                                                     const EdgeInsetsDirectional
                                                                         .fromSTEB(
-                                                                            16.0,
-                                                                            0.0,
-                                                                            0.0,
-                                                                            0.0),
+                                                                        16.0,
+                                                                        0.0,
+                                                                        0.0,
+                                                                        0.0),
                                                                 child: Column(
                                                                   mainAxisSize:
                                                                       MainAxisSize
@@ -1601,7 +1603,8 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                                           ),
                                                                     ),
                                                                     Padding(
-                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional
+                                                                          .fromSTEB(
                                                                           0.0,
                                                                           4.0,
                                                                           0.0,
@@ -1718,9 +1721,8 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                               listViewNotesRecordList[
                                                   listViewIndex];
                                           return Padding(
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 4.0, 0.0, 0.0),
+                                            padding: const EdgeInsetsDirectional
+                                                .fromSTEB(0.0, 4.0, 0.0, 0.0),
                                             child: Container(
                                               width: double.infinity,
                                               decoration: BoxDecoration(
@@ -1743,8 +1745,9 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                     BorderRadius.circular(0.0),
                                               ),
                                               child: Padding(
-                                                padding: const EdgeInsetsDirectional
-                                                    .fromSTEB(
+                                                padding:
+                                                    const EdgeInsetsDirectional
+                                                        .fromSTEB(
                                                         16.0, 12.0, 16.0, 12.0),
                                                 child:
                                                     FutureBuilder<UsersRecord>(
@@ -1799,10 +1802,10 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                             padding:
                                                                 const EdgeInsetsDirectional
                                                                     .fromSTEB(
-                                                                        16.0,
-                                                                        0.0,
-                                                                        0.0,
-                                                                        0.0),
+                                                                    16.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0),
                                                             child: Column(
                                                               mainAxisSize:
                                                                   MainAxisSize
@@ -1830,8 +1833,9 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                                       ),
                                                                 ),
                                                                 Padding(
-                                                                  padding: const EdgeInsetsDirectional
-                                                                      .fromSTEB(
+                                                                  padding:
+                                                                      const EdgeInsetsDirectional
+                                                                          .fromSTEB(
                                                                           0.0,
                                                                           4.0,
                                                                           0.0,
@@ -1853,8 +1857,9 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                                   ),
                                                                 ),
                                                                 Padding(
-                                                                  padding: const EdgeInsetsDirectional
-                                                                      .fromSTEB(
+                                                                  padding:
+                                                                      const EdgeInsetsDirectional
+                                                                          .fromSTEB(
                                                                           0.0,
                                                                           12.0,
                                                                           0.0,
@@ -1975,8 +1980,8 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                   children: [
                                     Expanded(
                                       child: Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 0.0, 16.0, 0.0),
+                                        padding: const EdgeInsetsDirectional
+                                            .fromSTEB(0.0, 0.0, 16.0, 0.0),
                                         child: TextFormField(
                                           controller:
                                               _model.updateActivityController,
@@ -2006,35 +2011,35 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                                       context)
                                                                   .bodySmallFamily),
                                                     ),
-                                            enabledBorder: const UnderlineInputBorder(
+                                            enabledBorder:
+                                                const UnderlineInputBorder(
                                               borderSide: BorderSide(
                                                 color: Color(0x00000000),
                                                 width: 1.0,
                                               ),
-                                              borderRadius:
-                                                  BorderRadius.only(
+                                              borderRadius: BorderRadius.only(
                                                 topLeft: Radius.circular(4.0),
                                                 topRight: Radius.circular(4.0),
                                               ),
                                             ),
-                                            focusedBorder: const UnderlineInputBorder(
+                                            focusedBorder:
+                                                const UnderlineInputBorder(
                                               borderSide: BorderSide(
                                                 color: Color(0x00000000),
                                                 width: 1.0,
                                               ),
-                                              borderRadius:
-                                                  BorderRadius.only(
+                                              borderRadius: BorderRadius.only(
                                                 topLeft: Radius.circular(4.0),
                                                 topRight: Radius.circular(4.0),
                                               ),
                                             ),
-                                            errorBorder: const UnderlineInputBorder(
+                                            errorBorder:
+                                                const UnderlineInputBorder(
                                               borderSide: BorderSide(
                                                 color: Color(0x00000000),
                                                 width: 1.0,
                                               ),
-                                              borderRadius:
-                                                  BorderRadius.only(
+                                              borderRadius: BorderRadius.only(
                                                 topLeft: Radius.circular(4.0),
                                                 topRight: Radius.circular(4.0),
                                               ),
@@ -2045,14 +2050,14 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                 color: Color(0x00000000),
                                                 width: 1.0,
                                               ),
-                                              borderRadius:
-                                                  BorderRadius.only(
+                                              borderRadius: BorderRadius.only(
                                                 topLeft: Radius.circular(4.0),
                                                 topRight: Radius.circular(4.0),
                                               ),
                                             ),
                                             contentPadding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional
+                                                    .fromSTEB(
                                                     12.0, 0.0, 0.0, 0.0),
                                           ),
                                           style: FlutterFlowTheme.of(context)
@@ -2080,7 +2085,8 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                       onPressed: () async {
                                         await _model.content?.animateTo(
                                           0,
-                                          duration: const Duration(milliseconds: 200),
+                                          duration:
+                                              const Duration(milliseconds: 200),
                                           curve: Curves.ease,
                                         );
 
@@ -2124,7 +2130,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                 widget.taskRef?.projectRef,
                                             otherUser: currentUserReference,
                                             activitySubText:
-                                                'has left a note on ',
+                                                'Ha dejado una nota en ',
                                             taskRef: widget.taskRef?.reference,
                                           ),
                                           ...mapToFirestore(
@@ -2149,7 +2155,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                 widget.taskRef?.projectRef,
                                             otherUser: currentUserReference,
                                             activitySubText:
-                                                'has left a note on ',
+                                                'Ha dejado una nota en',
                                             taskRef: widget.taskRef?.reference,
                                           ),
                                           ...mapToFirestore(
@@ -2173,11 +2179,10 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                       ),
                                       options: FFButtonOptions(
                                         height: 40.0,
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
-                                            24.0, 0.0, 24.0, 0.0),
-                                        iconPadding:
-                                            const EdgeInsetsDirectional.fromSTEB(
-                                                0.0, 0.0, 0.0, 0.0),
+                                        padding: const EdgeInsetsDirectional
+                                            .fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                        iconPadding: const EdgeInsetsDirectional
+                                            .fromSTEB(0.0, 0.0, 0.0, 0.0),
                                         color: FlutterFlowTheme.of(context)
                                             .primary,
                                         textStyle: FlutterFlowTheme.of(context)

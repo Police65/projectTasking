@@ -74,7 +74,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
         ),
         title: Text(
           FFLocalizations.of(context).getText(
-            'pt9elxe4' /* Edit Profile */,
+            'pt9elxe4' /* Editar perfil */,
           ),
           style: FlutterFlowTheme.of(context).titleSmall.override(
                 fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
@@ -164,7 +164,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                           ).then((value) => safeSetState(() {}));
                         },
                         text: FFLocalizations.of(context).getText(
-                          'evdej962' /* Change Photo */,
+                          'evdej962' /* Cambiar foto */,
                         ),
                         options: FFButtonOptions(
                           width: 130.0,
@@ -204,7 +204,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                       obscureText: false,
                       decoration: InputDecoration(
                         labelText: FFLocalizations.of(context).getText(
-                          't7tz85hw' /* Your Name */,
+                          't7tz85hw' /* Nombre */,
                         ),
                         labelStyle:
                             FlutterFlowTheme.of(context).labelMedium.override(
@@ -282,7 +282,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                       obscureText: false,
                       decoration: InputDecoration(
                         labelText: FFLocalizations.of(context).getText(
-                          'p7ef0qd8' /* Title or Role */,
+                          'p7ef0qd8' /* Titulo o rol */,
                         ),
                         labelStyle:
                             FlutterFlowTheme.of(context).labelMedium.override(
@@ -431,7 +431,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                   child: SelectionArea(
                       child: Text(
                     FFLocalizations.of(context).getText(
-                      '5vmz78yy' /* Email associated with this acc... */,
+                      '5vmz78yy' /* Email asociado con esta cuenta... */,
                     ),
                     style: FlutterFlowTheme.of(context).labelSmall.override(
                           fontFamily:
@@ -472,7 +472,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                         context.pop();
                       },
                       text: FFLocalizations.of(context).getText(
-                        '4cj4t3x4' /* Save Changes */,
+                        '4cj4t3x4' /* Guardar cambios */,
                       ),
                       options: FFButtonOptions(
                         width: 200.0,

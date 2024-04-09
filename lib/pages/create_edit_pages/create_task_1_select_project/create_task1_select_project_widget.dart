@@ -61,7 +61,7 @@ class _CreateTask1SelectProjectWidgetState
           automaticallyImplyLeading: false,
           title: Text(
             FFLocalizations.of(context).getText(
-              '1evyvanx' /* Create Task */,
+              '1evyvanx' /* Crear tarea */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: FlutterFlowTheme.of(context).headlineMediumFamily,
@@ -113,7 +113,7 @@ class _CreateTask1SelectProjectWidgetState
                               0.0, 0.0, 24.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              '5p3w7kqb' /* Don't see your project? Add on... */,
+                              '5p3w7kqb' /* No ves tu proyecto? añadelo aq... */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .labelMedium
@@ -142,7 +142,7 @@ class _CreateTask1SelectProjectWidgetState
                           );
                         },
                         text: FFLocalizations.of(context).getText(
-                          'atun5agk' /* Add Project */,
+                          'atun5agk' /* Añadir */,
                         ),
                         options: FFButtonOptions(
                           width: 130.0,

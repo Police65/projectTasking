@@ -376,10 +376,12 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                               shape: BoxShape.circle,
                                             ),
                                             alignment:
-                                                const AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(
+                                                    0.0, 0.0),
                                             child: Align(
-                                              alignment: const AlignmentDirectional(
-                                                  0.0, 0.0),
+                                              alignment:
+                                                  const AlignmentDirectional(
+                                                      0.0, 0.0),
                                               child: Container(
                                                 width: 36.0,
                                                 height: 36.0,
@@ -648,8 +650,8 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                   ),
                 Expanded(
                   child: Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(
+                        0.0, 12.0, 0.0, 0.0),
                     child: Column(
                       children: [
                         Align(
@@ -747,9 +749,9 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                   0.8,
                                           height: 300.0,
                                           child: const EmptyTasksWidget(
-                                            title: 'No In Progress Tasks',
+                                            title: 'No hay tareas en proceso',
                                             bodyText:
-                                                'No current tasks are in progress, congrats! Seems like you have deseared a rest.',
+                                                'No hay tareas actuales en progreso, ¡felicidades! Parece que has deseado un descanso.',
                                           ),
                                         ),
                                       );
@@ -765,9 +767,8 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                             listViewAllTasksRecordList[
                                                 listViewIndex];
                                         return Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  16.0, 4.0, 16.0, 8.0),
+                                          padding: const EdgeInsetsDirectional
+                                              .fromSTEB(16.0, 4.0, 16.0, 8.0),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
                                             focusColor: Colors.transparent,
@@ -778,7 +779,8 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                 isScrollControlled: true,
                                                 backgroundColor:
                                                     Colors.transparent,
-                                                barrierColor: const Color(0x06000000),
+                                                barrierColor:
+                                                    const Color(0x06000000),
                                                 context: context,
                                                 builder: (context) {
                                                   return Padding(
@@ -804,19 +806,19 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                 color: () {
                                                   if (listViewAllTasksRecord
                                                           .status ==
-                                                      'Not Started') {
+                                                      'No iniciado') {
                                                     return FlutterFlowTheme.of(
                                                             context)
                                                         .secondary30;
                                                   } else if (listViewAllTasksRecord
                                                           .status ==
-                                                      'In Progress') {
+                                                      'En progreso') {
                                                     return FlutterFlowTheme.of(
                                                             context)
                                                         .primary30;
                                                   } else if (listViewAllTasksRecord
                                                           .status ==
-                                                      'Complete') {
+                                                      'Completo') {
                                                     return FlutterFlowTheme.of(
                                                             context)
                                                         .tertiary30;
@@ -832,19 +834,19 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                   color: () {
                                                     if (listViewAllTasksRecord
                                                             .status ==
-                                                        'Not Started') {
+                                                        'No iniciado') {
                                                       return FlutterFlowTheme
                                                               .of(context)
                                                           .secondary;
                                                     } else if (listViewAllTasksRecord
                                                             .status ==
-                                                        'In Progress') {
+                                                        'En progreso') {
                                                       return FlutterFlowTheme
                                                               .of(context)
                                                           .primary;
                                                     } else if (listViewAllTasksRecord
                                                             .status ==
-                                                        'Complete') {
+                                                        'Completo') {
                                                       return FlutterFlowTheme
                                                               .of(context)
                                                           .alternate;
@@ -858,7 +860,8 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                 ),
                                               ),
                                               child: Padding(
-                                                padding: const EdgeInsets.all(12.0),
+                                                padding:
+                                                    const EdgeInsets.all(12.0),
                                                 child: FutureBuilder<
                                                     ProjectsRecord>(
                                                   future: ProjectsRecord
@@ -906,10 +909,10 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                                 padding:
                                                                     const EdgeInsetsDirectional
                                                                         .fromSTEB(
-                                                                            0.0,
-                                                                            0.0,
-                                                                            12.0,
-                                                                            0.0),
+                                                                        0.0,
+                                                                        0.0,
+                                                                        12.0,
+                                                                        0.0),
                                                                 child: Text(
                                                                   listViewAllTasksRecord
                                                                       .taskName,
@@ -934,19 +937,19 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                                 color: () {
                                                                   if (listViewAllTasksRecord
                                                                           .status ==
-                                                                      'Not Started') {
+                                                                      'No inciado') {
                                                                     return FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary30;
                                                                   } else if (listViewAllTasksRecord
                                                                           .status ==
-                                                                      'In Progress') {
+                                                                      'En progreso') {
                                                                     return FlutterFlowTheme.of(
                                                                             context)
                                                                         .primary30;
                                                                   } else if (listViewAllTasksRecord
                                                                           .status ==
-                                                                      'Complete') {
+                                                                      'Completo') {
                                                                     return FlutterFlowTheme.of(
                                                                             context)
                                                                         .tertiary30;
@@ -965,19 +968,19 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                                   color: () {
                                                                     if (listViewAllTasksRecord
                                                                             .status ==
-                                                                        'Not Started') {
+                                                                        'No iniciado') {
                                                                       return FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondary;
                                                                     } else if (listViewAllTasksRecord
                                                                             .status ==
-                                                                        'In Progress') {
+                                                                        'En progreso') {
                                                                       return FlutterFlowTheme.of(
                                                                               context)
                                                                           .primary;
                                                                     } else if (listViewAllTasksRecord
                                                                             .status ==
-                                                                        'Complete') {
+                                                                        'Completo') {
                                                                       return FlutterFlowTheme.of(
                                                                               context)
                                                                           .alternate;
@@ -994,8 +997,9 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                                   const AlignmentDirectional(
                                                                       0.0, 0.0),
                                                               child: Padding(
-                                                                padding: const EdgeInsetsDirectional
-                                                                    .fromSTEB(
+                                                                padding:
+                                                                    const EdgeInsetsDirectional
+                                                                        .fromSTEB(
                                                                         12.0,
                                                                         0.0,
                                                                         12.0,
@@ -1023,10 +1027,10 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                           padding:
                                                               const EdgeInsetsDirectional
                                                                   .fromSTEB(
-                                                                      0.0,
-                                                                      4.0,
-                                                                      0.0,
-                                                                      0.0),
+                                                                  0.0,
+                                                                  4.0,
+                                                                  0.0,
+                                                                  0.0),
                                                           child: Text(
                                                             columnProjectsRecord
                                                                 .projectName,
@@ -1092,10 +1096,10 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                               padding:
                                                                   const EdgeInsetsDirectional
                                                                       .fromSTEB(
-                                                                          8.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0),
+                                                                      8.0,
+                                                                      0.0,
+                                                                      0.0,
+                                                                      0.0),
                                                               child: Text(
                                                                 dateTimeFormat(
                                                                   'MMMEd',
@@ -1125,10 +1129,10 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                               padding:
                                                                   const EdgeInsetsDirectional
                                                                       .fromSTEB(
-                                                                          4.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0),
+                                                                      4.0,
+                                                                      0.0,
+                                                                      0.0,
+                                                                      0.0),
                                                               child: Text(
                                                                 dateTimeFormat(
                                                                   'jm',
@@ -1223,9 +1227,9 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                   0.8,
                                           height: 300.0,
                                           child: const CompletedTasksWidget(
-                                            title: 'No Completed Tasks',
+                                            title: 'No hay tareas completadas',
                                             bodyText:
-                                                'You need to get to work, go and complete some tasks.',
+                                                'Necesitas trabajar y completar algunas tareas',
                                           ),
                                         ),
                                       );
@@ -1241,9 +1245,8 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                             listViewAllTasksRecordList[
                                                 listViewIndex];
                                         return Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  16.0, 0.0, 16.0, 12.0),
+                                          padding: const EdgeInsetsDirectional
+                                              .fromSTEB(16.0, 0.0, 16.0, 12.0),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
                                             focusColor: Colors.transparent,
@@ -1254,7 +1257,8 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                 isScrollControlled: true,
                                                 backgroundColor:
                                                     Colors.transparent,
-                                                barrierColor: const Color(0x06000000),
+                                                barrierColor:
+                                                    const Color(0x06000000),
                                                 context: context,
                                                 builder: (context) {
                                                   return Padding(
@@ -1290,7 +1294,8 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                 ),
                                               ),
                                               child: Padding(
-                                                padding: const EdgeInsets.all(12.0),
+                                                padding:
+                                                    const EdgeInsets.all(12.0),
                                                 child: FutureBuilder<
                                                     ProjectsRecord>(
                                                   future: ProjectsRecord
@@ -1338,10 +1343,10 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                                 padding:
                                                                     const EdgeInsetsDirectional
                                                                         .fromSTEB(
-                                                                            0.0,
-                                                                            0.0,
-                                                                            12.0,
-                                                                            0.0),
+                                                                        0.0,
+                                                                        0.0,
+                                                                        12.0,
+                                                                        0.0),
                                                                 child: Text(
                                                                   listViewAllTasksRecord
                                                                       .taskName,
@@ -1377,8 +1382,9 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                                   const AlignmentDirectional(
                                                                       0.0, 0.0),
                                                               child: Padding(
-                                                                padding: const EdgeInsetsDirectional
-                                                                    .fromSTEB(
+                                                                padding:
+                                                                    const EdgeInsetsDirectional
+                                                                        .fromSTEB(
                                                                         12.0,
                                                                         0.0,
                                                                         12.0,
@@ -1411,10 +1417,10 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                           padding:
                                                               const EdgeInsetsDirectional
                                                                   .fromSTEB(
-                                                                      0.0,
-                                                                      4.0,
-                                                                      0.0,
-                                                                      0.0),
+                                                                  0.0,
+                                                                  4.0,
+                                                                  0.0,
+                                                                  0.0),
                                                           child: Text(
                                                             columnProjectsRecord
                                                                 .projectName,
@@ -1480,10 +1486,10 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                               padding:
                                                                   const EdgeInsetsDirectional
                                                                       .fromSTEB(
-                                                                          8.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0),
+                                                                      8.0,
+                                                                      0.0,
+                                                                      0.0,
+                                                                      0.0),
                                                               child: Text(
                                                                 dateTimeFormat(
                                                                   'MMMEd',
@@ -1514,10 +1520,10 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                                 padding:
                                                                     const EdgeInsetsDirectional
                                                                         .fromSTEB(
-                                                                            4.0,
-                                                                            0.0,
-                                                                            0.0,
-                                                                            0.0),
+                                                                        4.0,
+                                                                        0.0,
+                                                                        0.0,
+                                                                        0.0),
                                                                 child: Text(
                                                                   dateTimeFormat(
                                                                     'jm',
@@ -1606,8 +1612,10 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                       ),
                                             )),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(0.0, 4.0, 0.0, 0.0),
+                                              padding:
+                                                  const EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                      0.0, 4.0, 0.0, 0.0),
                                               child: SelectionArea(
                                                   child: Text(
                                                 dateTimeFormat(
@@ -1648,7 +1656,7 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                   isEqualTo: widget
                                                       .projectRef?.reference,
                                                 )
-                                                .orderBy('activityTime',
+                                                .orderBy('Tiempo de actividad',
                                                     descending: true),
                                       ),
                                       builder: (context, snapshot) {
@@ -1658,7 +1666,7 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                             child: SizedBox(
                                               height: 340.0,
                                               child: EmptyNotificationsWidget(
-                                                title: 'Loading...',
+                                                title: 'Cargando...',
                                                 bodyText: ' ',
                                               ),
                                             ),
@@ -1674,10 +1682,11 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                               width: MediaQuery.sizeOf(context)
                                                       .width *
                                                   0.5,
-                                              child: const EmptyNotificationsWidget(
-                                                title: 'No Activity',
+                                              child:
+                                                  const EmptyNotificationsWidget(
+                                                title: 'No hay actividad',
                                                 bodyText:
-                                                    'It seems you have no activity, create some projects and tasks to get started.',
+                                                    'Parece que no tienes actividad, crea algunos proyectos y tareas para comenzar.',
                                               ),
                                             ),
                                           );
@@ -1719,8 +1728,9 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                           12.0),
                                                 ),
                                                 child: Padding(
-                                                  padding: const EdgeInsetsDirectional
-                                                      .fromSTEB(
+                                                  padding:
+                                                      const EdgeInsetsDirectional
+                                                          .fromSTEB(
                                                           12.0, 0.0, 12.0, 0.0),
                                                   child: FutureBuilder<
                                                       UsersRecord>(
@@ -1766,10 +1776,10 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                               padding:
                                                                   const EdgeInsetsDirectional
                                                                       .fromSTEB(
-                                                                          0.0,
-                                                                          0.0,
-                                                                          12.0,
-                                                                          0.0),
+                                                                      0.0,
+                                                                      0.0,
+                                                                      12.0,
+                                                                      0.0),
                                                               child: SizedBox(
                                                                 width: 16.0,
                                                                 height: 130.0,
@@ -1806,7 +1816,8 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                                               1.0),
                                                                       child:
                                                                           Padding(
-                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional
+                                                                            .fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,
@@ -1850,7 +1861,8 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                                           .start,
                                                                   children: [
                                                                     Padding(
-                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional
+                                                                          .fromSTEB(
                                                                           0.0,
                                                                           12.0,
                                                                           0.0,
@@ -1882,7 +1894,8 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                                     Expanded(
                                                                       child:
                                                                           Padding(
-                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional
+                                                                            .fromSTEB(
                                                                             12.0,
                                                                             12.0,
                                                                             0.0,
@@ -1952,8 +1965,9 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                                   ],
                                                                 ),
                                                                 Padding(
-                                                                  padding: const EdgeInsetsDirectional
-                                                                      .fromSTEB(
+                                                                  padding:
+                                                                      const EdgeInsetsDirectional
+                                                                          .fromSTEB(
                                                                           0.0,
                                                                           16.0,
                                                                           0.0,

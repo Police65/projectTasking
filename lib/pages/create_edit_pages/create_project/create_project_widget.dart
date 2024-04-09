@@ -56,7 +56,7 @@ class _CreateProjectWidgetState extends State<CreateProjectWidget> {
           automaticallyImplyLeading: false,
           title: Text(
             FFLocalizations.of(context).getText(
-              'zhq7wtzw' /* Create Project */,
+              'zhq7wtzw' /* Crear proyecto */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: FlutterFlowTheme.of(context).headlineMediumFamily,
@@ -122,7 +122,7 @@ class _CreateProjectWidgetState extends State<CreateProjectWidget> {
                                 decoration: InputDecoration(
                                   labelText:
                                       FFLocalizations.of(context).getText(
-                                    '9duf9kbf' /* Project Name */,
+                                    '9duf9kbf' /* Nombre */,
                                   ),
                                   labelStyle: FlutterFlowTheme.of(context)
                                       .headlineSmall
@@ -192,7 +192,7 @@ class _CreateProjectWidgetState extends State<CreateProjectWidget> {
                                 obscureText: false,
                                 decoration: InputDecoration(
                                   hintText: FFLocalizations.of(context).getText(
-                                    'j3scp78v' /* Enter description here... */,
+                                    'j3scp78v' /* descripcion */,
                                   ),
                                   hintStyle: FlutterFlowTheme.of(context)
                                       .bodySmall

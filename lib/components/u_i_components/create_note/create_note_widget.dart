@@ -70,8 +70,8 @@ class _CreateNoteWidgetState extends State<CreateNoteWidget> {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Padding(
-                  padding:
-                      const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 32.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(
+                      16.0, 16.0, 16.0, 32.0),
                   child: Material(
                     color: Colors.transparent,
                     elevation: 5.0,
@@ -170,8 +170,9 @@ class _CreateNoteWidgetState extends State<CreateNoteWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        12.0, 0.0, 0.0, 0.0),
+                                    padding:
+                                        const EdgeInsetsDirectional.fromSTEB(
+                                            12.0, 0.0, 0.0, 0.0),
                                     child: AuthUserStreamWidget(
                                       builder: (context) => Text(
                                         currentUserDisplayName,
@@ -317,7 +318,7 @@ class _CreateNoteWidgetState extends State<CreateNoteWidget> {
                                           otherUser: currentUserReference,
                                           readState: false,
                                           activitySubText:
-                                              'has left a note on ',
+                                              'Ha dejado una nota en ',
                                           taskRef: widget.taskRef?.reference,
                                         ),
                                         ...mapToFirestore(
@@ -343,7 +344,7 @@ class _CreateNoteWidgetState extends State<CreateNoteWidget> {
                                           otherUser: currentUserReference,
                                           readState: false,
                                           activitySubText:
-                                              'has left a note on ',
+                                              'Ha dejado una nota en',
                                           taskRef: widget.taskRef?.reference,
                                         ),
                                         ...mapToFirestore(
@@ -365,8 +366,9 @@ class _CreateNoteWidgetState extends State<CreateNoteWidget> {
                                     options: FFButtonOptions(
                                       width: 270.0,
                                       height: 50.0,
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 0.0, 0.0, 0.0),
+                                      padding:
+                                          const EdgeInsetsDirectional.fromSTEB(
+                                              0.0, 0.0, 0.0, 0.0),
                                       iconPadding:
                                           const EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),

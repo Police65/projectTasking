@@ -164,9 +164,8 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                           CrossAxisAlignment.start,
                                       children: [
                                         Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  16.0, 0.0, 0.0, 0.0),
+                                          padding: const EdgeInsetsDirectional
+                                              .fromSTEB(16.0, 0.0, 0.0, 0.0),
                                           child: Text(
                                             FFLocalizations.of(context).getText(
                                               'v3df17c1' /* Find members by searching belo... */,
@@ -189,9 +188,8 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                           ),
                                         ),
                                         Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  16.0, 8.0, 16.0, 8.0),
+                                          padding: const EdgeInsetsDirectional
+                                              .fromSTEB(16.0, 8.0, 16.0, 8.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
@@ -235,7 +233,8 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                         ),
                                                     enabledBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: const BorderSide(
+                                                      borderSide:
+                                                          const BorderSide(
                                                         color:
                                                             Color(0x00000000),
                                                         width: 1.0,
@@ -246,7 +245,8 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                     ),
                                                     focusedBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: const BorderSide(
+                                                      borderSide:
+                                                          const BorderSide(
                                                         color:
                                                             Color(0x00000000),
                                                         width: 1.0,
@@ -257,7 +257,8 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                     ),
                                                     errorBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: const BorderSide(
+                                                      borderSide:
+                                                          const BorderSide(
                                                         color:
                                                             Color(0x00000000),
                                                         width: 1.0,
@@ -268,7 +269,8 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                     ),
                                                     focusedErrorBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: const BorderSide(
+                                                      borderSide:
+                                                          const BorderSide(
                                                         color:
                                                             Color(0x00000000),
                                                         width: 1.0,
@@ -306,8 +308,9 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: const EdgeInsetsDirectional
-                                                    .fromSTEB(
+                                                padding:
+                                                    const EdgeInsetsDirectional
+                                                        .fromSTEB(
                                                         12.0, 0.0, 0.0, 0.0),
                                                 child: FlutterFlowIconButton(
                                                   borderColor:
@@ -361,9 +364,8 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                           ),
                                         ),
                                         Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 8.0, 0.0, 44.0),
+                                          padding: const EdgeInsetsDirectional
+                                              .fromSTEB(0.0, 8.0, 0.0, 44.0),
                                           child: Builder(
                                             builder: (context) {
                                               final serachResults = _model
@@ -377,10 +379,12 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                             .width *
                                                         0.8,
                                                     height: 230.0,
-                                                    child: const EmptyMembersWidget(
-                                                      title: 'No Users Found',
+                                                    child:
+                                                        const EmptyMembersWidget(
+                                                      title:
+                                                          'No hay usuarios encontrados',
                                                       bodyText:
-                                                          'No members are present for your search, try the search bar again.',
+                                                          'No hay miembros presentes para tu búsqueda, prueba la barra de búsqueda nuevamente.',
                                                     ),
                                                   ),
                                                 );
@@ -399,7 +403,7 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                     padding:
                                                         const EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 4.0,
-                                                                16.0, 8.0),
+                                                            16.0, 8.0),
                                                     child: InkWell(
                                                       splashColor:
                                                           Colors.transparent,
@@ -461,10 +465,10 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                           padding:
                                                               const EdgeInsetsDirectional
                                                                   .fromSTEB(
-                                                                      8.0,
-                                                                      0.0,
-                                                                      8.0,
-                                                                      0.0),
+                                                                  8.0,
+                                                                  0.0,
+                                                                  8.0,
+                                                                  0.0),
                                                           child: Row(
                                                             mainAxisSize:
                                                                 MainAxisSize
@@ -494,8 +498,9 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                               ),
                                                               Expanded(
                                                                 child: Padding(
-                                                                  padding: const EdgeInsetsDirectional
-                                                                      .fromSTEB(
+                                                                  padding:
+                                                                      const EdgeInsetsDirectional
+                                                                          .fromSTEB(
                                                                           12.0,
                                                                           0.0,
                                                                           0.0,
@@ -693,12 +698,13 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                                         36.0,
                                                                     padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
-                                                                            0.0,
-                                                                            0.0,
-                                                                            0.0,
-                                                                            0.0),
+                                                                        0.0,
+                                                                        0.0,
+                                                                        0.0,
+                                                                        0.0),
                                                                     iconPadding:
-                                                                        const EdgeInsetsDirectional.fromSTEB(
+                                                                        const EdgeInsetsDirectional
+                                                                            .fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,
