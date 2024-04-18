@@ -164,7 +164,6 @@ class _SearchMembersWidgetState extends State<SearchMembersWidget> {
                                   FlutterFlowTheme.of(context)
                                       .bodyMediumFamily),
                             ),
-                        minLines: null,
                         validator:
                             _model.textControllerValidator.asValidator(context),
                       ),
@@ -401,7 +400,7 @@ class _SearchMembersWidgetState extends State<SearchMembersWidget> {
                                         },
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'kmiq19hs' /* Assignar */,
+                                          'kmiq19hs' /* Asignar */,
                                         ),
                                         options: FFButtonOptions(
                                           width: 80.0,

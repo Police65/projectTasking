@@ -87,7 +87,7 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
                       context.pushNamed('myProfile');
                     },
                     text: FFLocalizations.of(context).getText(
-                      'j81no67g' /* View */,
+                      'j81no67g' /* Vista */,
                     ),
                     options: FFButtonOptions(
                       width: 80.0,
@@ -186,7 +186,7 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
                                 4.0, 0.0, 12.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'ikdzucnf' /* Following */,
+                                'ikdzucnf' /* Siguiendo */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .bodySmall
@@ -277,7 +277,7 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
                                   16.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  'xnmol3vm' /* Tracker */,
+                                  'xnmol3vm' /* Tareas */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -329,7 +329,7 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
                                   16.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  'tgp9100p' /* Projects */,
+                                  'tgp9100p' /* Proyectos */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -381,7 +381,7 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
                                   16.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  'gvsvhzns' /* Team */,
+                                  'gvsvhzns' /* Equipo */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -425,7 +425,7 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
                                 16.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'r33amlko' /* About */,
+                                'r33amlko' /* Acerca de */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
@@ -463,7 +463,7 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
                                 16.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'hfpu6vi1' /* Rate App */,
+                                'hfpu6vi1' /* Califica la app */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium

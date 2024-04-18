@@ -8,8 +8,8 @@ class AddTeamModel extends FlutterFlowModel<AddTeamWidget> {
 
   // State field(s) for searchField widget.
   FocusNode? searchFieldFocusNode;
-  TextEditingController? searchFieldController;
-  String? Function(BuildContext, String?)? searchFieldControllerValidator;
+  TextEditingController? searchFieldTextController;
+  String? Function(BuildContext, String?)? searchFieldTextControllerValidator;
   List<UsersRecord> simpleSearchResults = [];
   // Stores action output result for [Backend Call - Create Document] action in Button widget.
   ActivityRecord? newActivity;
@@ -22,6 +22,6 @@ class AddTeamModel extends FlutterFlowModel<AddTeamWidget> {
   @override
   void dispose() {
     searchFieldFocusNode?.dispose();
-    searchFieldController?.dispose();
+    searchFieldTextController?.dispose();
   }
 }

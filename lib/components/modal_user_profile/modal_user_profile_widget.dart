@@ -28,27 +28,7 @@ class _ModalUserProfileWidgetState extends State<ModalUserProfileWidget>
     with TickerProviderStateMixin {
   late ModalUserProfileModel _model;
 
-  final animationsMap = {
-    'containerOnPageLoadAnimation': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.0, 30.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-  };
+  final animationsMap = <String, AnimationInfo>{};
 
   @override
   void setState(VoidCallback callback) {
@@ -61,6 +41,27 @@ class _ModalUserProfileWidgetState extends State<ModalUserProfileWidget>
     super.initState();
     _model = createModel(context, () => ModalUserProfileModel());
 
+    animationsMap.addAll({
+      'containerOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 30.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+    });
     setupAnimations(
       animationsMap.values.where((anim) =>
           anim.trigger == AnimationTrigger.onActionTrigger ||
@@ -217,7 +218,7 @@ class _ModalUserProfileWidgetState extends State<ModalUserProfileWidget>
                                           0.0, 8.0, 0.0, 0.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
-                                          'xbcjin31' /* Team Name */,
+                                          'xbcjin31' /* Nombre de equipo  */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -269,7 +270,7 @@ class _ModalUserProfileWidgetState extends State<ModalUserProfileWidget>
                                           8.0, 8.0, 0.0, 0.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
-                                          'f87wic4n' /* 12 Tasks */,
+                                          'f87wic4n' /* 12 tarea */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -326,7 +327,7 @@ class _ModalUserProfileWidgetState extends State<ModalUserProfileWidget>
                     children: [
                       Text(
                         FFLocalizations.of(context).getText(
-                          '1r4s70n4' /* Team Bio */,
+                          '1r4s70n4' /* Descripcion del equipo */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyLarge.override(
                               fontFamily:
@@ -375,7 +376,7 @@ class _ModalUserProfileWidgetState extends State<ModalUserProfileWidget>
                     children: [
                       Text(
                         FFLocalizations.of(context).getText(
-                          'ai2tvk8r' /* Tasks */,
+                          'ai2tvk8r' /* Tareas */,
                         ),
                         style: FlutterFlowTheme.of(context).labelSmall.override(
                               fontFamily:
@@ -651,7 +652,7 @@ class _ModalUserProfileWidgetState extends State<ModalUserProfileWidget>
                                             Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                'k2fas9o8' /* Due */,
+                                                'k2fas9o8' /* Pendiente */,
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)

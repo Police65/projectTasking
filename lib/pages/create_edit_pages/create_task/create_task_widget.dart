@@ -31,39 +31,41 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget>
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
-  final animationsMap = {
-    'containerOnPageLoadAnimation': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        VisibilityEffect(duration: 1.ms),
-        ScaleEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 300.ms,
-          begin: const Offset(0.9, 0.9),
-          end: const Offset(1.0, 1.0),
-        ),
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 300.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-      ],
-    ),
-  };
+  final animationsMap = <String, AnimationInfo>{};
 
   @override
   void initState() {
     super.initState();
     _model = createModel(context, () => CreateTaskModel());
 
-    _model.taskNameController ??= TextEditingController();
+    _model.taskNameTextController ??= TextEditingController();
     _model.taskNameFocusNode ??= FocusNode();
 
-    _model.descriptionController ??= TextEditingController();
+    _model.descriptionTextController ??= TextEditingController();
     _model.descriptionFocusNode ??= FocusNode();
+
+    animationsMap.addAll({
+      'containerOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          VisibilityEffect(duration: 1.ms),
+          ScaleEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 300.0.ms,
+            begin: const Offset(0.9, 0.9),
+            end: const Offset(1.0, 1.0),
+          ),
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 300.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+        ],
+      ),
+    });
 
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
@@ -100,8 +102,7 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget>
           ),
           actions: [
             Padding(
-              padding:
-                  const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
               child: FlutterFlowIconButton(
                 borderColor: Colors.transparent,
                 borderRadius: 30.0,
@@ -217,8 +218,7 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget>
                                               MainAxisAlignment.spaceBetween,
                                           children: [
                                             Padding(
-                                              padding:
-                                                  const EdgeInsets.all(12.0),
+                                              padding: const EdgeInsets.all(12.0),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 mainAxisAlignment:
@@ -251,7 +251,7 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget>
                                                     padding:
                                                         const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 12.0,
-                                                            0.0, 0.0),
+                                                                0.0, 0.0),
                                                     child: Text(
                                                       '${createTaskFormProjectsRecordList.length.toString()} tasks',
                                                       style:
@@ -314,7 +314,7 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget>
                                   padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 12.0, 16.0, 0.0),
                                   child: TextFormField(
-                                    controller: _model.taskNameController,
+                                    controller: _model.taskNameTextController,
                                     focusNode: _model.taskNameFocusNode,
                                     obscureText: false,
                                     decoration: InputDecoration(
@@ -390,9 +390,8 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget>
                                                       .headlineSmallFamily),
                                         ),
                                     textAlign: TextAlign.start,
-                                    minLines: null,
                                     validator: _model
-                                        .taskNameControllerValidator
+                                        .taskNameTextControllerValidator
                                         .asValidator(context),
                                   ),
                                 ),
@@ -400,7 +399,8 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget>
                                   padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 16.0, 16.0, 0.0),
                                   child: TextFormField(
-                                    controller: _model.descriptionController,
+                                    controller:
+                                        _model.descriptionTextController,
                                     focusNode: _model.descriptionFocusNode,
                                     obscureText: false,
                                     decoration: InputDecoration(
@@ -474,10 +474,9 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget>
                                         ),
                                     textAlign: TextAlign.start,
                                     maxLines: 4,
-                                    minLines: null,
                                     keyboardType: TextInputType.multiline,
                                     validator: _model
-                                        .descriptionControllerValidator
+                                        .descriptionTextControllerValidator
                                         .asValidator(context),
                                   ),
                                 ),
@@ -490,13 +489,13 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget>
                                             FormFieldController<String>(null),
                                     options: [
                                       FFLocalizations.of(context).getText(
-                                        're4r1lkn' /* Not Started */,
+                                        're4r1lkn' /* No iniciado */,
                                       ),
                                       FFLocalizations.of(context).getText(
-                                        'ptyt1h7n' /* In Progress */,
+                                        'ptyt1h7n' /* En progreso */,
                                       ),
                                       FFLocalizations.of(context).getText(
-                                        'gcvdijqn' /* Complete */,
+                                        'gcvdijqn' /* Completo */,
                                       )
                                     ],
                                     onChanged: (val) => setState(
@@ -532,9 +531,8 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget>
                                         FlutterFlowTheme.of(context).alternate,
                                     borderWidth: 2.0,
                                     borderRadius: 8.0,
-                                    margin:
-                                        const EdgeInsetsDirectional.fromSTEB(
-                                            24.0, 4.0, 12.0, 4.0),
+                                    margin: const EdgeInsetsDirectional.fromSTEB(
+                                        24.0, 4.0, 12.0, 4.0),
                                     hidesUnderline: true,
                                     isSearchable: false,
                                     isMultiSelect: false,
@@ -551,8 +549,9 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget>
                                       if (_model.statusSelectValue ==
                                           'In Progress')
                                         Padding(
-                                          padding: const EdgeInsetsDirectional
-                                              .fromSTEB(0.0, 0.0, 8.0, 0.0),
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 8.0, 0.0),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
                                             focusColor: Colors.transparent,
@@ -600,9 +599,8 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget>
                                                 ),
                                               ),
                                               child: Padding(
-                                                padding:
-                                                    const EdgeInsetsDirectional
-                                                        .fromSTEB(
+                                                padding: const EdgeInsetsDirectional
+                                                    .fromSTEB(
                                                         12.0, 5.0, 12.0, 5.0),
                                                 child: Row(
                                                   mainAxisSize:
@@ -700,8 +698,9 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget>
                                             ),
                                           ),
                                           child: Padding(
-                                            padding: const EdgeInsetsDirectional
-                                                .fromSTEB(12.0, 5.0, 12.0, 5.0),
+                                            padding:
+                                                const EdgeInsetsDirectional.fromSTEB(
+                                                    12.0, 5.0, 12.0, 5.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment:
@@ -784,8 +783,7 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget>
                                                           .titleMediumFamily),
                                             ),
                                       ),
-                                      duration:
-                                          const Duration(milliseconds: 4000),
+                                      duration: const Duration(milliseconds: 4000),
                                       backgroundColor:
                                           FlutterFlowTheme.of(context).tertiary,
                                     ),
@@ -797,10 +795,11 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget>
                                     AllTasksRecord.collection.doc();
                                 await allTasksRecordReference.set({
                                   ...createAllTasksRecordData(
-                                    taskName: _model.taskNameController.text,
+                                    taskName:
+                                        _model.taskNameTextController.text,
                                     dueDate: _model.datePicked2,
                                     description:
-                                        _model.descriptionController.text,
+                                        _model.descriptionTextController.text,
                                     completed: false,
                                     owner: currentUserReference,
                                     status: _model.statusSelectValue,
@@ -816,10 +815,11 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget>
                                 _model.newTask =
                                     AllTasksRecord.getDocumentFromData({
                                   ...createAllTasksRecordData(
-                                    taskName: _model.taskNameController.text,
+                                    taskName:
+                                        _model.taskNameTextController.text,
                                     dueDate: _model.datePicked2,
                                     description:
-                                        _model.descriptionController.text,
+                                        _model.descriptionTextController.text,
                                     completed: false,
                                     owner: currentUserReference,
                                     status: _model.statusSelectValue,
@@ -848,17 +848,17 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget>
                                     ActivityRecord.collection.doc();
                                 await activityRecordReference.set({
                                   ...createActivityRecordData(
-                                    activityName: 'Nueva tarea',
+                                    activityName: 'New Task',
                                     activityTime: getCurrentTimestamp,
                                     activityDescription:
-                                        '¡Se ha creado una nueva tarea!',
+                                        'A new task has been created!',
                                     activityType:
                                         widget.projectParameter?.projectName,
                                     projectRef:
                                         widget.projectParameter?.reference,
                                     otherUser: currentUserReference,
                                     activitySubText:
-                                        'Se ha creado una nueva tarea en',
+                                        'A new task has been created in ',
                                   ),
                                   ...mapToFirestore(
                                     {
@@ -872,17 +872,17 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget>
                                 _model.activityCreated =
                                     ActivityRecord.getDocumentFromData({
                                   ...createActivityRecordData(
-                                    activityName: 'Nueva tarea',
+                                    activityName: 'New Task',
                                     activityTime: getCurrentTimestamp,
                                     activityDescription:
-                                        '¡Se ha creado una nueva tarea!',
+                                        'A new task has been created!',
                                     activityType:
                                         widget.projectParameter?.projectName,
                                     projectRef:
                                         widget.projectParameter?.reference,
                                     otherUser: currentUserReference,
                                     activitySubText:
-                                        'Se ha creado una nueva tarea en ',
+                                        'A new task has been created in ',
                                   ),
                                   ...mapToFirestore(
                                     {
@@ -912,8 +912,7 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget>
                                                         .titleMediumFamily),
                                           ),
                                     ),
-                                    duration:
-                                        const Duration(milliseconds: 4000),
+                                    duration: const Duration(milliseconds: 4000),
                                     backgroundColor:
                                         FlutterFlowTheme.of(context).secondary,
                                   ),
@@ -934,16 +933,15 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget>
                                 setState(() {});
                               },
                               text: FFLocalizations.of(context).getText(
-                                '0pml5dft' /* Create Task */,
+                                '0pml5dft' /* Crear tarea */,
                               ),
                               options: FFButtonOptions(
                                 width: 270.0,
                                 height: 50.0,
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
-                                iconPadding:
-                                    const EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 0.0, 0.0),
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 0.0),
                                 color: FlutterFlowTheme.of(context).primary,
                                 textStyle: FlutterFlowTheme.of(context)
                                     .titleSmall

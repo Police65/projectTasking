@@ -184,7 +184,7 @@ class _MainTeamPageWidgetState extends State<MainTeamPageWidget> {
                                       children: [
                                         Text(
                                           FFLocalizations.of(context).getText(
-                                            'vf4ee69k' /* My Team */,
+                                            'vf4ee69k' /* Mi equipo */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .headlineMedium
@@ -372,7 +372,6 @@ class _MainTeamPageWidgetState extends State<MainTeamPageWidget> {
                                                                 context)
                                                             .bodyMediumFamily),
                                               ),
-                                          minLines: null,
                                           validator: _model
                                               .textControllerValidator
                                               .asValidator(context),

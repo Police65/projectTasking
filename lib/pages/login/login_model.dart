@@ -14,28 +14,29 @@ class LoginModel extends FlutterFlowModel<LoginWidget> {
 
   // State field(s) for emailAddress widget.
   FocusNode? emailAddressFocusNode;
-  TextEditingController? emailAddressController;
-  String? Function(BuildContext, String?)? emailAddressControllerValidator;
-  String? _emailAddressControllerValidator(BuildContext context, String? val) {
+  TextEditingController? emailAddressTextController;
+  String? Function(BuildContext, String?)? emailAddressTextControllerValidator;
+  String? _emailAddressTextControllerValidator(
+      BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
       return FFLocalizations.of(context).getText(
-        'tazfclws' /* Field is required */,
+        'tazfclws' /* Campo es requerido  */,
       );
     }
 
     if (val.length < 5) {
       return FFLocalizations.of(context).getText(
-        '64wzffab' /* Email address should be minimu... */,
+        '64wzffab' /* La dirección de correo electró... */,
       );
     }
     if (val.length > 60) {
       return FFLocalizations.of(context).getText(
-        'anmgh4rt' /* email address is too long */,
+        'anmgh4rt' /* Direccion de correo muy larga */,
       );
     }
     if (!RegExp(kTextValidatorEmailRegex).hasMatch(val)) {
       return FFLocalizations.of(context).getText(
-        'niw2rp7x' /* Email seems to be invalid. Ple... */,
+        'niw2rp7x' /* Parece que el email es invalid... */,
       );
     }
     return null;
@@ -43,23 +44,24 @@ class LoginModel extends FlutterFlowModel<LoginWidget> {
 
   // State field(s) for password widget.
   FocusNode? passwordFocusNode;
-  TextEditingController? passwordController;
+  TextEditingController? passwordTextController;
   late bool passwordVisibility;
-  String? Function(BuildContext, String?)? passwordControllerValidator;
+  String? Function(BuildContext, String?)? passwordTextControllerValidator;
   // State field(s) for emailAddressCreate widget.
   FocusNode? emailAddressCreateFocusNode;
-  TextEditingController? emailAddressCreateController;
+  TextEditingController? emailAddressCreateTextController;
   String? Function(BuildContext, String?)?
-      emailAddressCreateControllerValidator;
+      emailAddressCreateTextControllerValidator;
   // State field(s) for passwordCreate widget.
   FocusNode? passwordCreateFocusNode;
-  TextEditingController? passwordCreateController;
+  TextEditingController? passwordCreateTextController;
   late bool passwordCreateVisibility;
-  String? Function(BuildContext, String?)? passwordCreateControllerValidator;
+  String? Function(BuildContext, String?)?
+      passwordCreateTextControllerValidator;
 
   @override
   void initState(BuildContext context) {
-    emailAddressControllerValidator = _emailAddressControllerValidator;
+    emailAddressTextControllerValidator = _emailAddressTextControllerValidator;
     passwordVisibility = false;
     passwordCreateVisibility = false;
   }
@@ -69,15 +71,15 @@ class LoginModel extends FlutterFlowModel<LoginWidget> {
     unfocusNode.dispose();
     tabBarController?.dispose();
     emailAddressFocusNode?.dispose();
-    emailAddressController?.dispose();
+    emailAddressTextController?.dispose();
 
     passwordFocusNode?.dispose();
-    passwordController?.dispose();
+    passwordTextController?.dispose();
 
     emailAddressCreateFocusNode?.dispose();
-    emailAddressCreateController?.dispose();
+    emailAddressCreateTextController?.dispose();
 
     passwordCreateFocusNode?.dispose();
-    passwordCreateController?.dispose();
+    passwordCreateTextController?.dispose();
   }
 }

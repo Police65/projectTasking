@@ -21,12 +21,13 @@ class ModalCreateProjectModel
   final formKey = GlobalKey<FormState>();
   // State field(s) for projectName widget.
   FocusNode? projectNameFocusNode;
-  TextEditingController? projectNameController;
-  String? Function(BuildContext, String?)? projectNameControllerValidator;
-  String? _projectNameControllerValidator(BuildContext context, String? val) {
+  TextEditingController? projectNameTextController;
+  String? Function(BuildContext, String?)? projectNameTextControllerValidator;
+  String? _projectNameTextControllerValidator(
+      BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
       return FFLocalizations.of(context).getText(
-        'zzv8enkj' /* Please enter a project name. */,
+        'zzv8enkj' /* Por favor ingrese un nombre de... */,
       );
     }
 
@@ -39,12 +40,13 @@ class ModalCreateProjectModel
 
   // State field(s) for description widget.
   FocusNode? descriptionFocusNode;
-  TextEditingController? descriptionController;
-  String? Function(BuildContext, String?)? descriptionControllerValidator;
-  String? _descriptionControllerValidator(BuildContext context, String? val) {
+  TextEditingController? descriptionTextController;
+  String? Function(BuildContext, String?)? descriptionTextControllerValidator;
+  String? _descriptionTextControllerValidator(
+      BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
       return FFLocalizations.of(context).getText(
-        'e68qg04m' /* Please enter a short descripti... */,
+        'e68qg04m' /* Por favor ingrese una breve de... */,
       );
     }
 
@@ -58,16 +60,16 @@ class ModalCreateProjectModel
 
   @override
   void initState(BuildContext context) {
-    projectNameControllerValidator = _projectNameControllerValidator;
-    descriptionControllerValidator = _descriptionControllerValidator;
+    projectNameTextControllerValidator = _projectNameTextControllerValidator;
+    descriptionTextControllerValidator = _descriptionTextControllerValidator;
   }
 
   @override
   void dispose() {
     projectNameFocusNode?.dispose();
-    projectNameController?.dispose();
+    projectNameTextController?.dispose();
 
     descriptionFocusNode?.dispose();
-    descriptionController?.dispose();
+    descriptionTextController?.dispose();
   }
 }

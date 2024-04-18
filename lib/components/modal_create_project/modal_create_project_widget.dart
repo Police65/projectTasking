@@ -45,10 +45,10 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
       });
     });
 
-    _model.projectNameController ??= TextEditingController();
+    _model.projectNameTextController ??= TextEditingController();
     _model.projectNameFocusNode ??= FocusNode();
 
-    _model.descriptionController ??= TextEditingController();
+    _model.descriptionTextController ??= TextEditingController();
     _model.descriptionFocusNode ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
@@ -122,7 +122,7 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                                 child: SelectionArea(
                                     child: Text(
                                   FFLocalizations.of(context).getText(
-                                    'd3zhz60s' /* Create Project */,
+                                    'd3zhz60s' /* Crear proyecto */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .headlineMedium
@@ -163,7 +163,7 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                             child: SelectionArea(
                                 child: Text(
                               FFLocalizations.of(context).getText(
-                                'ndua9r0o' /* Please add the name & descript... */,
+                                'ndua9r0o' /* Por favor agregue el nombre y ... */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .labelSmall
@@ -182,12 +182,12 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                             padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 16.0, 16.0, 0.0),
                             child: TextFormField(
-                              controller: _model.projectNameController,
+                              controller: _model.projectNameTextController,
                               focusNode: _model.projectNameFocusNode,
                               obscureText: false,
                               decoration: InputDecoration(
                                 labelText: FFLocalizations.of(context).getText(
-                                  'ijnwlsug' /* Project Name */,
+                                  'ijnwlsug' /* Nombre del proyecto */,
                                 ),
                                 labelStyle: FlutterFlowTheme.of(context)
                                     .headlineSmall
@@ -232,9 +232,8 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                                   ),
                                   borderRadius: BorderRadius.circular(8.0),
                                 ),
-                                contentPadding:
-                                    const EdgeInsetsDirectional.fromSTEB(
-                                        20.0, 32.0, 20.0, 12.0),
+                                contentPadding: const EdgeInsetsDirectional.fromSTEB(
+                                    20.0, 32.0, 20.0, 12.0),
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .headlineSmall
@@ -248,8 +247,8 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                                                 .headlineSmallFamily),
                                   ),
                               textAlign: TextAlign.start,
-                              minLines: null,
-                              validator: _model.projectNameControllerValidator
+                              validator: _model
+                                  .projectNameTextControllerValidator
                                   .asValidator(context),
                             ),
                           ),
@@ -257,12 +256,12 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                             padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 16.0, 16.0, 0.0),
                             child: TextFormField(
-                              controller: _model.descriptionController,
+                              controller: _model.descriptionTextController,
                               focusNode: _model.descriptionFocusNode,
                               obscureText: false,
                               decoration: InputDecoration(
                                 hintText: FFLocalizations.of(context).getText(
-                                  'l7qnilp2' /* Enter description here... */,
+                                  'l7qnilp2' /* Introduzca la descripción aquí... */,
                                 ),
                                 hintStyle: FlutterFlowTheme.of(context)
                                     .bodySmall
@@ -306,9 +305,8 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                                   ),
                                   borderRadius: BorderRadius.circular(8.0),
                                 ),
-                                contentPadding:
-                                    const EdgeInsetsDirectional.fromSTEB(
-                                        20.0, 32.0, 20.0, 12.0),
+                                contentPadding: const EdgeInsetsDirectional.fromSTEB(
+                                    20.0, 32.0, 20.0, 12.0),
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
@@ -323,9 +321,9 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                                   ),
                               textAlign: TextAlign.start,
                               maxLines: 4,
-                              minLines: null,
                               keyboardType: TextInputType.multiline,
-                              validator: _model.descriptionControllerValidator
+                              validator: _model
+                                  .descriptionTextControllerValidator
                                   .asValidator(context),
                             ),
                           ),
@@ -338,12 +336,11 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding:
-                                        const EdgeInsetsDirectional.fromSTEB(
-                                            16.0, 0.0, 0.0, 0.0),
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        16.0, 0.0, 0.0, 0.0),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
-                                        'iou7k3x8' /* Assign Users */,
+                                        'iou7k3x8' /* Asignar usuarios */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyLarge
@@ -360,12 +357,11 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding:
-                                        const EdgeInsetsDirectional.fromSTEB(
-                                            16.0, 4.0, 0.0, 0.0),
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        16.0, 4.0, 0.0, 0.0),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
-                                        'h40v3y8u' /* Find members by searching belo... */,
+                                        'h40v3y8u' /* Encuentre miembros buscando a ... */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .labelSmall
@@ -382,9 +378,8 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding:
-                                        const EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 8.0, 0.0, 44.0),
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 8.0, 0.0, 44.0),
                                     child: StreamBuilder<List<UsersRecord>>(
                                       stream: FFAppState().appUsers(
                                         requestFn: () => queryUsersRecord(
@@ -424,10 +419,9 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                                                   0.8,
                                               height: 230.0,
                                               child: const EmptyMembersWidget(
-                                                title:
-                                                    'No hay usuarios encontrados',
+                                                title: 'No Users Found',
                                                 bodyText:
-                                                    'No hay miembros presentes para tu búsqueda, prueba la barra de búsqueda nuevamente.',
+                                                    'No members are present for your search, try the search bar again.',
                                               ),
                                             ),
                                           );
@@ -444,9 +438,8 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                                                 userListUsersRecordList[
                                                     userListIndex];
                                             return Padding(
-                                              padding:
-                                                  const EdgeInsetsDirectional
-                                                      .fromSTEB(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(
                                                       16.0, 4.0, 16.0, 8.0),
                                               child: InkWell(
                                                 splashColor: Colors.transparent,
@@ -512,8 +505,8 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                                                   child: Padding(
                                                     padding:
                                                         const EdgeInsetsDirectional
-                                                            .fromSTEB(
-                                                            8.0, 0.0, 8.0, 0.0),
+                                                            .fromSTEB(8.0, 0.0,
+                                                                8.0, 0.0),
                                                     child: Row(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -549,10 +542,10 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                                                             padding:
                                                                 const EdgeInsetsDirectional
                                                                     .fromSTEB(
-                                                                    12.0,
-                                                                    0.0,
-                                                                    0.0,
-                                                                    0.0),
+                                                                        12.0,
+                                                                        0.0,
+                                                                        0.0,
+                                                                        0.0),
                                                             child: Column(
                                                               mainAxisSize:
                                                                   MainAxisSize
@@ -749,7 +742,7 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                                                             text: FFLocalizations
                                                                     .of(context)
                                                                 .getText(
-                                                              '74kovm7t' /* Assign */,
+                                                              '74kovm7t' /* Asignar */,
                                                             ),
                                                             options:
                                                                 FFButtonOptions(
@@ -758,17 +751,17 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                                                               padding:
                                                                   const EdgeInsetsDirectional
                                                                       .fromSTEB(
-                                                                      0.0,
-                                                                      0.0,
-                                                                      0.0,
-                                                                      0.0),
+                                                                          0.0,
+                                                                          0.0,
+                                                                          0.0,
+                                                                          0.0),
                                                               iconPadding:
                                                                   const EdgeInsetsDirectional
                                                                       .fromSTEB(
-                                                                      0.0,
-                                                                      0.0,
-                                                                      0.0,
-                                                                      0.0),
+                                                                          0.0,
+                                                                          0.0,
+                                                                          0.0,
+                                                                          0.0),
                                                               color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .primary,
@@ -823,8 +816,8 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            0.0, 0.0, 0.0, 16.0),
+                        padding:
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
                         child: FFButtonWidget(
                           onPressed: () async {
                             // This creates the project for tasks to be assigned to.
@@ -835,8 +828,10 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                             await projectsRecordReference.set({
                               ...createProjectsRecordData(
                                 owner: currentUserReference,
-                                projectName: _model.projectNameController.text,
-                                description: _model.descriptionController.text,
+                                projectName:
+                                    _model.projectNameTextController.text,
+                                description:
+                                    _model.descriptionTextController.text,
                                 numberTasks: 0,
                                 completedTasks: 0,
                                 lastEdited: getCurrentTimestamp,
@@ -851,8 +846,10 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                                 ProjectsRecord.getDocumentFromData({
                               ...createProjectsRecordData(
                                 owner: currentUserReference,
-                                projectName: _model.projectNameController.text,
-                                description: _model.descriptionController.text,
+                                projectName:
+                                    _model.projectNameTextController.text,
+                                description:
+                                    _model.descriptionTextController.text,
                                 numberTasks: 0,
                                 completedTasks: 0,
                                 lastEdited: getCurrentTimestamp,
@@ -885,7 +882,7 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                             setState(() {});
                           },
                           text: FFLocalizations.of(context).getText(
-                            'p9mvmaob' /* Create Project */,
+                            'p9mvmaob' /* Crear proyecto */,
                           ),
                           options: FFButtonOptions(
                             width: 270.0,

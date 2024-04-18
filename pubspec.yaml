@@ -1,4 +1,4 @@
-name: project_tasking
+name: protasker
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -52,7 +52,7 @@ dependencies:
   flutter_plugin_android_lifecycle: 2.0.17
   font_awesome_flutter: 10.6.0
   from_css_color: 2.0.0
-  go_router: 7.1.1
+  go_router: 12.1.3
   google_fonts: 6.1.0
   google_sign_in: 6.1.5
   google_sign_in_android: 6.1.20

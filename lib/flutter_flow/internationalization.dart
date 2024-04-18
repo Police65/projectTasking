@@ -128,7 +128,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'ای میل اڈریس',
     },
     'vuhwdlzn': {
-      'en': 'Email Address',
+      'en': 'Correo electronico',
       'hi': 'मेल पता',
       'ta': 'மின்னஞ்சல் முகவரி',
       'ur': 'ای میل اڈریس',
@@ -194,47 +194,62 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'اکاؤنٹ بنائیں',
     },
     'tazfclws': {
-      'en': 'El campo es obligatorio',
+      'en': 'Campo es requerido ',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
     },
     '64wzffab': {
       'en':
-          'La dirección de correo electrónico debe tener como mínimo 5 caracteres',
+          'La dirección de correo electrónico debe tener un mínimo de 5 caracteres',
       'hi': 'ईमेल पता कम से कम 5 अक्षरों का होना चाहिए',
       'ta': 'மின்னஞ்சல் முகவரி குறைந்தபட்சம் 5 எழுத்துகளாக இருக்க வேண்டும்',
       'ur': 'ای میل ایڈریس کم از کم 5 حروف کا ہونا چاہیے۔',
     },
     'anmgh4rt': {
-      'en': 'La dirección de correo electrónico es demasiado larga',
+      'en': 'Direccion de correo muy larga',
       'hi': 'ईमेल पता बहुत लंबा है',
       'ta': 'மின்னஞ்சல் முகவரி மிக நீளமாக உள்ளது',
       'ur': 'ای میل ایڈریس بہت لمبا ہے۔',
     },
     'niw2rp7x': {
-      'en': 'El correo electrónico parece ser inválido. Por favor, verifique',
+      'en': 'Parece que el email es invalido, prueba otra vez',
       'hi': 'ईमेल अमान्य प्रतीत होता है। कृपया जांचें',
       'ta': 'மின்னஞ்சல் தவறானது போல் தெரிகிறது. தயவுசெய்து சாிபார்க்கவும்',
       'ur': 'ایسا لگتا ہے کہ ای میل غلط ہے۔ براہ مہربانی دیکھ لیجے',
     },
     '0erhnun6': {
-      'en': 'El campo es obligatorio',
+      'en': 'Se requiere campo',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
     },
     'mw32hvo4': {
-      'en': 'El campo es obligatorio',
+      'en': 'Se requiere campo',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
     },
     'rklj8lg5': {
-      'en': 'El campo es obligatorio',
+      'en': 'Se requiere campo',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
+    },
+  },
+  // forgotPassword
+  {
+    's20e49ou': {
+      'en': 'Atras',
+      'hi': 'पीछे',
+      'ta': 'மீண்டும்',
+      'ur': 'پیچھے',
+    },
+    '5slql49v': {
+      'en': 'Atras',
+      'hi': 'पीछे',
+      'ta': 'மீண்டும்',
+      'ur': 'پیچھے',
     },
     'qgfcbi0c': {
       'en': 'Olvide contraseña',
@@ -258,7 +273,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'ای میل ایڈریسز',
     },
     'gegzfze4': {
-      'en': 'Entroduce tu email...',
+      'en': 'Introduce tu email',
       'hi': 'अपना ईमेल दर्ज करें...',
       'ta': 'மின்னஞ்சலை பதிவுசெய்...',
       'ur': 'اپنا ای میل درج کریں...',
@@ -270,7 +285,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'لنک بھیجیں۔',
     },
     '9a4bm91z': {
-      'en': 'Home',
+      'en': 'Inicio',
       'hi': 'घर',
       'ta': 'வீடு',
       'ur': 'گھر',
@@ -309,25 +324,25 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'صارف بنائیں اور مدعو کریں۔',
     },
     'nyguqlya': {
-      'en': 'El campo es obligatorio',
+      'en': 'Se requiere campo',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
     },
     '8opg51gj': {
-      'en': 'El campo es obligatorio',
+      'en': 'Se requiere campo',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
     },
     'ht71rkhg': {
-      'en': 'El campo es obligatorio',
+      'en': 'Se requiere campo',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
     },
     'bxrlgb5p': {
-      'en': 'El campo es obligatorio',
+      'en': 'Se requiere campo',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
@@ -360,7 +375,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'واجب الادا',
     },
     'xeqma55c': {
-      'en': 'Issue #242952592',
+      'en': 'problema #242952592',
       'hi': 'अंक #242952592',
       'ta': 'வெளியீடு #242952592',
       'ur': 'شمارہ نمبر 242952592',
@@ -372,7 +387,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'کام جاری ہے',
     },
     'zi7hfryq': {
-      'en': 'Andres Reynolds',
+      'en': 'Name LastName',
       'hi': 'एंड्रेस रेनॉल्ड्स',
       'ta': 'ஆண்ட்ரெஸ் ரெனால்ட்ஸ்',
       'ur': 'اینڈریس رینالڈز',
@@ -414,13 +429,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'کام جاری ہے',
     },
     'c8gv1fmj': {
-      'en': 'Pendiente',
+      'en': 'Due',
       'hi': 'देय',
       'ta': 'காரணமாக',
       'ur': 'واجب الادا',
     },
     'd4gw9qw0': {
-      'en': 'Issue #242952592',
+      'en': 'Problema #242952592',
       'hi': 'अंक #242952592',
       'ta': 'வெளியீடு #242952592',
       'ur': 'شمارہ نمبر 242952592',
@@ -432,13 +447,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'کام جاری ہے',
     },
     '6p1meot0': {
-      'en': 'Andres Reynolds',
+      'en': 'Name Lastname',
       'hi': 'एंड्रेस रेनॉल्ड्स',
       'ta': 'ஆண்ட்ரெஸ் ரெனால்ட்ஸ்',
       'ur': 'اینڈریس رینالڈز',
     },
     '86lis2jg': {
-      'en': 'Due',
+      'en': 'Pendiente',
       'hi': 'देय',
       'ta': 'காரணமாக',
       'ur': 'واجب الادا',
@@ -462,7 +477,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'مکمل',
     },
     'htuk5fl0': {
-      'en': 'Due',
+      'en': 'Pendiente',
       'hi': 'देय',
       'ta': 'காரணமாக',
       'ur': 'واجب الادا',
@@ -480,7 +495,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': '(4)',
     },
     'oopnhfx6': {
-      'en': 'Due',
+      'en': 'Pendiente',
       'hi': 'देय',
       'ta': 'காரணமாக',
       'ur': 'واجب الادا',
@@ -492,19 +507,19 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'شمارہ نمبر 242952592',
     },
     '6z27sxtu': {
-      'en': 'In Progress',
+      'en': 'En progreso',
       'hi': 'चालू',
       'ta': 'செயல்பாட்டில் உள்ளது',
       'ur': 'کام جاری ہے',
     },
     'kvvayf1a': {
-      'en': 'Andres Reynolds',
+      'en': 'Name Lastname',
       'hi': 'एंड्रेस रेनॉल्ड्स',
       'ta': 'ஆண்ட்ரெஸ் ரெனால்ட்ஸ்',
       'ur': 'اینڈریس رینالڈز',
     },
     'y2umcbi9': {
-      'en': 'Due',
+      'en': 'Pendiente',
       'hi': 'देय',
       'ta': 'காரணமாக',
       'ur': 'واجب الادا',
@@ -516,31 +531,31 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'منگل، صبح 10:00 بجے',
     },
     'rktf6kep': {
-      'en': 'No Iniciado',
+      'en': 'No iniciado',
       'hi': 'शुरू नहीं',
       'ta': 'துவங்கவில்லை',
       'ur': 'شروع نہیں کیا',
     },
     'mpiabjfr': {
-      'en': 'Comenzar',
+      'en': 'Iniciar',
       'hi': 'शुरू',
       'ta': 'தொடங்கு',
       'ur': 'شروع کریں۔',
     },
     'i1j0llq5': {
-      'en': 'Vencido',
+      'en': 'Pendiente',
       'hi': 'देय',
       'ta': 'காரணமாக',
       'ur': 'واجب الادا',
     },
     '89oepmke': {
-      'en': 'En Progreso',
+      'en': 'Progreso',
       'hi': 'चालू',
       'ta': 'செயல்பாட்டில் உள்ளது',
       'ur': 'کام جاری ہے',
     },
     'b8974iek': {
-      'en': 'Vencido',
+      'en': 'Pendiente',
       'hi': 'देय',
       'ta': 'காரணமாக',
       'ur': 'واجب الادا',
@@ -552,19 +567,19 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'شمارہ نمبر 242952592',
     },
     '2jc6nxa6': {
-      'en': 'En Progreso',
+      'en': 'En progreso',
       'hi': 'चालू',
       'ta': 'செயல்பாட்டில் உள்ளது',
       'ur': 'کام جاری ہے',
     },
     'z98yqioc': {
-      'en': 'Andres Reynolds',
+      'en': 'Name Lastname',
       'hi': 'एंड्रेस रेनॉल्ड्स',
       'ta': 'ஆண்ட்ரெஸ் ரெனால்ட்ஸ்',
       'ur': 'اینڈریس رینالڈز',
     },
     '6c511ygf': {
-      'en': 'Due',
+      'en': 'Pendiente',
       'hi': 'देय',
       'ta': 'காரணமாக',
       'ur': 'واجب الادا',
@@ -576,13 +591,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'منگل، صبح 10:00 بجے',
     },
     '310ik08p': {
-      'en': 'Completed',
+      'en': 'Completado',
       'hi': 'पुरा होना।',
       'ta': 'நிறைவு',
       'ur': 'مکمل',
     },
     '6mv3j0ec': {
-      'en': 'Tracker',
+      'en': 'Tareas',
       'hi': 'ट्रैकर',
       'ta': 'டிராக்கர்',
       'ur': 'ٹریکر',
@@ -609,31 +624,31 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'پروجیکٹ شامل کریں۔',
     },
     'nb0qs3fd': {
-      'en': 'Last edited:',
+      'en': 'Ultima edicion:',
       'hi': 'अंतिम संपादित:',
       'ta': 'கடைசியாக திருத்தப்பட்டது:',
       'ur': 'آخری ترمیم:',
     },
     'h0y2vck1': {
-      'en': 'Field is required',
+      'en': 'Se requiere campo',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
     },
     'ry8gdxku': {
-      'en': 'Field is required',
+      'en': 'Se requiere campo',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
     },
     'xtzbonrg': {
-      'en': 'Field is required',
+      'en': 'Se requiere campo',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
     },
     'd3cize38': {
-      'en': 'Field is required',
+      'en': 'Se requiere campo',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
@@ -660,19 +675,19 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'یہاں تفصیل درج کریں...',
     },
     're4r1lkn': {
-      'en': 'Not Started',
+      'en': 'No iniciado',
       'hi': 'शुरू नहीं',
       'ta': 'துவங்கவில்லை',
       'ur': 'شروع نہیں کیا',
     },
     'ptyt1h7n': {
-      'en': 'In Progress',
+      'en': 'En progreso',
       'hi': 'चालू',
       'ta': 'செயல்பாட்டில் உள்ளது',
       'ur': 'کام جاری ہے',
     },
     'gcvdijqn': {
-      'en': 'Complete',
+      'en': 'Completo',
       'hi': 'पूरा',
       'ta': 'முழுமை',
       'ur': 'مکمل',
@@ -684,37 +699,37 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'اسٹیٹس کو منتخب کریں۔',
     },
     '0pml5dft': {
-      'en': 'Create Task',
+      'en': 'Crear tarea',
       'hi': 'कार्य बनाएँ',
       'ta': 'பணியை உருவாக்கவும்',
       'ur': 'ٹاسک بنائیں',
     },
     '3nx43hj1': {
-      'en': 'Please add a task name.',
+      'en': 'Por favor añade el nombre de la tarea',
       'hi': 'कृपया कार्य का नाम जोड़ें।',
       'ta': 'பணியின் பெயரைச் சேர்க்கவும்.',
       'ur': 'براہ کرم ایک کام کا نام شامل کریں۔',
     },
     'tjxg3net': {
-      'en': 'Please enter at least 3 letters.',
+      'en': 'Por favor ingrese al menos 3 letras.',
       'hi': 'कृपया कम से कम 3 अक्षर दर्ज करें।',
       'ta': 'குறைந்தது 3 எழுத்துக்களை உள்ளிடவும்.',
       'ur': 'براہ کرم کم از کم 3 حروف درج کریں۔',
     },
     '3khebw6t': {
-      'en': 'Please choose an option from the dropdown',
+      'en': 'Por favor elija una opción del menú desplegable',
       'hi': 'कृपया ड्रॉपडाउन से एक विकल्प चुनें',
       'ta': 'கீழ்தோன்றலில் இருந்து ஒரு விருப்பத்தைத் தேர்ந்தெடுக்கவும்',
       'ur': 'براہ کرم ڈراپ ڈاؤن سے ایک آپشن منتخب کریں۔',
     },
     '45sp2bki': {
-      'en': 'Field is required',
+      'en': 'Se requiere campo',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
     },
     'cm4f3q0t': {
-      'en': 'Please choose an option from the dropdown',
+      'en': 'Por favor elija una opción del menú desplegable',
       'hi': 'कृपया ड्रॉपडाउन से एक विकल्प चुनें',
       'ta': 'கீழ்தோன்றலில் இருந்து ஒரு விருப்பத்தைத் தேர்ந்தெடுக்கவும்',
       'ur': 'براہ کرم ڈراپ ڈاؤن سے ایک آپشن منتخب کریں۔',
@@ -741,7 +756,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'نوٹس اور سرگرمی',
     },
     '46h6mjof': {
-      'en': 'Mark as Complete',
+      'en': 'Marcar como completo',
       'hi': 'पूर्ण के रूप में चिह्नित करें',
       'ta': 'முழுமையானதாகக் குறிக்கவும்',
       'ur': 'مکمل کے بطور نشان زد کریں۔',
@@ -753,7 +768,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'کام شروع کریں۔',
     },
     'q5i02gt3': {
-      'en': 'Home',
+      'en': 'Inicio',
       'hi': 'घर',
       'ta': 'வீடு',
       'ur': 'گھر',
@@ -774,7 +789,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'پورا نام',
     },
     '733r7kk8': {
-      'en': 'Email',
+      'en': 'Correo Electronico',
       'hi': 'ईमेल',
       'ta': 'மின்னஞ்சல்',
       'ur': 'ای میل',
@@ -786,19 +801,19 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'عنوان یا کردار',
     },
     '39qfddvg': {
-      'en': 'Team 1',
+      'en': 'Equipo 1',
       'hi': 'टीम 1',
       'ta': 'அணி 1',
       'ur': 'ٹیم 1',
     },
     '0rrub9lg': {
-      'en': 'Team 2',
+      'en': 'Equipo 2',
       'hi': 'टीम 2',
       'ta': 'அணி 2',
       'ur': 'ٹیم 2',
     },
     '23fglgb8': {
-      'en': 'Team 3',
+      'en': 'Equipo 3',
       'hi': 'टीम 3',
       'ta': 'அணி 3',
       'ur': 'ٹیم 3',
@@ -816,31 +831,31 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'یہاں تفصیل درج کریں..',
     },
     'c38hkcs1': {
-      'en': 'Create & Invite User',
+      'en': 'Crear & Invitar usuario',
       'hi': 'उपयोगकर्ता बनाएं और आमंत्रित करें',
       'ta': 'பயனரை உருவாக்கி அழைக்கவும்',
       'ur': 'صارف بنائیں اور مدعو کریں۔',
     },
     '41umybiv': {
-      'en': 'Field is required',
+      'en': 'El campo es requerido',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
     },
     'i5wagnfq': {
-      'en': 'Field is required',
+      'en': 'El campo es requerido',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
     },
     'h5euxn0m': {
-      'en': 'Field is required',
+      'en': 'El campo es requerido',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
     },
     'ag9dglwf': {
-      'en': 'Field is required',
+      'en': 'El campo es requerido',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
@@ -861,13 +876,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': '-',
     },
     '8lhfh12w': {
-      'en': '12 Tasks',
+      'en': '12 Tareas',
       'hi': '12 कार्य',
       'ta': '12 பணிகள்',
       'ur': '12 کام',
     },
     'j2ieipip': {
-      'en': 'Team Bio',
+      'en': 'Descripcion de equipo',
       'hi': 'टीम बायो',
       'ta': 'டீம் பயோ',
       'ur': 'ٹیم بائیو',
@@ -879,13 +894,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'کام',
     },
     '3rwjcoju': {
-      'en': 'Due',
+      'en': 'Pendiente',
       'hi': 'देय',
       'ta': 'காரணமாக',
       'ur': 'واجب الادا',
     },
     'znm2flgb': {
-      'en': 'Home',
+      'en': 'Inicio',
       'hi': 'घर',
       'ta': 'வீடு',
       'ur': 'گھر',
@@ -906,13 +921,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'ذیل میں آپ کے منصوبوں کی فہرست۔',
     },
     '5mru78lw': {
-      'en': 'Create Project',
+      'en': 'Crear proyecto',
       'hi': 'प्रोजेक्ट बनाएं',
       'ta': 'திட்டத்தை உருவாக்கவும்',
       'ur': 'پروجیکٹ بنائیں',
     },
     'hmxr55qt': {
-      'en': 'Home',
+      'en': 'Inicio',
       'hi': 'घर',
       'ta': 'வீடு',
       'ur': 'گھر',
@@ -921,7 +936,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // Main_teamPage
   {
     'vf4ee69k': {
-      'en': 'My Team',
+      'en': 'Mi equipo',
       'hi': 'मेरी टीम',
       'ta': 'என் அணி',
       'ur': 'میری ٹیم',
@@ -951,7 +966,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'پر بنایا',
     },
     'h2tjjlou': {
-      'en': 'My Team',
+      'en': 'Mi equipo',
       'hi': 'मेरी टीम',
       'ta': 'என் அணி',
       'ur': 'میری ٹیم',
@@ -960,7 +975,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // Main_projects
   {
     '3drc3684': {
-      'en': 'Home',
+      'en': 'inicio',
       'hi': 'घर',
       'ta': 'வீடு',
       'ur': 'گھر',
@@ -969,7 +984,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // myProfile
   {
     '5n51xmhd': {
-      'en': 'Switch to Dark Mode',
+      'en': 'Cambia al modo oscuro',
       'hi': 'डार्क मोड पर स्विच करें',
       'ta': 'டார்க் பயன்முறைக்கு மாறவும்',
       'ur': 'ڈارک موڈ پر سوئچ کریں۔',
@@ -1005,7 +1020,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'لاگ آوٹ',
     },
     '3e1n01mf': {
-      'en': 'Home',
+      'en': 'Inicio',
       'hi': 'घर',
       'ta': 'வீடு',
       'ur': 'گھر',
@@ -1032,31 +1047,31 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'یہاں تفصیل درج کریں...',
     },
     'gql7sgl9': {
-      'en': 'Create Project',
+      'en': 'Crer proyecto',
       'hi': 'प्रोजेक्ट बनाएं',
       'ta': 'திட்டத்தை உருவாக்கவும்',
       'ur': 'پروجیکٹ بنائیں',
     },
     'abj4bb18': {
-      'en': 'Field is required',
+      'en': 'El campo es requerido',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
     },
     'yyhmrk0i': {
-      'en': 'Field is required',
+      'en': 'El campo es requerido',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
     },
     'yepouzyh': {
-      'en': 'Field is required',
+      'en': 'El campo es requerido',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
     },
     'qckve3hq': {
-      'en': 'Field is required',
+      'en': 'El campo es requerido',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
@@ -1071,13 +1086,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'سب دیکھیں',
     },
     'vdyl48dm': {
-      'en': 'Completed Tasks',
+      'en': 'Tareas completas',
       'hi': 'पूर्ण कार्य',
       'ta': 'முடிக்கப்பட்ட பணிகள்',
       'ur': 'مکمل شدہ کام',
     },
     'f24x8bkt': {
-      'en': 'Number of Tasks',
+      'en': 'Numero de tareas',
       'hi': 'कार्यों की संख्या',
       'ta': 'பணிகளின் எண்ணிக்கை',
       'ur': 'کاموں کی تعداد',
@@ -1101,7 +1116,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'شمارہ نمبر 242952592',
     },
     '3ihf4pre': {
-      'en': 'In Progress',
+      'en': 'En progreso',
       'hi': 'चालू',
       'ta': 'செயல்பாட்டில் உள்ளது',
       'ur': 'کام جاری ہے',
@@ -1113,7 +1128,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'اینڈریس رینالڈز',
     },
     'sg458n0n': {
-      'en': 'Due',
+      'en': 'Pendiente',
       'hi': 'देय',
       'ta': 'காரணமாக',
       'ur': 'واجب الادا',
@@ -1161,7 +1176,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'پیچھے',
     },
     '5kom1132': {
-      'en': 'Home',
+      'en': 'Inicio',
       'hi': 'घर',
       'ta': 'வீடு',
       'ur': 'گھر',
@@ -1188,13 +1203,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'ممبرز تلاش کریں۔',
     },
     'kmiq19hs': {
-      'en': 'Assignar',
+      'en': 'Asignar',
       'hi': 'सौंपना',
       'ta': 'ஒதுக்க',
       'ur': 'تفویض',
     },
     'ag17xw1c': {
-      'en': 'Home',
+      'en': 'Inicio',
       'hi': 'घर',
       'ta': 'வீடு',
       'ur': 'گھر',
@@ -1266,25 +1281,25 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'دور',
     },
     'gjanmvum': {
-      'en': 'UserName',
+      'en': 'Nombre de usuario',
       'hi': 'उपयोगकर्ता नाम',
       'ta': 'பயனர்பெயர்',
       'ur': 'صارف کا نام',
     },
     '8dw4hlie': {
-      'en': 'Remove',
+      'en': 'Remover',
       'hi': 'निकालना',
       'ta': 'அகற்று',
       'ur': 'دور',
     },
     'eq219wh6': {
-      'en': 'UserName',
+      'en': 'Nombre de usuario',
       'hi': 'उपयोगकर्ता नाम',
       'ta': 'பயனர்பெயர்',
       'ur': 'صارف کا نام',
     },
     'cjsbj4wg': {
-      'en': 'Remove',
+      'en': 'Remover',
       'hi': 'निकालना',
       'ta': 'அகற்று',
       'ur': 'دور',
@@ -1308,7 +1323,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'user@domainname.com',
     },
     '70d3gp3g': {
-      'en': 'View',
+      'en': 'Vista',
       'hi': 'देखना',
       'ta': 'காண்க',
       'ur': 'دیکھیں',
@@ -1326,7 +1341,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'user@domainname.com',
     },
     '8ohfceuq': {
-      'en': 'View',
+      'en': 'Vista',
       'hi': 'देखना',
       'ta': 'காண்க',
       'ur': 'دیکھیں',
@@ -1344,7 +1359,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'user@domainname.com',
     },
     'ntjxiluh': {
-      'en': 'View',
+      'en': 'Vista',
       'hi': 'देखना',
       'ta': 'காண்க',
       'ur': 'دیکھیں',
@@ -1356,13 +1371,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'user@domainname.com',
     },
     'vlair7ur': {
-      'en': 'View',
+      'en': 'Vista',
       'hi': 'देखना',
       'ta': 'காண்க',
       'ur': 'دیکھیں',
     },
     '76xe81xi': {
-      'en': 'Home',
+      'en': 'Inicio',
       'hi': 'घर',
       'ta': 'வீடு',
       'ur': 'گھر',
@@ -1383,37 +1398,37 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'پراجیکٹ کا نام',
     },
     'hyz5515g': {
-      'en': 'Enter description here...',
+      'en': 'Introduce una descripcion aca...',
       'hi': 'यहां विवरण दर्ज करें...',
       'ta': 'விளக்கத்தை இங்கே உள்ளிடவும்...',
       'ur': 'یہاں تفصیل درج کریں...',
     },
     '57dpf0bb': {
-      'en': 'Save Changes',
+      'en': 'Guardar cambios',
       'hi': 'परिवर्तनों को सुरक्षित करें',
       'ta': 'மாற்றங்களை சேமியுங்கள்',
       'ur': 'تبدیلیاں محفوظ کرو',
     },
     'lp17x1az': {
-      'en': 'Field is required',
+      'en': 'El campo es requerido',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
     },
     'ly4njc2q': {
-      'en': 'Field is required',
+      'en': 'El campo es requerido',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
     },
     'wqm2ux47': {
-      'en': 'Field is required',
+      'en': 'El campo es requerido',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
     },
     'cgdvh4bx': {
-      'en': 'Field is required',
+      'en': 'El campo es requerido',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
@@ -1422,7 +1437,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // drawerNav
   {
     'j81no67g': {
-      'en': 'View',
+      'en': 'Vista',
       'hi': 'देखना',
       'ta': 'காண்க',
       'ur': 'دیکھیں',
@@ -1434,7 +1449,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': '345',
     },
     'ikdzucnf': {
-      'en': 'Following',
+      'en': 'Siguiendo',
       'hi': 'अगले',
       'ta': 'தொடர்ந்து',
       'ur': 'درج ذیل',
@@ -1452,31 +1467,31 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'پیروکار',
     },
     'xnmol3vm': {
-      'en': 'Tracker',
+      'en': 'Tareas',
       'hi': 'ट्रैकर',
       'ta': 'டிராக்கர்',
       'ur': 'ٹریکر',
     },
     'tgp9100p': {
-      'en': 'Projects',
+      'en': 'Proyectos',
       'hi': 'परियोजनाओं',
       'ta': 'திட்டங்கள்',
       'ur': 'پروجیکٹس',
     },
     'gvsvhzns': {
-      'en': 'Team',
+      'en': 'Equipo',
       'hi': 'टीम',
       'ta': 'குழு',
       'ur': 'ٹیم',
     },
     'r33amlko': {
-      'en': 'About',
+      'en': 'Acerca de',
       'hi': 'के बारे में',
       'ta': 'பற்றி',
       'ur': 'کے بارے میں',
     },
     'hfpu6vi1': {
-      'en': 'Calificar app',
+      'en': 'Califica la app',
       'hi': 'एप्प का मूल्यांकन',
       'ta': 'பயன்பாட்டை மதிப்பிடவும்',
       'ur': 'ایپ کی درجہ بندی کریں۔',
@@ -1511,7 +1526,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'اراکین کو تلاش کریں...',
     },
     'k3vvd9ha': {
-      'en': 'Assign',
+      'en': 'Asignar',
       'hi': 'सौंपना',
       'ta': 'ஒதுக்க',
       'ur': 'تفویض',
@@ -1523,13 +1538,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'user@domainname.com',
     },
     '5fcmvseb': {
-      'en': 'View',
+      'en': 'Vista',
       'hi': 'देखना',
       'ta': 'காண்க',
       'ur': 'دیکھیں',
     },
     'ipj4b3o2': {
-      'en': 'Username',
+      'en': 'Nombre de usuario',
       'hi': 'उपयोगकर्ता नाम',
       'ta': 'பயனர் பெயர்',
       'ur': 'صارف نام',
@@ -1541,13 +1556,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'user@domainname.com',
     },
     '3t1qpdde': {
-      'en': 'View',
+      'en': 'Vista',
       'hi': 'देखना',
       'ta': 'காண்க',
       'ur': 'دیکھیں',
     },
     'hpq0skds': {
-      'en': 'Username',
+      'en': 'Usuario',
       'hi': 'उपयोगकर्ता नाम',
       'ta': 'பயனர் பெயர்',
       'ur': 'صارف نام',
@@ -1559,7 +1574,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'user@domainname.com',
     },
     'gvttx09d': {
-      'en': 'View',
+      'en': 'Vista',
       'hi': 'देखना',
       'ta': 'காண்க',
       'ur': 'دیکھیں',
@@ -1571,7 +1586,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'user@domainname.com',
     },
     'm88gl572': {
-      'en': 'View',
+      'en': 'Vista',
       'hi': 'देखना',
       'ta': 'காண்க',
       'ur': 'دیکھیں',
@@ -1580,25 +1595,25 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // createNote
   {
     'i9im6f7s': {
-      'en': 'Create Note',
+      'en': 'Crear nota',
       'hi': 'नोट बनाएँ',
       'ta': 'குறிப்பை உருவாக்கவும்',
       'ur': 'نوٹ بنائیں',
     },
     'y8jieyz4': {
-      'en': 'Create a note to keep your team in the loop.',
+      'en': 'Crea una nota para mantener a tu equipo informado.',
       'hi': 'अपनी टीम को लूप में रखने के लिए एक नोट बनाएं।',
       'ta': 'உங்கள் குழுவை லூப்பில் வைத்திருக்க ஒரு குறிப்பை உருவாக்கவும்.',
       'ur': 'اپنی ٹیم کو لوپ میں رکھنے کے لیے ایک نوٹ بنائیں۔',
     },
     'sq20csss': {
-      'en': 'Enter your note here...',
+      'en': 'Introduce tu nota aquí...',
       'hi': 'अपना नोट यहां दर्ज करें...',
       'ta': 'உங்கள் குறிப்பை இங்கே உள்ளிடவும்...',
       'ur': 'اپنا نوٹ یہاں درج کریں...',
     },
     'clj48a46': {
-      'en': 'Create Note',
+      'en': 'Crear nota',
       'hi': 'नोट बनाएँ',
       'ta': 'குறிப்பை உருவாக்கவும்',
       'ur': 'نوٹ بنائیں',
@@ -1607,7 +1622,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // TaskComponent
   {
     'uuuaezib': {
-      'en': 'Completed',
+      'en': 'Completado',
       'hi': 'पुरा होना।',
       'ta': 'நிறைவு',
       'ur': 'مکمل',
@@ -1625,14 +1640,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // changePhoto
   {
     'rveosbw6': {
-      'en': 'Change Photo',
+      'en': 'Cambiar foto',
       'hi': 'छवि बदलो',
       'ta': 'புகைப்படத்தை மாற்று',
       'ur': 'تصویر تبدیل کریں',
     },
     'xkv4rj30': {
       'en':
-          'Upload a new photo below in order to change your avatar seen by others.',
+          'Sube una nueva foto a continuación para cambiar tu avatar visto por otros.',
       'hi':
           'दूसरों द्वारा देखे गए अपने अवतार को बदलने के लिए नीचे एक नया फोटो अपलोड करें।',
       'ta':
@@ -1641,13 +1656,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
           'دوسروں کے ذریعے نظر آنے والے اپنے اوتار کو تبدیل کرنے کے لیے نیچے ایک نئی تصویر اپ لوڈ کریں۔',
     },
     '9jqfzztm': {
-      'en': 'Upload Image',
+      'en': 'Cargar imagen',
       'hi': 'तस्विर अपलोड करना',
       'ta': 'படத்தை பதிவேற்றம் செய்யவும்',
       'ur': 'تصویر انٹرنیٹ پر ڈالنا',
     },
     'tnhsrx4j': {
-      'en': 'Save Changes',
+      'en': 'Guardar cambios',
       'hi': 'परिवर्तनों को सुरक्षित करें',
       'ta': 'மாற்றங்களை சேமியுங்கள்',
       'ur': 'تبدیلیاں محفوظ کرو',
@@ -1656,31 +1671,31 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // modal_Project
   {
     '4r29z75b': {
-      'en': 'View All',
+      'en': 'Ver todo',
       'hi': 'सभी को देखें',
       'ta': 'அனைத்தையும் காட்டு',
       'ur': 'سب دیکھیں',
     },
     't5thu3gr': {
-      'en': 'Completed Tasks',
+      'en': 'Tareas completadas',
       'hi': 'पूर्ण कार्य',
       'ta': 'முடிக்கப்பட்ட பணிகள்',
       'ur': 'مکمل شدہ کام',
     },
     'fycpdliq': {
-      'en': 'Number of Tasks',
+      'en': 'Número de tareas',
       'hi': 'कार्यों की संख्या',
       'ta': 'பணிகளின் எண்ணிக்கை',
       'ur': 'کاموں کی تعداد',
     },
     't39dexai': {
-      'en': 'In Progress',
+      'en': 'En progreso',
       'hi': 'चालू',
       'ta': 'செயல்பாட்டில் உள்ளது',
       'ur': 'کام جاری ہے',
     },
     'uu14cs8r': {
-      'en': 'Due',
+      'en': 'Pendiente',
       'hi': 'देय',
       'ta': 'காரணமாக',
       'ur': 'واجب الادا',
@@ -1692,7 +1707,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'شمارہ نمبر 242952592',
     },
     'fe9x22ad': {
-      'en': 'In Progress',
+      'en': 'En progreso',
       'hi': 'चालू',
       'ta': 'செயல்பாட்டில் உள்ளது',
       'ur': 'کام جاری ہے',
@@ -1704,7 +1719,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'اینڈریس رینالڈز',
     },
     '2rn0rm7g': {
-      'en': 'Due',
+      'en': 'Pendiente',
       'hi': 'देय',
       'ta': 'காரணமாக',
       'ur': 'واجب الادا',
@@ -1716,31 +1731,31 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'منگل، صبح 10:00 بجے',
     },
     'gd3bhzsf': {
-      'en': 'Completed',
+      'en': 'Completada',
       'hi': 'पुरा होना।',
       'ta': 'நிறைவு',
       'ur': 'مکمل',
     },
     'y686s4b1': {
-      'en': 'Complete',
+      'en': 'Completo',
       'hi': 'पूरा',
       'ta': 'முழுமை',
       'ur': 'مکمل',
     },
     'lcgypwk6': {
-      'en': 'Completed on',
+      'en': 'Completado en',
       'hi': 'पर पूर्ण',
       'ta': 'அன்று நிறைவடைந்தது',
       'ur': 'پر مکمل ہوا۔',
     },
     'dy7qxdlp': {
-      'en': 'Activity',
+      'en': 'Actividad',
       'hi': 'गतिविधि',
       'ta': 'செயல்பாடு',
       'ur': 'سرگرمی',
     },
     '99rgc554': {
-      'en': 'Current Time',
+      'en': 'Tiempo actual',
       'hi': 'वर्तमान समय',
       'ta': 'தற்போதைய நேரம்',
       'ur': 'موجودہ وقت',
@@ -1749,19 +1764,19 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // modal_TaskDetails
   {
     'zerfwzgz': {
-      'en': 'Mark as Complete',
+      'en': 'Marcar como completo',
       'hi': 'पूर्ण के रूप में चिह्नित करें',
       'ta': 'முழுமையானதாகக் குறிக்கவும்',
       'ur': 'مکمل کے بطور نشان زد کریں۔',
     },
     'fki0wi86': {
-      'en': 'Begin Task',
+      'en': 'Comenzar tarea',
       'hi': 'कार्य प्रारंभ करें',
       'ta': 'பணியைத் தொடங்குங்கள்',
       'ur': 'کام شروع کریں۔',
     },
     'pj3j661s': {
-      'en': 'Due',
+      'en': 'Pendiente',
       'hi': 'देय',
       'ta': 'காரணமாக',
       'ur': 'واجب الادا',
@@ -1773,25 +1788,25 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': '،',
     },
     '5bz5zdwp': {
-      'en': 'Team Members',
+      'en': 'Miembros del equipo',
       'hi': 'टीम के सदस्य',
       'ta': 'குழு உறுப்பினர்கள்',
       'ur': 'ٹیم کے افراد',
     },
     'hc3gs7ga': {
-      'en': 'Activity',
+      'en': 'Actividad',
       'hi': 'गतिविधि',
       'ta': 'செயல்பாடு',
       'ur': 'سرگرمی',
     },
     'ru97sguf': {
-      'en': 'Leave update here...',
+      'en': 'Dejar actualización aquí...',
       'hi': 'अपडेट यहां छोड़ें...',
       'ta': 'புதுப்பிப்பை இங்கே விடுங்கள்...',
       'ur': 'یہاں اپ ڈیٹ چھوڑیں...',
     },
     '5xomb4rp': {
-      'en': 'Submit',
+      'en': 'Entregar',
       'hi': 'जमा करना',
       'ta': 'சமர்ப்பிக்கவும்',
       'ur': 'جمع کرائیں',
@@ -1800,7 +1815,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // modal_UserProfile
   {
     'xbcjin31': {
-      'en': 'Team Name',
+      'en': 'Nombre de equipo ',
       'hi': 'टीम का नाम',
       'ta': 'குழு பெயர்',
       'ur': 'گروہ کا نام',
@@ -1812,25 +1827,25 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': '-',
     },
     'f87wic4n': {
-      'en': '12 Tasks',
+      'en': '12 tarea',
       'hi': '12 कार्य',
       'ta': '12 பணிகள்',
       'ur': '12 کام',
     },
     '1r4s70n4': {
-      'en': 'Team Bio',
+      'en': 'Descripcion del equipo',
       'hi': 'टीम बायो',
       'ta': 'டீம் பயோ',
       'ur': 'ٹیم بائیو',
     },
     'ai2tvk8r': {
-      'en': 'Tasks',
+      'en': 'Tareas',
       'hi': 'कार्य',
       'ta': 'பணிகள்',
       'ur': 'کام',
     },
     'k2fas9o8': {
-      'en': 'Due',
+      'en': 'Pendiente',
       'hi': 'देय',
       'ta': 'காரணமாக',
       'ur': 'واجب الادا',
@@ -1839,49 +1854,49 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // modal_TaskCreate_1
   {
     'na5pbjsl': {
-      'en': 'Choose Project',
+      'en': 'Seleccionar Proyecto',
       'hi': 'प्रोजेक्ट चुनें',
       'ta': 'திட்டத்தை தேர்வு செய்யவும்',
       'ur': 'پروجیکٹ کا انتخاب کریں۔',
     },
     '7lc6cya0': {
-      'en': 'Don\'t see your project? Add one here.',
+      'en': '¿No ves tu proyecto? Añade uno aquí.',
       'hi': 'आपका प्रोजेक्ट नहीं दिख रहा है? यहां एक जोड़ें।',
       'ta': 'உங்கள் திட்டம் பார்க்கவில்லையா? ஒன்றை இங்கே சேர்க்கவும்.',
       'ur': 'آپ کا پروجیکٹ نظر نہیں آرہا؟ یہاں ایک شامل کریں۔',
     },
     'wyow03qm': {
-      'en': 'Add Project',
+      'en': 'Agregar proyecto',
       'hi': 'प्रोजेक्ट जोड़ें',
       'ta': 'திட்டத்தைச் சேர்க்கவும்',
       'ur': 'پروجیکٹ شامل کریں۔',
     },
     '0advwx1u': {
-      'en': 'Last edited:',
+      'en': 'Ultima edicion:',
       'hi': 'अंतिम संपादित:',
       'ta': 'கடைசியாக திருத்தப்பட்டது:',
       'ur': 'آخری ترمیم:',
     },
     'ksmhvpjh': {
-      'en': 'Field is required',
+      'en': 'El campo es requerido',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
     },
     '2icxeqf5': {
-      'en': 'Field is required',
+      'en': 'El campo es requerido',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
     },
     'bthhoi83': {
-      'en': 'Field is required',
+      'en': 'El campo es requerido',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
     },
     '9g6shlpz': {
-      'en': 'Field is required',
+      'en': 'El campo es requerido',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
@@ -1890,73 +1905,73 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // modal_CreateProject
   {
     'd3zhz60s': {
-      'en': 'Create Project',
+      'en': 'Crear proyecto',
       'hi': 'प्रोजेक्ट बनाएं',
       'ta': 'திட்டத்தை உருவாக்கவும்',
       'ur': 'پروجیکٹ بنائیں',
     },
     'ndua9r0o': {
-      'en': 'Please add the name & description below.',
+      'en': 'Por favor agregue el nombre y la descripción a continuación.',
       'hi': 'कृपया नीचे नाम और विवरण जोड़ें।',
       'ta': 'கீழே பெயரையும் விளக்கத்தையும் சேர்க்கவும்.',
       'ur': 'براہ کرم ذیل میں نام اور تفصیل شامل کریں۔',
     },
     'ijnwlsug': {
-      'en': 'Project Name',
+      'en': 'Nombre del proyecto',
       'hi': 'परियोजना का नाम',
       'ta': 'திட்டத்தின் பெயர்',
       'ur': 'پراجیکٹ کا نام',
     },
     'l7qnilp2': {
-      'en': 'Enter description here...',
+      'en': 'Introduzca la descripción aquí...',
       'hi': 'यहां विवरण दर्ज करें...',
       'ta': 'விளக்கத்தை இங்கே உள்ளிடவும்...',
       'ur': 'یہاں تفصیل درج کریں...',
     },
     'iou7k3x8': {
-      'en': 'Assign Users',
+      'en': 'Asignar usuarios',
       'hi': 'उपयोगकर्ताओं को असाइन करें',
       'ta': 'பயனர்களை ஒதுக்குங்கள்',
       'ur': 'صارفین کو تفویض کریں۔',
     },
     'h40v3y8u': {
-      'en': 'Find members by searching below',
+      'en': 'Encuentre miembros buscando a continuación',
       'hi': 'नीचे खोज कर सदस्यों को खोजें',
       'ta': 'கீழே தேடுவதன் மூலம் உறுப்பினர்களைக் கண்டறியவும்',
       'ur': 'ذیل میں تلاش کرکے اراکین کو تلاش کریں۔',
     },
     '74kovm7t': {
-      'en': 'Assign',
+      'en': 'Asignar',
       'hi': 'सौंपना',
       'ta': 'ஒதுக்க',
       'ur': 'تفویض',
     },
     'p9mvmaob': {
-      'en': 'Create Project',
+      'en': 'Crear proyecto',
       'hi': 'प्रोजेक्ट बनाएं',
       'ta': 'திட்டத்தை உருவாக்கவும்',
       'ur': 'پروجیکٹ بنائیں',
     },
     'zzv8enkj': {
-      'en': 'Please enter a project name.',
+      'en': 'Por favor ingrese un nombre de proyecto.',
       'hi': 'कृपया एक परियोजना का नाम दर्ज करें।',
       'ta': 'திட்டப் பெயரை உள்ளிடவும்.',
       'ur': 'براہ کرم پروجیکٹ کا نام درج کریں۔',
     },
     '536ycszy': {
-      'en': 'Please choose an option from the dropdown',
+      'en': 'Por favor elija una opción del menú desplegable',
       'hi': 'कृपया ड्रॉपडाउन से एक विकल्प चुनें',
       'ta': 'கீழ்தோன்றலில் இருந்து ஒரு விருப்பத்தைத் தேர்ந்தெடுக்கவும்',
       'ur': 'براہ کرم ڈراپ ڈاؤن سے ایک آپشن منتخب کریں۔',
     },
     'e68qg04m': {
-      'en': 'Please enter a short description.',
+      'en': 'Por favor ingrese una breve descripción.',
       'hi': 'कृपया संक्षिप्त विवरण दर्ज करें।',
       'ta': 'தயவுசெய்து ஒரு சிறிய விளக்கத்தை உள்ளிடவும்.',
       'ur': 'براہ کرم ایک مختصر تفصیل درج کریں۔',
     },
     'csybxpz6': {
-      'en': 'Please choose an option from the dropdown',
+      'en': 'Por favor elija una opción del menú desplegable',
       'hi': 'कृपया ड्रॉपडाउन से एक विकल्प चुनें',
       'ta': 'கீழ்தோன்றலில் இருந்து ஒரு விருப்பத்தைத் தேர்ந்தெடுக்கவும்',
       'ur': 'براہ کرم ڈراپ ڈاؤن سے ایک آپشن منتخب کریں۔',
@@ -1965,73 +1980,73 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // modal_TaskCreate_2
   {
     'fkb8cli1': {
-      'en': 'Task Name',
+      'en': 'Nombre de la tarea',
       'hi': 'कार्य का नाम',
       'ta': 'பணியின் பெயர்',
       'ur': 'ٹاسک کا نام',
     },
     '5qwd78rp': {
-      'en': 'Enter description here...',
+      'en': 'Introduzca la descripción aquí...',
       'hi': 'यहां विवरण दर्ज करें...',
       'ta': 'விளக்கத்தை இங்கே உள்ளிடவும்...',
       'ur': 'یہاں تفصیل درج کریں...',
     },
     'o1qo2qg3': {
-      'en': 'Not Started',
+      'en': 'No empezado',
       'hi': 'शुरू नहीं',
       'ta': 'துவங்கவில்லை',
       'ur': 'شروع نہیں کیا',
     },
     '3xt3njp6': {
-      'en': 'In Progress',
+      'en': 'En curso',
       'hi': 'चालू',
       'ta': 'செயல்பாட்டில் உள்ளது',
       'ur': 'کام جاری ہے',
     },
     'u0g3xflr': {
-      'en': 'Complete',
+      'en': 'Completo',
       'hi': 'पूरा',
       'ta': 'முழுமை',
       'ur': 'مکمل',
     },
     'c2dtsnbb': {
-      'en': 'Select Status',
+      'en': 'Seleccionar status',
       'hi': 'स्थिति का चयन करें',
       'ta': 'நிலையைத் தேர்ந்தெடுக்கவும்',
       'ur': 'اسٹیٹس کو منتخب کریں۔',
     },
     'udw09bms': {
-      'en': 'Create Task',
+      'en': 'Crear tarea',
       'hi': 'कार्य बनाएँ',
       'ta': 'பணியை உருவாக்கவும்',
       'ur': 'ٹاسک بنائیں',
     },
     'dgd9bazz': {
-      'en': 'Please add a task name.',
+      'en': 'Por favor agregue un nombre de tarea.',
       'hi': 'कृपया कार्य का नाम जोड़ें।',
       'ta': 'பணியின் பெயரைச் சேர்க்கவும்.',
       'ur': 'براہ کرم ایک کام کا نام شامل کریں۔',
     },
     '510sc51m': {
-      'en': 'Please enter at least 3 letters.',
+      'en': 'Por favor ingrese al menos 3 letras.',
       'hi': 'कृपया कम से कम 3 अक्षर दर्ज करें।',
       'ta': 'குறைந்தது 3 எழுத்துக்களை உள்ளிடவும்.',
       'ur': 'براہ کرم کم از کم 3 حروف درج کریں۔',
     },
     'grveqhde': {
-      'en': 'Please choose an option from the dropdown',
+      'en': 'Por favor elija una opción del menú desplegable',
       'hi': 'कृपया ड्रॉपडाउन से एक विकल्प चुनें',
       'ta': 'கீழ்தோன்றலில் இருந்து ஒரு விருப்பத்தைத் தேர்ந்தெடுக்கவும்',
       'ur': 'براہ کرم ڈراپ ڈاؤن سے ایک آپشن منتخب کریں۔',
     },
     'jid8c04u': {
-      'en': 'Field is required',
+      'en': 'El campo es requerido',
       'hi': 'ये स्थान भरा जाना है',
       'ta': 'இந்த பகுதி அவசியமானது',
       'ur': 'فیلڈ کی ضرورت ہے',
     },
     'r242ro2z': {
-      'en': 'Please choose an option from the dropdown',
+      'en': 'Por favor elija una opción del menú desplegable',
       'hi': 'कृपया ड्रॉपडाउन से एक विकल्प चुनें',
       'ta': 'கீழ்தோன்றலில் இருந்து ஒரு விருப்பத்தைத் தேர்ந்தெடுக்கவும்',
       'ur': 'براہ کرم ڈراپ ڈاؤن سے ایک آپشن منتخب کریں۔',
@@ -2040,13 +2055,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // modal_Activity
   {
     '2issmdet': {
-      'en': 'Notifications',
+      'en': 'Notificaciones',
       'hi': 'सूचनाएं',
       'ta': 'அறிவிப்புகள்',
       'ur': 'اطلاعات',
     },
     '4z8dhmym': {
-      'en': 'Project:',
+      'en': 'Proyecto:',
       'hi': 'परियोजना:',
       'ta': 'திட்டம்:',
       'ur': 'پروجیکٹ:',
@@ -2061,49 +2076,49 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'ممبران کو پروجیکٹ میں شامل کریں۔',
     },
     'ncylrws1': {
-      'en': 'Members in Project',
+      'en': 'Miembros en proyecto',
       'hi': 'परियोजना में सदस्य',
       'ta': 'திட்டத்தில் உறுப்பினர்கள்',
       'ur': 'پروجیکٹ میں ممبران',
     },
     'ddkg34qk': {
-      'en': 'Remove',
+      'en': 'Remover',
       'hi': 'निकालना',
       'ta': 'அகற்று',
       'ur': 'دور',
     },
     'gw54o3ei': {
-      'en': 'UserName',
+      'en': 'Nombre de usuario',
       'hi': 'उपयोगकर्ता नाम',
       'ta': 'பயனர்பெயர்',
       'ur': 'صارف کا نام',
     },
     '5ybblr1d': {
-      'en': 'Remove',
+      'en': 'Remover',
       'hi': 'निकालना',
       'ta': 'அகற்று',
       'ur': 'دور',
     },
     'epngmu69': {
-      'en': 'UserName',
+      'en': 'Nombre de usuario',
       'hi': 'उपयोगकर्ता नाम',
       'ta': 'பயனர்பெயர்',
       'ur': 'صارف کا نام',
     },
     '1qnvp80y': {
-      'en': 'Remove',
+      'en': 'Remover',
       'hi': 'निकालना',
       'ta': 'அகற்று',
       'ur': 'دور',
     },
     'rxgjnrtl': {
-      'en': 'Add Members',
+      'en': 'Añadir miembros',
       'hi': 'सदस्यों को जोड़ें',
       'ta': 'உறுப்பினர்களைச் சேர்க்கவும்',
       'ur': 'ممبرز کو شامل کریں۔',
     },
     'c69xi1a4': {
-      'en': 'Assign',
+      'en': 'Asignar',
       'hi': 'सौंपना',
       'ta': 'ஒதுக்க',
       'ur': 'تفویض',
@@ -2115,13 +2130,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'user@domainname.com',
     },
     'bixtd6lt': {
-      'en': 'View',
+      'en': 'Vista',
       'hi': 'देखना',
       'ta': 'காண்க',
       'ur': 'دیکھیں',
     },
     's1ekanj3': {
-      'en': 'Username',
+      'en': 'Nombre de usuario',
       'hi': 'उपयोगकर्ता नाम',
       'ta': 'பயனர் பெயர்',
       'ur': 'صارف نام',
@@ -2133,13 +2148,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'user@domainname.com',
     },
     '9rm7l3fs': {
-      'en': 'View',
+      'en': 'Vista',
       'hi': 'देखना',
       'ta': 'காண்க',
       'ur': 'دیکھیں',
     },
     'chsej9xj': {
-      'en': 'Username',
+      'en': 'Nombre de usuario',
       'hi': 'उपयोगकर्ता नाम',
       'ta': 'பயனர் பெயர்',
       'ur': 'صارف نام',
@@ -2151,7 +2166,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'user@domainname.com',
     },
     'y6o0uvra': {
-      'en': 'View',
+      'en': 'Vista',
       'hi': 'देखना',
       'ta': 'காண்க',
       'ur': 'دیکھیں',
@@ -2163,7 +2178,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': 'user@domainname.com',
     },
     'ug774jqi': {
-      'en': 'View',
+      'en': 'Vista',
       'hi': 'देखना',
       'ta': 'காண்க',
       'ur': 'دیکھیں',
@@ -2197,6 +2212,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'skzc79wn': {
       'en': '',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    'i3j9j9sj': {
+      'en':
+          'Para recordarte tus tareas pendientes, necesitamos permiso para enviarte notificaciones. ¿Nos lo otorgas?',
       'hi': '',
       'ta': '',
       'ur': '',
@@ -2238,6 +2260,30 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ur': '',
     },
     'zbbv93d3': {
+      'en': '',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    'zsenmvi5': {
+      'en': '',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    '49tte4wk': {
+      'en': '',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    'th7ukaxr': {
+      'en': '',
+      'hi': '',
+      'ta': '',
+      'ur': '',
+    },
+    'btl4y3ux': {
       'en': '',
       'hi': '',
       'ta': '',

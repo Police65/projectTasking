@@ -10,12 +10,12 @@ class ModalTaskCreate2Model extends FlutterFlowModel<ModalTaskCreate2Widget> {
   final formKey = GlobalKey<FormState>();
   // State field(s) for taskName widget.
   FocusNode? taskNameFocusNode;
-  TextEditingController? taskNameController;
-  String? Function(BuildContext, String?)? taskNameControllerValidator;
+  TextEditingController? taskNameTextController;
+  String? Function(BuildContext, String?)? taskNameTextControllerValidator;
   // State field(s) for description widget.
   FocusNode? descriptionFocusNode;
-  TextEditingController? descriptionController;
-  String? Function(BuildContext, String?)? descriptionControllerValidator;
+  TextEditingController? descriptionTextController;
+  String? Function(BuildContext, String?)? descriptionTextControllerValidator;
   // State field(s) for statusSelect widget.
   String? statusSelectValue;
   FormFieldController<String>? statusSelectValueController;
@@ -32,9 +32,9 @@ class ModalTaskCreate2Model extends FlutterFlowModel<ModalTaskCreate2Widget> {
   @override
   void dispose() {
     taskNameFocusNode?.dispose();
-    taskNameController?.dispose();
+    taskNameTextController?.dispose();
 
     descriptionFocusNode?.dispose();
-    descriptionController?.dispose();
+    descriptionTextController?.dispose();
   }
 }

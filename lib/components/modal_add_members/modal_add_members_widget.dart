@@ -144,7 +144,7 @@ class _ModalAddMembersWidgetState extends State<ModalAddMembersWidget> {
                               16.0, 0.0, 0.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              'ncylrws1' /* Members in Project */,
+                              'ncylrws1' /* Miembros en proyecto */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .bodySmall
@@ -404,7 +404,7 @@ class _ModalAddMembersWidgetState extends State<ModalAddMembersWidget> {
                                                   text: FFLocalizations.of(
                                                           context)
                                                       .getText(
-                                                    'ddkg34qk' /* Remove */,
+                                                    'ddkg34qk' /* Remover */,
                                                   ),
                                                   options: FFButtonOptions(
                                                     width: 130.0,
@@ -466,7 +466,7 @@ class _ModalAddMembersWidgetState extends State<ModalAddMembersWidget> {
                               16.0, 0.0, 0.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              'rxgjnrtl' /* Add Members */,
+                              'rxgjnrtl' /* Añadir miembros */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .bodySmall
@@ -801,7 +801,7 @@ class _ModalAddMembersWidgetState extends State<ModalAddMembersWidget> {
                                                   text: FFLocalizations.of(
                                                           context)
                                                       .getText(
-                                                    'c69xi1a4' /* Assign */,
+                                                    'c69xi1a4' /* Asignar */,
                                                   ),
                                                   options: FFButtonOptions(
                                                     width: 80.0,

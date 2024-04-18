@@ -11,18 +11,18 @@ class CreateTaskModel extends FlutterFlowModel<CreateTaskWidget> {
   final formKey = GlobalKey<FormState>();
   // State field(s) for taskName widget.
   FocusNode? taskNameFocusNode;
-  TextEditingController? taskNameController;
-  String? Function(BuildContext, String?)? taskNameControllerValidator;
-  String? _taskNameControllerValidator(BuildContext context, String? val) {
+  TextEditingController? taskNameTextController;
+  String? Function(BuildContext, String?)? taskNameTextControllerValidator;
+  String? _taskNameTextControllerValidator(BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
       return FFLocalizations.of(context).getText(
-        '3nx43hj1' /* Please add a task name. */,
+        '3nx43hj1' /* Por favor añade el nombre de l... */,
       );
     }
 
     if (val.length < 3) {
       return FFLocalizations.of(context).getText(
-        'tjxg3net' /* Please enter at least 3 letter... */,
+        'tjxg3net' /* Por favor ingrese al menos 3 l... */,
       );
     }
 
@@ -31,8 +31,8 @@ class CreateTaskModel extends FlutterFlowModel<CreateTaskWidget> {
 
   // State field(s) for description widget.
   FocusNode? descriptionFocusNode;
-  TextEditingController? descriptionController;
-  String? Function(BuildContext, String?)? descriptionControllerValidator;
+  TextEditingController? descriptionTextController;
+  String? Function(BuildContext, String?)? descriptionTextControllerValidator;
   // State field(s) for statusSelect widget.
   String? statusSelectValue;
   FormFieldController<String>? statusSelectValueController;
@@ -45,16 +45,16 @@ class CreateTaskModel extends FlutterFlowModel<CreateTaskWidget> {
 
   @override
   void initState(BuildContext context) {
-    taskNameControllerValidator = _taskNameControllerValidator;
+    taskNameTextControllerValidator = _taskNameTextControllerValidator;
   }
 
   @override
   void dispose() {
     unfocusNode.dispose();
     taskNameFocusNode?.dispose();
-    taskNameController?.dispose();
+    taskNameTextController?.dispose();
 
     descriptionFocusNode?.dispose();
-    descriptionController?.dispose();
+    descriptionTextController?.dispose();
   }
 }

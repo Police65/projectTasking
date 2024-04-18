@@ -39,7 +39,7 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
     super.initState();
     _model = createModel(context, () => AddTeamModel());
 
-    _model.searchFieldController ??= TextEditingController();
+    _model.searchFieldTextController ??= TextEditingController();
     _model.searchFieldFocusNode ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
@@ -135,7 +135,7 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                   children: [
                                     Text(
                                       FFLocalizations.of(context).getText(
-                                        'uap9xd08' /* Assign Member */,
+                                        'uap9xd08' /* Asignar miembro */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .headlineMedium
@@ -164,11 +164,12 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                           CrossAxisAlignment.start,
                                       children: [
                                         Padding(
-                                          padding: const EdgeInsetsDirectional
-                                              .fromSTEB(16.0, 0.0, 0.0, 0.0),
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  16.0, 0.0, 0.0, 0.0),
                                           child: Text(
                                             FFLocalizations.of(context).getText(
-                                              'v3df17c1' /* Find members by searching belo... */,
+                                              'v3df17c1' /* Encuentre miembros buscando a ... */,
                                             ),
                                             style: FlutterFlowTheme.of(context)
                                                 .bodySmall
@@ -188,20 +189,21 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                           ),
                                         ),
                                         Padding(
-                                          padding: const EdgeInsetsDirectional
-                                              .fromSTEB(16.0, 8.0, 16.0, 8.0),
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  16.0, 8.0, 16.0, 8.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Expanded(
                                                 child: TextFormField(
                                                   controller: _model
-                                                      .searchFieldController,
+                                                      .searchFieldTextController,
                                                   focusNode: _model
                                                       .searchFieldFocusNode,
                                                   onChanged: (_) =>
                                                       EasyDebounce.debounce(
-                                                    '_model.searchFieldController',
+                                                    '_model.searchFieldTextController',
                                                     const Duration(
                                                         milliseconds: 2000),
                                                     () => setState(() {}),
@@ -213,7 +215,7 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                         FFLocalizations.of(
                                                                 context)
                                                             .getText(
-                                                      '4gubn0rd' /* Search members... */,
+                                                      '4gubn0rd' /* Buscar miembros... */,
                                                     ),
                                                     labelStyle: FlutterFlowTheme
                                                             .of(context)
@@ -233,8 +235,7 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                         ),
                                                     enabledBorder:
                                                         OutlineInputBorder(
-                                                      borderSide:
-                                                          const BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Color(0x00000000),
                                                         width: 1.0,
@@ -245,8 +246,7 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                     ),
                                                     focusedBorder:
                                                         OutlineInputBorder(
-                                                      borderSide:
-                                                          const BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Color(0x00000000),
                                                         width: 1.0,
@@ -257,8 +257,7 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                     ),
                                                     errorBorder:
                                                         OutlineInputBorder(
-                                                      borderSide:
-                                                          const BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Color(0x00000000),
                                                         width: 1.0,
@@ -269,8 +268,7 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                     ),
                                                     focusedErrorBorder:
                                                         OutlineInputBorder(
-                                                      borderSide:
-                                                          const BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Color(0x00000000),
                                                         width: 1.0,
@@ -301,16 +299,14 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                                         context)
                                                                     .bodyMediumFamily),
                                                       ),
-                                                  minLines: null,
                                                   validator: _model
-                                                      .searchFieldControllerValidator
+                                                      .searchFieldTextControllerValidator
                                                       .asValidator(context),
                                                 ),
                                               ),
                                               Padding(
-                                                padding:
-                                                    const EdgeInsetsDirectional
-                                                        .fromSTEB(
+                                                padding: const EdgeInsetsDirectional
+                                                    .fromSTEB(
                                                         12.0, 0.0, 0.0, 0.0),
                                                 child: FlutterFlowIconButton(
                                                   borderColor:
@@ -346,7 +342,7 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                                 .toList(),
                                                           )
                                                                   .search(_model
-                                                                      .searchFieldController
+                                                                      .searchFieldTextController
                                                                       .text)
                                                                   .map((r) =>
                                                                       r.object)
@@ -364,8 +360,9 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                           ),
                                         ),
                                         Padding(
-                                          padding: const EdgeInsetsDirectional
-                                              .fromSTEB(0.0, 8.0, 0.0, 44.0),
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 8.0, 0.0, 44.0),
                                           child: Builder(
                                             builder: (context) {
                                               final serachResults = _model
@@ -379,12 +376,10 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                             .width *
                                                         0.8,
                                                     height: 230.0,
-                                                    child:
-                                                        const EmptyMembersWidget(
-                                                      title:
-                                                          'No hay usuarios encontrados',
+                                                    child: const EmptyMembersWidget(
+                                                      title: 'No Users Found',
                                                       bodyText:
-                                                          'No hay miembros presentes para tu búsqueda, prueba la barra de búsqueda nuevamente.',
+                                                          'No members are present for your search, try the search bar again.',
                                                     ),
                                                   ),
                                                 );
@@ -403,7 +398,7 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                     padding:
                                                         const EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 4.0,
-                                                            16.0, 8.0),
+                                                                16.0, 8.0),
                                                     child: InkWell(
                                                       splashColor:
                                                           Colors.transparent,
@@ -465,10 +460,10 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                           padding:
                                                               const EdgeInsetsDirectional
                                                                   .fromSTEB(
-                                                                  8.0,
-                                                                  0.0,
-                                                                  8.0,
-                                                                  0.0),
+                                                                      8.0,
+                                                                      0.0,
+                                                                      8.0,
+                                                                      0.0),
                                                           child: Row(
                                                             mainAxisSize:
                                                                 MainAxisSize
@@ -498,9 +493,8 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                               ),
                                                               Expanded(
                                                                 child: Padding(
-                                                                  padding:
-                                                                      const EdgeInsetsDirectional
-                                                                          .fromSTEB(
+                                                                  padding: const EdgeInsetsDirectional
+                                                                      .fromSTEB(
                                                                           12.0,
                                                                           0.0,
                                                                           0.0,
@@ -689,7 +683,7 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                                   text: FFLocalizations.of(
                                                                           context)
                                                                       .getText(
-                                                                    'k3vvd9ha' /* Assign */,
+                                                                    'k3vvd9ha' /* Asignar */,
                                                                   ),
                                                                   options:
                                                                       FFButtonOptions(
@@ -698,13 +692,12 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                                         36.0,
                                                                     padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
-                                                                        0.0,
-                                                                        0.0,
-                                                                        0.0,
-                                                                        0.0),
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0),
                                                                     iconPadding:
-                                                                        const EdgeInsetsDirectional
-                                                                            .fromSTEB(
+                                                                        const EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,

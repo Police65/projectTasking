@@ -31,28 +31,7 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
     with TickerProviderStateMixin {
   late ModalTaskCreate2Model _model;
 
-  final animationsMap = {
-    'containerOnPageLoadAnimation': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        VisibilityEffect(duration: 1.ms),
-        ScaleEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 300.ms,
-          begin: const Offset(0.9, 0.9),
-          end: const Offset(1.0, 1.0),
-        ),
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 300.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-      ],
-    ),
-  };
+  final animationsMap = <String, AnimationInfo>{};
 
   @override
   void setState(VoidCallback callback) {
@@ -65,11 +44,34 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
     super.initState();
     _model = createModel(context, () => ModalTaskCreate2Model());
 
-    _model.taskNameController ??= TextEditingController();
+    _model.taskNameTextController ??= TextEditingController();
     _model.taskNameFocusNode ??= FocusNode();
 
-    _model.descriptionController ??= TextEditingController();
+    _model.descriptionTextController ??= TextEditingController();
     _model.descriptionFocusNode ??= FocusNode();
+
+    animationsMap.addAll({
+      'containerOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          VisibilityEffect(duration: 1.ms),
+          ScaleEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 300.0.ms,
+            begin: const Offset(0.9, 0.9),
+            end: const Offset(1.0, 1.0),
+          ),
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 300.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+        ],
+      ),
+    });
 
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
@@ -202,8 +204,7 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                               MainAxisAlignment.spaceBetween,
                                           children: [
                                             Padding(
-                                              padding:
-                                                  const EdgeInsets.all(12.0),
+                                              padding: const EdgeInsets.all(12.0),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 mainAxisAlignment:
@@ -236,7 +237,7 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                                     padding:
                                                         const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 12.0,
-                                                            0.0, 0.0),
+                                                                0.0, 0.0),
                                                     child: Text(
                                                       '${createTaskFormProjectsRecordList.length.toString()} tasks',
                                                       style:
@@ -306,13 +307,13 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                   padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 12.0, 16.0, 0.0),
                                   child: TextFormField(
-                                    controller: _model.taskNameController,
+                                    controller: _model.taskNameTextController,
                                     focusNode: _model.taskNameFocusNode,
                                     obscureText: false,
                                     decoration: InputDecoration(
                                       labelText:
                                           FFLocalizations.of(context).getText(
-                                        'fkb8cli1' /* Task Name */,
+                                        'fkb8cli1' /* Nombre de la tarea */,
                                       ),
                                       labelStyle: FlutterFlowTheme.of(context)
                                           .headlineSmall
@@ -379,9 +380,8 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                                       .headlineSmallFamily),
                                         ),
                                     textAlign: TextAlign.start,
-                                    minLines: null,
                                     validator: _model
-                                        .taskNameControllerValidator
+                                        .taskNameTextControllerValidator
                                         .asValidator(context),
                                   ),
                                 ),
@@ -389,13 +389,14 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                   padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 16.0, 16.0, 0.0),
                                   child: TextFormField(
-                                    controller: _model.descriptionController,
+                                    controller:
+                                        _model.descriptionTextController,
                                     focusNode: _model.descriptionFocusNode,
                                     obscureText: false,
                                     decoration: InputDecoration(
                                       hintText:
                                           FFLocalizations.of(context).getText(
-                                        '5qwd78rp' /* Enter description here... */,
+                                        '5qwd78rp' /* Introduzca la descripción aquí... */,
                                       ),
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .bodySmall
@@ -460,10 +461,9 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                         ),
                                     textAlign: TextAlign.start,
                                     maxLines: 4,
-                                    minLines: null,
                                     keyboardType: TextInputType.multiline,
                                     validator: _model
-                                        .descriptionControllerValidator
+                                        .descriptionTextControllerValidator
                                         .asValidator(context),
                                   ),
                                 ),
@@ -476,13 +476,13 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                             FormFieldController<String>(null),
                                     options: [
                                       FFLocalizations.of(context).getText(
-                                        'o1qo2qg3' /* Not Started */,
+                                        'o1qo2qg3' /* No empezado */,
                                       ),
                                       FFLocalizations.of(context).getText(
-                                        '3xt3njp6' /* In Progress */,
+                                        '3xt3njp6' /* En curso */,
                                       ),
                                       FFLocalizations.of(context).getText(
-                                        'u0g3xflr' /* Complete */,
+                                        'u0g3xflr' /* Completo */,
                                       )
                                     ],
                                     onChanged: (val) => setState(
@@ -503,7 +503,7 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                         ),
                                     hintText:
                                         FFLocalizations.of(context).getText(
-                                      'c2dtsnbb' /* Select Status */,
+                                      'c2dtsnbb' /* Seleccionar status */,
                                     ),
                                     icon: Icon(
                                       Icons.keyboard_arrow_down_rounded,
@@ -518,9 +518,8 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                         .primaryBackground,
                                     borderWidth: 2.0,
                                     borderRadius: 8.0,
-                                    margin:
-                                        const EdgeInsetsDirectional.fromSTEB(
-                                            24.0, 4.0, 12.0, 4.0),
+                                    margin: const EdgeInsetsDirectional.fromSTEB(
+                                        24.0, 4.0, 12.0, 4.0),
                                     hidesUnderline: true,
                                     isSearchable: false,
                                     isMultiSelect: false,
@@ -537,8 +536,9 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                       if (_model.statusSelectValue ==
                                           'In Progress')
                                         Padding(
-                                          padding: const EdgeInsetsDirectional
-                                              .fromSTEB(0.0, 0.0, 8.0, 0.0),
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 8.0, 0.0),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
                                             focusColor: Colors.transparent,
@@ -586,9 +586,8 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                                 ),
                                               ),
                                               child: Padding(
-                                                padding:
-                                                    const EdgeInsetsDirectional
-                                                        .fromSTEB(
+                                                padding: const EdgeInsetsDirectional
+                                                    .fromSTEB(
                                                         12.0, 5.0, 12.0, 5.0),
                                                 child: Row(
                                                   mainAxisSize:
@@ -686,8 +685,9 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                             ),
                                           ),
                                           child: Padding(
-                                            padding: const EdgeInsetsDirectional
-                                                .fromSTEB(12.0, 5.0, 12.0, 5.0),
+                                            padding:
+                                                const EdgeInsetsDirectional.fromSTEB(
+                                                    12.0, 5.0, 12.0, 5.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment:
@@ -765,10 +765,11 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                       AllTasksRecord.collection.doc();
                                   await allTasksRecordReference.set({
                                     ...createAllTasksRecordData(
-                                      taskName: _model.taskNameController.text,
+                                      taskName:
+                                          _model.taskNameTextController.text,
                                       dueDate: _model.datePicked2,
                                       description:
-                                          _model.descriptionController.text,
+                                          _model.descriptionTextController.text,
                                       completed: false,
                                       owner: currentUserReference,
                                       status: _model.statusSelectValue,
@@ -784,10 +785,11 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                   _model.taskCreated =
                                       AllTasksRecord.getDocumentFromData({
                                     ...createAllTasksRecordData(
-                                      taskName: _model.taskNameController.text,
+                                      taskName:
+                                          _model.taskNameTextController.text,
                                       dueDate: _model.datePicked2,
                                       description:
-                                          _model.descriptionController.text,
+                                          _model.descriptionTextController.text,
                                       completed: false,
                                       owner: currentUserReference,
                                       status: _model.statusSelectValue,
@@ -819,7 +821,7 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                     owner: currentUserReference,
                                     taskRef: _model.taskCreated?.reference,
                                     note:
-                                        'La tarea ha sido creada con el estado de \"${_model.statusSelectValue}\".',
+                                        'Task has been created with the status of \"${_model.statusSelectValue}\".',
                                     timePosted: getCurrentTimestamp,
                                   ));
                                   _model.taskActivity =
@@ -829,7 +831,7 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                             taskRef:
                                                 _model.taskCreated?.reference,
                                             note:
-                                                'La tarea ha sido creada con el estado de \"${_model.statusSelectValue}\".',
+                                                'Task has been created with the status of \"${_model.statusSelectValue}\".',
                                             timePosted: getCurrentTimestamp,
                                           ),
                                           notesRecordReference);
@@ -855,8 +857,7 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                                           .titleMediumFamily),
                                             ),
                                       ),
-                                      duration:
-                                          const Duration(milliseconds: 4000),
+                                      duration: const Duration(milliseconds: 4000),
                                       backgroundColor:
                                           FlutterFlowTheme.of(context)
                                               .secondary,
@@ -878,16 +879,15 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                   setState(() {});
                                 },
                                 text: FFLocalizations.of(context).getText(
-                                  'udw09bms' /* Create Task */,
+                                  'udw09bms' /* Crear tarea */,
                                 ),
                                 options: FFButtonOptions(
                                   width: 270.0,
                                   height: 50.0,
                                   padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  iconPadding:
-                                      const EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 0.0, 0.0, 0.0),
+                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 0.0, 0.0),
                                   color: FlutterFlowTheme.of(context).primary,
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall

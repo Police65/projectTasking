@@ -7,16 +7,16 @@ class EditProfileModel extends FlutterFlowModel<EditProfileWidget> {
 
   // State field(s) for yourName widget.
   FocusNode? yourNameFocusNode;
-  TextEditingController? yourNameController;
-  String? Function(BuildContext, String?)? yourNameControllerValidator;
+  TextEditingController? yourNameTextController;
+  String? Function(BuildContext, String?)? yourNameTextControllerValidator;
   // State field(s) for titleRole widget.
   FocusNode? titleRoleFocusNode;
-  TextEditingController? titleRoleController;
-  String? Function(BuildContext, String?)? titleRoleControllerValidator;
+  TextEditingController? titleRoleTextController;
+  String? Function(BuildContext, String?)? titleRoleTextControllerValidator;
   // State field(s) for myBio widget.
   FocusNode? myBioFocusNode;
-  TextEditingController? myBioController;
-  String? Function(BuildContext, String?)? myBioControllerValidator;
+  TextEditingController? myBioTextController;
+  String? Function(BuildContext, String?)? myBioTextControllerValidator;
 
   @override
   void initState(BuildContext context) {}
@@ -24,12 +24,12 @@ class EditProfileModel extends FlutterFlowModel<EditProfileWidget> {
   @override
   void dispose() {
     yourNameFocusNode?.dispose();
-    yourNameController?.dispose();
+    yourNameTextController?.dispose();
 
     titleRoleFocusNode?.dispose();
-    titleRoleController?.dispose();
+    titleRoleTextController?.dispose();
 
     myBioFocusNode?.dispose();
-    myBioController?.dispose();
+    myBioTextController?.dispose();
   }
 }

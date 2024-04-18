@@ -35,217 +35,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
-  final animationsMap = {
-    'containerOnPageLoadAnimation1': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.0, 30.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'containerOnPageLoadAnimation2': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.0, 30.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'containerOnPageLoadAnimation3': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.0, 30.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'containerOnPageLoadAnimation4': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.0, 30.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'containerOnPageLoadAnimation5': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.0, 30.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'containerOnPageLoadAnimation6': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.0, 30.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'containerOnPageLoadAnimation7': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.0, 30.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'containerOnPageLoadAnimation8': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.0, 30.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'containerOnPageLoadAnimation9': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.0, 30.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'containerOnPageLoadAnimation10': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.0, 30.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'containerOnPageLoadAnimation11': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.0, 30.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-  };
+  final animationsMap = <String, AnimationInfo>{};
 
   @override
   void initState() {
@@ -257,6 +47,217 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
       length: 4,
       initialIndex: 0,
     )..addListener(() => setState(() {}));
+    animationsMap.addAll({
+      'containerOnPageLoadAnimation1': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 30.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation2': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 30.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation3': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 30.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation4': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 30.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation5': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 30.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation6': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 30.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation7': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 30.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation8': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 30.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation9': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 30.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation10': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 30.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation11': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 30.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+    });
     setupAnimations(
       animationsMap.values.where((anim) =>
           anim.trigger == AnimationTrigger.onActionTrigger ||
@@ -357,8 +358,8 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                       ),
                     ),
                   Padding(
-                    padding: const EdgeInsetsDirectional.fromSTEB(
-                        16.0, 24.0, 16.0, 0.0),
+                    padding:
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -463,7 +464,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                 ).then((value) => safeSetState(() {}));
                               },
                               text: FFLocalizations.of(context).getText(
-                                'j0lx26qq' /* Create Task */,
+                                'j0lx26qq' /* Crear tarea */,
                               ),
                               icon: const Icon(
                                 Icons.add_rounded,
@@ -473,9 +474,8 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                 height: 40.0,
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 20.0, 0.0),
-                                iconPadding:
-                                    const EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 0.0, 0.0),
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 0.0),
                                 color: FlutterFlowTheme.of(context).primary,
                                 textStyle: FlutterFlowTheme.of(context)
                                     .titleSmall
@@ -576,9 +576,8 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                 controller: _model.tabBarController,
                                 children: [
                                   Padding(
-                                    padding:
-                                        const EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 8.0, 0.0, 0.0),
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 8.0, 0.0, 0.0),
                                     child: PagedListView<
                                         DocumentSnapshot<Object?>?,
                                         AllTasksRecord>(
@@ -657,9 +656,8 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                     .completed ==
                                                 false,
                                             child: Padding(
-                                              padding:
-                                                  const EdgeInsetsDirectional
-                                                      .fromSTEB(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(
                                                       16.0, 4.0, 16.0, 8.0),
                                               child: InkWell(
                                                 splashColor: Colors.transparent,
@@ -744,8 +742,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                   ),
                                                   child: Padding(
                                                     padding:
-                                                        const EdgeInsets.all(
-                                                            12.0),
+                                                        const EdgeInsets.all(12.0),
                                                     child: FutureBuilder<
                                                         ProjectsRecord>(
                                                       future: ProjectsRecord
@@ -795,10 +792,10 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                       Padding(
                                                                     padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
-                                                                        0.0,
-                                                                        0.0,
-                                                                        12.0,
-                                                                        0.0),
+                                                                            0.0,
+                                                                            0.0,
+                                                                            12.0,
+                                                                            0.0),
                                                                     child: Text(
                                                                       valueOrDefault<
                                                                           String>(
@@ -857,10 +854,10 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                       Padding(
                                                                     padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
-                                                                        12.0,
-                                                                        0.0,
-                                                                        12.0,
-                                                                        0.0),
+                                                                            12.0,
+                                                                            0.0,
+                                                                            12.0,
+                                                                            0.0),
                                                                     child: Text(
                                                                       valueOrDefault<
                                                                           String>(
@@ -890,10 +887,10 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                               padding:
                                                                   const EdgeInsetsDirectional
                                                                       .fromSTEB(
-                                                                      0.0,
-                                                                      4.0,
-                                                                      0.0,
-                                                                      0.0),
+                                                                          0.0,
+                                                                          4.0,
+                                                                          0.0,
+                                                                          0.0),
                                                               child: Text(
                                                                 valueOrDefault<
                                                                     String>(
@@ -936,7 +933,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                   FFLocalizations.of(
                                                                           context)
                                                                       .getText(
-                                                                    'uwyvo6wk' /* Due */,
+                                                                    'uwyvo6wk' /* Pendiente */,
                                                                   ),
                                                                   style: FlutterFlowTheme.of(
                                                                           context)
@@ -953,9 +950,8 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                       ),
                                                                 ),
                                                                 Padding(
-                                                                  padding:
-                                                                      const EdgeInsetsDirectional
-                                                                          .fromSTEB(
+                                                                  padding: const EdgeInsetsDirectional
+                                                                      .fromSTEB(
                                                                           8.0,
                                                                           0.0,
                                                                           0.0,
@@ -986,9 +982,8 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                   ),
                                                                 ),
                                                                 Padding(
-                                                                  padding:
-                                                                      const EdgeInsetsDirectional
-                                                                          .fromSTEB(
+                                                                  padding: const EdgeInsetsDirectional
+                                                                      .fromSTEB(
                                                                           4.0,
                                                                           0.0,
                                                                           0.0,
@@ -1043,9 +1038,8 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding:
-                                        const EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 12.0, 0.0, 0.0),
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 12.0, 0.0, 0.0),
                                     child: StreamBuilder<List<AllTasksRecord>>(
                                       stream: queryAllTasksRecord(
                                         queryBuilder: (allTasksRecord) =>
@@ -1108,9 +1102,8 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                 notStartedQueriesAllTasksRecordList[
                                                     notStartedQueriesIndex];
                                             return Padding(
-                                              padding:
-                                                  const EdgeInsetsDirectional
-                                                      .fromSTEB(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(
                                                       16.0, 0.0, 16.0, 8.0),
                                               child: InkWell(
                                                 splashColor: Colors.transparent,
@@ -1152,8 +1145,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                   ),
                                                   child: Padding(
                                                     padding:
-                                                        const EdgeInsets.all(
-                                                            12.0),
+                                                        const EdgeInsets.all(12.0),
                                                     child: Column(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -1173,10 +1165,10 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                 padding:
                                                                     const EdgeInsetsDirectional
                                                                         .fromSTEB(
-                                                                        0.0,
-                                                                        0.0,
-                                                                        12.0,
-                                                                        0.0),
+                                                                            0.0,
+                                                                            0.0,
+                                                                            12.0,
+                                                                            0.0),
                                                                 child: Text(
                                                                   notStartedQueriesAllTasksRecord
                                                                       .taskName,
@@ -1235,9 +1227,8 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                         0.0,
                                                                         0.0),
                                                                 child: Padding(
-                                                                  padding:
-                                                                      const EdgeInsetsDirectional
-                                                                          .fromSTEB(
+                                                                  padding: const EdgeInsetsDirectional
+                                                                      .fromSTEB(
                                                                           12.0,
                                                                           0.0,
                                                                           12.0,
@@ -1271,10 +1262,10 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                           padding:
                                                               const EdgeInsetsDirectional
                                                                   .fromSTEB(
-                                                                  0.0,
-                                                                  4.0,
-                                                                  0.0,
-                                                                  0.0),
+                                                                      0.0,
+                                                                      4.0,
+                                                                      0.0,
+                                                                      0.0),
                                                           child: AutoSizeText(
                                                             notStartedQueriesAllTasksRecord
                                                                 .description
@@ -1316,7 +1307,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                               FFLocalizations.of(
                                                                       context)
                                                                   .getText(
-                                                                '1460lgka' /* Due */,
+                                                                '1460lgka' /* Pendiente */,
                                                               ),
                                                               style: FlutterFlowTheme
                                                                       .of(context)
@@ -1341,10 +1332,10 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                 padding:
                                                                     const EdgeInsetsDirectional
                                                                         .fromSTEB(
-                                                                        8.0,
-                                                                        0.0,
-                                                                        0.0,
-                                                                        0.0),
+                                                                            8.0,
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0),
                                                                 child: Text(
                                                                   dateTimeFormat(
                                                                     'MMMEd',
@@ -1391,9 +1382,8 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding:
-                                        const EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 12.0, 0.0, 0.0),
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 12.0, 0.0, 0.0),
                                     child: FutureBuilder<List<AllTasksRecord>>(
                                       future:
                                           (_model.firestoreRequestCompleter4 ??=
@@ -1450,10 +1440,9 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                   0.8,
                                               height: 300.0,
                                               child: const EmptyTasksWidget(
-                                                title:
-                                                    'No hay tareas en proceso',
+                                                title: 'No In Progress Tasks',
                                                 bodyText:
-                                                    'No hay tareas actuales en progreso, ¡felicidades! Parece que has deseado un descanso.',
+                                                    'No current tasks are in progress, congrats! Seems like you have deseared a rest.',
                                               ),
                                             ),
                                           );
@@ -1480,9 +1469,8 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                   listViewAllTasksRecordList[
                                                       listViewIndex];
                                               return Padding(
-                                                padding:
-                                                    const EdgeInsetsDirectional
-                                                        .fromSTEB(
+                                                padding: const EdgeInsetsDirectional
+                                                    .fromSTEB(
                                                         16.0, 4.0, 16.0, 8.0),
                                                 child: InkWell(
                                                   splashColor:
@@ -1529,8 +1517,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                     ),
                                                     child: Padding(
                                                       padding:
-                                                          const EdgeInsets.all(
-                                                              12.0),
+                                                          const EdgeInsets.all(12.0),
                                                       child: FutureBuilder<
                                                           ProjectsRecord>(
                                                         future: ProjectsRecord
@@ -1580,8 +1567,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                   Expanded(
                                                                     child:
                                                                         Padding(
-                                                                      padding: const EdgeInsetsDirectional
-                                                                          .fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           12.0,
@@ -1618,8 +1604,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                             0.0),
                                                                     child:
                                                                         Padding(
-                                                                      padding: const EdgeInsetsDirectional
-                                                                          .fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           12.0,
                                                                           0.0,
                                                                           12.0,
@@ -1645,10 +1630,10 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                 padding:
                                                                     const EdgeInsetsDirectional
                                                                         .fromSTEB(
-                                                                        0.0,
-                                                                        4.0,
-                                                                        0.0,
-                                                                        0.0),
+                                                                            0.0,
+                                                                            4.0,
+                                                                            0.0,
+                                                                            0.0),
                                                                 child: Text(
                                                                   columnProjectsRecord
                                                                       .projectName,
@@ -1703,10 +1688,10 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                   Padding(
                                                                     padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
-                                                                        8.0,
-                                                                        0.0,
-                                                                        0.0,
-                                                                        0.0),
+                                                                            8.0,
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0),
                                                                     child: Text(
                                                                       dateTimeFormat(
                                                                         'MMMEd',
@@ -1731,10 +1716,10 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                   Padding(
                                                                     padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
-                                                                        4.0,
-                                                                        0.0,
-                                                                        0.0,
-                                                                        0.0),
+                                                                            4.0,
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0),
                                                                     child: Text(
                                                                       dateTimeFormat(
                                                                         'jm',
@@ -1782,9 +1767,8 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding:
-                                        const EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 12.0, 0.0, 0.0),
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 12.0, 0.0, 0.0),
                                     child: FutureBuilder<List<AllTasksRecord>>(
                                       future:
                                           (_model.firestoreRequestCompleter2 ??=
@@ -1837,10 +1821,9 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                   0.8,
                                               height: 300.0,
                                               child: const CompletedTasksWidget(
-                                                title:
-                                                    'No hay tareas completadas',
+                                                title: 'No Completed Tasks',
                                                 bodyText:
-                                                    'Necesitas trabajar para completar algunas tareas',
+                                                    'You need to get to work, go and complete some tasks.',
                                               ),
                                             ),
                                           );
@@ -1867,9 +1850,8 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                   listViewAllTasksRecordList[
                                                       listViewIndex];
                                               return Padding(
-                                                padding:
-                                                    const EdgeInsetsDirectional
-                                                        .fromSTEB(
+                                                padding: const EdgeInsetsDirectional
+                                                    .fromSTEB(
                                                         16.0, 0.0, 16.0, 12.0),
                                                 child: InkWell(
                                                   splashColor:
@@ -1916,8 +1898,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                     ),
                                                     child: Padding(
                                                       padding:
-                                                          const EdgeInsets.all(
-                                                              12.0),
+                                                          const EdgeInsets.all(12.0),
                                                       child: FutureBuilder<
                                                           ProjectsRecord>(
                                                         future: ProjectsRecord
@@ -1967,8 +1948,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                   Expanded(
                                                                     child:
                                                                         Padding(
-                                                                      padding: const EdgeInsetsDirectional
-                                                                          .fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           12.0,
@@ -2005,8 +1985,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                             0.0),
                                                                     child:
                                                                         Padding(
-                                                                      padding: const EdgeInsetsDirectional
-                                                                          .fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           12.0,
                                                                           0.0,
                                                                           12.0,
@@ -2034,10 +2013,10 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                 padding:
                                                                     const EdgeInsetsDirectional
                                                                         .fromSTEB(
-                                                                        0.0,
-                                                                        4.0,
-                                                                        0.0,
-                                                                        0.0),
+                                                                            0.0,
+                                                                            4.0,
+                                                                            0.0,
+                                                                            0.0),
                                                                 child: Text(
                                                                   columnProjectsRecord
                                                                       .projectName,
@@ -2073,7 +2052,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                     FFLocalizations.of(
                                                                             context)
                                                                         .getText(
-                                                                      'htuk5fl0' /* Due */,
+                                                                      'htuk5fl0' /* Pendiente */,
                                                                     ),
                                                                     style: FlutterFlowTheme.of(
                                                                             context)
@@ -2092,10 +2071,10 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                   Padding(
                                                                     padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
-                                                                        8.0,
-                                                                        0.0,
-                                                                        0.0,
-                                                                        0.0),
+                                                                            8.0,
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0),
                                                                     child: Text(
                                                                       dateTimeFormat(
                                                                         'MMMEd',
@@ -2120,10 +2099,10 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                   Padding(
                                                                     padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
-                                                                        4.0,
-                                                                        0.0,
-                                                                        0.0,
-                                                                        0.0),
+                                                                            4.0,
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0),
                                                                     child: Text(
                                                                       dateTimeFormat(
                                                                         'jm',
@@ -2184,8 +2163,8 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                   ))
                     Expanded(
                       child: Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            4.0, 8.0, 0.0, 0.0),
+                        padding:
+                            const EdgeInsetsDirectional.fromSTEB(4.0, 8.0, 0.0, 0.0),
                         child: Container(
                           width: double.infinity,
                           height: 80.0,
@@ -2240,7 +2219,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                               Text(
                                                 FFLocalizations.of(context)
                                                     .getText(
-                                                  'xe34smbh' /* My Tasks */,
+                                                  'xe34smbh' /* Mis tareas */,
                                                 ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
@@ -2295,7 +2274,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                     padding:
                                                         const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 8.0,
-                                                            0.0, 12.0),
+                                                                0.0, 12.0),
                                                     child: FutureBuilder<
                                                         List<AllTasksRecord>>(
                                                       future: (_model
@@ -2390,9 +2369,8 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                             .completed ==
                                                                         false,
                                                                 child: Padding(
-                                                                  padding:
-                                                                      const EdgeInsetsDirectional
-                                                                          .fromSTEB(
+                                                                  padding: const EdgeInsetsDirectional
+                                                                      .fromSTEB(
                                                                           0.0,
                                                                           4.0,
                                                                           0.0,
@@ -2477,9 +2455,8 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                       ),
                                                                       child:
                                                                           Padding(
-                                                                        padding: const EdgeInsets
-                                                                            .all(
-                                                                            12.0),
+                                                                        padding:
+                                                                            const EdgeInsets.all(12.0),
                                                                         child: FutureBuilder<
                                                                             ProjectsRecord>(
                                                                           future:
@@ -2542,7 +2519,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                                   children: [
                                                                                     Text(
                                                                                       FFLocalizations.of(context).getText(
-                                                                                        'oopnhfx6' /* Due */,
+                                                                                        'oopnhfx6' /* Pendiente */,
                                                                                       ),
                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                             fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
@@ -2637,9 +2614,8 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                     borderRadius: BorderRadius.circular(8.0),
                                   ),
                                   child: Padding(
-                                    padding:
-                                        const EdgeInsetsDirectional.fromSTEB(
-                                            12.0, 12.0, 12.0, 0.0),
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        12.0, 12.0, 12.0, 0.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       crossAxisAlignment:
@@ -2653,7 +2629,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                             Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                'rktf6kep' /* Not Started */,
+                                                'rktf6kep' /* No iniciado */,
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -2676,8 +2652,9 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                         ),
                                         Expanded(
                                           child: Padding(
-                                            padding: const EdgeInsetsDirectional
-                                                .fromSTEB(0.0, 12.0, 0.0, 0.0),
+                                            padding:
+                                                const EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 12.0, 0.0, 0.0),
                                             child: FutureBuilder<
                                                 List<AllTasksRecord>>(
                                               future: (_model
@@ -2764,8 +2741,11 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                       return Padding(
                                                         padding:
                                                             const EdgeInsetsDirectional
-                                                                .fromSTEB(0.0,
-                                                                0.0, 0.0, 8.0),
+                                                                .fromSTEB(
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    8.0),
                                                         child: InkWell(
                                                           splashColor: Colors
                                                               .transparent,
@@ -2782,9 +2762,8 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                               backgroundColor:
                                                                   Colors
                                                                       .transparent,
-                                                              barrierColor:
-                                                                  const Color(
-                                                                      0x06000000),
+                                                              barrierColor: const Color(
+                                                                  0x06000000),
                                                               context: context,
                                                               builder:
                                                                   (context) {
@@ -2845,7 +2824,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                               padding:
                                                                   const EdgeInsets
                                                                       .all(
-                                                                      12.0),
+                                                                          12.0),
                                                               child: FutureBuilder<
                                                                   ProjectsRecord>(
                                                                 future: ProjectsRecord
@@ -2943,7 +2922,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                                 padding: const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
                                                                                 child: Text(
                                                                                   FFLocalizations.of(context).getText(
-                                                                                    'mpiabjfr' /* Start */,
+                                                                                    'mpiabjfr' /* Iniciar */,
                                                                                   ),
                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                         fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
@@ -2958,8 +2937,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                         ],
                                                                       ),
                                                                       Padding(
-                                                                        padding: const EdgeInsetsDirectional
-                                                                            .fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             4.0,
                                                                             0.0,
@@ -2994,7 +2972,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                         children: [
                                                                           Text(
                                                                             FFLocalizations.of(context).getText(
-                                                                              'i1j0llq5' /* Due */,
+                                                                              'i1j0llq5' /* Pendiente */,
                                                                             ),
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                   fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
@@ -3075,9 +3053,8 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                     borderRadius: BorderRadius.circular(8.0),
                                   ),
                                   child: Padding(
-                                    padding:
-                                        const EdgeInsetsDirectional.fromSTEB(
-                                            12.0, 12.0, 12.0, 0.0),
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        12.0, 12.0, 12.0, 0.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       crossAxisAlignment:
@@ -3091,7 +3068,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                             Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                '89oepmke' /* In Progress */,
+                                                '89oepmke' /* Progreso */,
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -3114,8 +3091,9 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                         ),
                                         Expanded(
                                           child: Padding(
-                                            padding: const EdgeInsetsDirectional
-                                                .fromSTEB(0.0, 12.0, 0.0, 0.0),
+                                            padding:
+                                                const EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 12.0, 0.0, 0.0),
                                             child: FutureBuilder<
                                                 List<AllTasksRecord>>(
                                               future: (_model
@@ -3175,12 +3153,11 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                               .width *
                                                           0.8,
                                                       height: 300.0,
-                                                      child:
-                                                          const EmptyTasksWidget(
+                                                      child: const EmptyTasksWidget(
                                                         title:
-                                                            'No hay tareas en proceso',
+                                                            'No In Progress Tasks',
                                                         bodyText:
-                                                            'No hay tareas actuales en progreso, ¡felicidades! Parece que has deseado un descanso.',
+                                                            'No current tasks are in progress, congrats! Seems like you have deseared a rest.',
                                                       ),
                                                     ),
                                                   );
@@ -3210,8 +3187,11 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                       return Padding(
                                                         padding:
                                                             const EdgeInsetsDirectional
-                                                                .fromSTEB(0.0,
-                                                                4.0, 0.0, 8.0),
+                                                                .fromSTEB(
+                                                                    0.0,
+                                                                    4.0,
+                                                                    0.0,
+                                                                    8.0),
                                                         child: InkWell(
                                                           splashColor: Colors
                                                               .transparent,
@@ -3228,9 +3208,8 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                               backgroundColor:
                                                                   Colors
                                                                       .transparent,
-                                                              barrierColor:
-                                                                  const Color(
-                                                                      0x06000000),
+                                                              barrierColor: const Color(
+                                                                  0x06000000),
                                                               context: context,
                                                               builder:
                                                                   (context) {
@@ -3291,7 +3270,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                               padding:
                                                                   const EdgeInsets
                                                                       .all(
-                                                                      12.0),
+                                                                          12.0),
                                                               child: FutureBuilder<
                                                                   ProjectsRecord>(
                                                                 future: ProjectsRecord
@@ -3354,8 +3333,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                         ],
                                                                       ),
                                                                       Padding(
-                                                                        padding: const EdgeInsetsDirectional
-                                                                            .fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             4.0,
                                                                             0.0,
@@ -3389,7 +3367,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                         children: [
                                                                           Text(
                                                                             FFLocalizations.of(context).getText(
-                                                                              'b8974iek' /* Due */,
+                                                                              'b8974iek' /* Pendiente */,
                                                                             ),
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                   fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
@@ -3492,9 +3470,8 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                     borderRadius: BorderRadius.circular(8.0),
                                   ),
                                   child: Padding(
-                                    padding:
-                                        const EdgeInsetsDirectional.fromSTEB(
-                                            12.0, 12.0, 12.0, 0.0),
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        12.0, 12.0, 12.0, 0.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       crossAxisAlignment:
@@ -3508,7 +3485,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                             Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                '310ik08p' /* Completed */,
+                                                '310ik08p' /* Completado */,
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -3531,8 +3508,9 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                         ),
                                         Expanded(
                                           child: Padding(
-                                            padding: const EdgeInsetsDirectional
-                                                .fromSTEB(0.0, 12.0, 0.0, 0.0),
+                                            padding:
+                                                const EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 12.0, 0.0, 0.0),
                                             child: FutureBuilder<
                                                 List<AllTasksRecord>>(
                                               future: (_model
@@ -3595,9 +3573,9 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                       child:
                                                           const CompletedTasksWidget(
                                                         title:
-                                                            'No hay tareas completadas',
+                                                            'No Completed Tasks',
                                                         bodyText:
-                                                            'Necesitas trabajar para completar algunas tareas',
+                                                            'You need to get to work, go and complete some tasks.',
                                                       ),
                                                     ),
                                                   );

@@ -97,7 +97,7 @@ class _ModalTaskCreate1WidgetState extends State<ModalTaskCreate1Widget> {
                             16.0, 20.0, 24.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'na5pbjsl' /* Choose Project */,
+                            'na5pbjsl' /* Seleccionar Proyecto */,
                           ),
                           style: FlutterFlowTheme.of(context)
                               .headlineMedium
@@ -143,7 +143,7 @@ class _ModalTaskCreate1WidgetState extends State<ModalTaskCreate1Widget> {
                                 0.0, 0.0, 24.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                '7lc6cya0' /* Don't see your project? Add on... */,
+                                '7lc6cya0' /* ¿No ves tu proyecto? Añade uno... */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .labelSmall
@@ -178,7 +178,7 @@ class _ModalTaskCreate1WidgetState extends State<ModalTaskCreate1Widget> {
                             ).then((value) => safeSetState(() {}));
                           },
                           text: FFLocalizations.of(context).getText(
-                            'wyow03qm' /* Add Project */,
+                            'wyow03qm' /* Agregar proyecto */,
                           ),
                           options: FFButtonOptions(
                             width: 130.0,
@@ -400,7 +400,7 @@ class _ModalTaskCreate1WidgetState extends State<ModalTaskCreate1Widget> {
                                                           FFLocalizations.of(
                                                                   context)
                                                               .getText(
-                                                            '0advwx1u' /* Last edited: */,
+                                                            '0advwx1u' /* Ultima edicion: */,
                                                           ),
                                                           style: FlutterFlowTheme
                                                                   .of(context)

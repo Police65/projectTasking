@@ -22,8 +22,9 @@ class ModalTaskDetailsModel extends FlutterFlowModel<ModalTaskDetailsWidget> {
   ScrollController? listViewController2;
   // State field(s) for updateActivity widget.
   FocusNode? updateActivityFocusNode;
-  TextEditingController? updateActivityController;
-  String? Function(BuildContext, String?)? updateActivityControllerValidator;
+  TextEditingController? updateActivityTextController;
+  String? Function(BuildContext, String?)?
+      updateActivityTextControllerValidator;
   // Stores action output result for [Backend Call - Create Document] action in Button widget.
   NotesRecord? newNoteDesktop;
   // Stores action output result for [Backend Call - Create Document] action in Button widget.
@@ -42,6 +43,6 @@ class ModalTaskDetailsModel extends FlutterFlowModel<ModalTaskDetailsWidget> {
     listViewController1?.dispose();
     listViewController2?.dispose();
     updateActivityFocusNode?.dispose();
-    updateActivityController?.dispose();
+    updateActivityTextController?.dispose();
   }
 }

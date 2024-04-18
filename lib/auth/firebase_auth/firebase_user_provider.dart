@@ -5,8 +5,8 @@ import '../base_auth_user_provider.dart';
 
 export '../base_auth_user_provider.dart';
 
-class Task2FirebaseUser extends BaseAuthUser {
-  Task2FirebaseUser(this.user);
+class ProtaskerFirebaseUser extends BaseAuthUser {
+  ProtaskerFirebaseUser(this.user);
   User? user;
   @override
   bool get loggedIn => user != null;
@@ -54,17 +54,18 @@ class Task2FirebaseUser extends BaseAuthUser {
 
   static BaseAuthUser fromUserCredential(UserCredential userCredential) =>
       fromFirebaseUser(userCredential.user);
-  static BaseAuthUser fromFirebaseUser(User? user) => Task2FirebaseUser(user);
+  static BaseAuthUser fromFirebaseUser(User? user) =>
+      ProtaskerFirebaseUser(user);
 }
 
-Stream<BaseAuthUser> task2FirebaseUserStream() => FirebaseAuth.instance
+Stream<BaseAuthUser> protaskerFirebaseUserStream() => FirebaseAuth.instance
         .authStateChanges()
         .debounce((user) => user == null && !loggedIn
             ? TimerStream(true, const Duration(seconds: 1))
             : Stream.value(user))
         .map<BaseAuthUser>(
       (user) {
-        currentUser = Task2FirebaseUser(user);
+        currentUser = ProtaskerFirebaseUser(user);
         return currentUser!;
       },
     );

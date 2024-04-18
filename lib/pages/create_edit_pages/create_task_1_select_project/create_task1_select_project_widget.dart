@@ -358,7 +358,7 @@ class _CreateTask1SelectProjectWidgetState
                                                         FFLocalizations.of(
                                                                 context)
                                                             .getText(
-                                                          'nb0qs3fd' /* Last edited: */,
+                                                          'nb0qs3fd' /* Ultima edicion: */,
                                                         ),
                                                         style:
                                                             FlutterFlowTheme.of(

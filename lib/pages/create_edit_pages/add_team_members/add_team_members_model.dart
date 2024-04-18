@@ -15,12 +15,12 @@ class AddTeamMembersModel extends FlutterFlowModel<AddTeamMembersWidget> {
 
   // State field(s) for userName widget.
   FocusNode? userNameFocusNode;
-  TextEditingController? userNameController;
-  String? Function(BuildContext, String?)? userNameControllerValidator;
-  String? _userNameControllerValidator(BuildContext context, String? val) {
+  TextEditingController? userNameTextController;
+  String? Function(BuildContext, String?)? userNameTextControllerValidator;
+  String? _userNameTextControllerValidator(BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
       return FFLocalizations.of(context).getText(
-        '41umybiv' /* Field is required */,
+        '41umybiv' /* El campo es requerido */,
       );
     }
 
@@ -29,12 +29,13 @@ class AddTeamMembersModel extends FlutterFlowModel<AddTeamMembersWidget> {
 
   // State field(s) for emailAddress widget.
   FocusNode? emailAddressFocusNode;
-  TextEditingController? emailAddressController;
-  String? Function(BuildContext, String?)? emailAddressControllerValidator;
-  String? _emailAddressControllerValidator(BuildContext context, String? val) {
+  TextEditingController? emailAddressTextController;
+  String? Function(BuildContext, String?)? emailAddressTextControllerValidator;
+  String? _emailAddressTextControllerValidator(
+      BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
       return FFLocalizations.of(context).getText(
-        'i5wagnfq' /* Field is required */,
+        'i5wagnfq' /* El campo es requerido */,
       );
     }
 
@@ -46,12 +47,12 @@ class AddTeamMembersModel extends FlutterFlowModel<AddTeamMembersWidget> {
 
   // State field(s) for titleRole widget.
   FocusNode? titleRoleFocusNode;
-  TextEditingController? titleRoleController;
-  String? Function(BuildContext, String?)? titleRoleControllerValidator;
-  String? _titleRoleControllerValidator(BuildContext context, String? val) {
+  TextEditingController? titleRoleTextController;
+  String? Function(BuildContext, String?)? titleRoleTextControllerValidator;
+  String? _titleRoleTextControllerValidator(BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
       return FFLocalizations.of(context).getText(
-        'h5euxn0m' /* Field is required */,
+        'h5euxn0m' /* El campo es requerido */,
       );
     }
 
@@ -63,29 +64,29 @@ class AddTeamMembersModel extends FlutterFlowModel<AddTeamMembersWidget> {
   FormFieldController<String>? teamSelectValueController;
   // State field(s) for shortBio widget.
   FocusNode? shortBioFocusNode;
-  TextEditingController? shortBioController;
-  String? Function(BuildContext, String?)? shortBioControllerValidator;
+  TextEditingController? shortBioTextController;
+  String? Function(BuildContext, String?)? shortBioTextControllerValidator;
 
   @override
   void initState(BuildContext context) {
-    userNameControllerValidator = _userNameControllerValidator;
-    emailAddressControllerValidator = _emailAddressControllerValidator;
-    titleRoleControllerValidator = _titleRoleControllerValidator;
+    userNameTextControllerValidator = _userNameTextControllerValidator;
+    emailAddressTextControllerValidator = _emailAddressTextControllerValidator;
+    titleRoleTextControllerValidator = _titleRoleTextControllerValidator;
   }
 
   @override
   void dispose() {
     unfocusNode.dispose();
     userNameFocusNode?.dispose();
-    userNameController?.dispose();
+    userNameTextController?.dispose();
 
     emailAddressFocusNode?.dispose();
-    emailAddressController?.dispose();
+    emailAddressTextController?.dispose();
 
     titleRoleFocusNode?.dispose();
-    titleRoleController?.dispose();
+    titleRoleTextController?.dispose();
 
     shortBioFocusNode?.dispose();
-    shortBioController?.dispose();
+    shortBioTextController?.dispose();
   }
 }

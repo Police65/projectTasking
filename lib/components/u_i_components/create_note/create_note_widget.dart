@@ -35,7 +35,7 @@ class _CreateNoteWidgetState extends State<CreateNoteWidget> {
     super.initState();
     _model = createModel(context, () => CreateNoteModel());
 
-    _model.shortBioController ??= TextEditingController();
+    _model.shortBioTextController ??= TextEditingController();
     _model.shortBioFocusNode ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
@@ -70,8 +70,8 @@ class _CreateNoteWidgetState extends State<CreateNoteWidget> {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(
-                      16.0, 16.0, 16.0, 32.0),
+                  padding:
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 32.0),
                   child: Material(
                     color: Colors.transparent,
                     elevation: 5.0,
@@ -117,7 +117,7 @@ class _CreateNoteWidgetState extends State<CreateNoteWidget> {
                                   16.0, 12.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  'i9im6f7s' /* Create Note */,
+                                  'i9im6f7s' /* Crear nota */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .headlineMedium
@@ -137,7 +137,7 @@ class _CreateNoteWidgetState extends State<CreateNoteWidget> {
                                   16.0, 4.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  'y8jieyz4' /* Create a note to keep your tea... */,
+                                  'y8jieyz4' /* Crea una nota para mantener a ... */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
@@ -170,9 +170,8 @@ class _CreateNoteWidgetState extends State<CreateNoteWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding:
-                                        const EdgeInsetsDirectional.fromSTEB(
-                                            12.0, 0.0, 0.0, 0.0),
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        12.0, 0.0, 0.0, 0.0),
                                     child: AuthUserStreamWidget(
                                       builder: (context) => Text(
                                         currentUserDisplayName,
@@ -200,12 +199,12 @@ class _CreateNoteWidgetState extends State<CreateNoteWidget> {
                               padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 16.0, 16.0, 0.0),
                               child: TextFormField(
-                                controller: _model.shortBioController,
+                                controller: _model.shortBioTextController,
                                 focusNode: _model.shortBioFocusNode,
                                 obscureText: false,
                                 decoration: InputDecoration(
                                   hintText: FFLocalizations.of(context).getText(
-                                    'sq20csss' /* Enter your note here... */,
+                                    'sq20csss' /* Introduce tu nota aquí... */,
                                   ),
                                   hintStyle: FlutterFlowTheme.of(context)
                                       .bodySmall
@@ -264,9 +263,9 @@ class _CreateNoteWidgetState extends State<CreateNoteWidget> {
                                     ),
                                 textAlign: TextAlign.start,
                                 maxLines: 4,
-                                minLines: null,
                                 keyboardType: TextInputType.multiline,
-                                validator: _model.shortBioControllerValidator
+                                validator: _model
+                                    .shortBioTextControllerValidator
                                     .asValidator(context),
                               ),
                             ),
@@ -286,7 +285,8 @@ class _CreateNoteWidgetState extends State<CreateNoteWidget> {
                                           .set(createNotesRecordData(
                                         owner: currentUserReference,
                                         taskRef: widget.taskRef?.reference,
-                                        note: _model.shortBioController.text,
+                                        note:
+                                            _model.shortBioTextController.text,
                                         timePosted: getCurrentTimestamp,
                                       ));
                                       _model.newNote =
@@ -296,7 +296,8 @@ class _CreateNoteWidgetState extends State<CreateNoteWidget> {
                                                 taskRef:
                                                     widget.taskRef?.reference,
                                                 note: _model
-                                                    .shortBioController.text,
+                                                    .shortBioTextController
+                                                    .text,
                                                 timePosted: getCurrentTimestamp,
                                               ),
                                               notesRecordReference);
@@ -309,8 +310,8 @@ class _CreateNoteWidgetState extends State<CreateNoteWidget> {
                                         ...createActivityRecordData(
                                           activityName: 'Note Created',
                                           activityTime: getCurrentTimestamp,
-                                          activityDescription:
-                                              _model.shortBioController.text,
+                                          activityDescription: _model
+                                              .shortBioTextController.text,
                                           activityType:
                                               widget.taskRef?.taskName,
                                           projectRef:
@@ -318,7 +319,7 @@ class _CreateNoteWidgetState extends State<CreateNoteWidget> {
                                           otherUser: currentUserReference,
                                           readState: false,
                                           activitySubText:
-                                              'Ha dejado una nota en ',
+                                              'has left a note on ',
                                           taskRef: widget.taskRef?.reference,
                                         ),
                                         ...mapToFirestore(
@@ -335,8 +336,8 @@ class _CreateNoteWidgetState extends State<CreateNoteWidget> {
                                         ...createActivityRecordData(
                                           activityName: 'Note Created',
                                           activityTime: getCurrentTimestamp,
-                                          activityDescription:
-                                              _model.shortBioController.text,
+                                          activityDescription: _model
+                                              .shortBioTextController.text,
                                           activityType:
                                               widget.taskRef?.taskName,
                                           projectRef:
@@ -344,7 +345,7 @@ class _CreateNoteWidgetState extends State<CreateNoteWidget> {
                                           otherUser: currentUserReference,
                                           readState: false,
                                           activitySubText:
-                                              'Ha dejado una nota en',
+                                              'has left a note on ',
                                           taskRef: widget.taskRef?.reference,
                                         ),
                                         ...mapToFirestore(
@@ -361,14 +362,13 @@ class _CreateNoteWidgetState extends State<CreateNoteWidget> {
                                       setState(() {});
                                     },
                                     text: FFLocalizations.of(context).getText(
-                                      'clj48a46' /* Create Note */,
+                                      'clj48a46' /* Crear nota */,
                                     ),
                                     options: FFButtonOptions(
                                       width: 270.0,
                                       height: 50.0,
-                                      padding:
-                                          const EdgeInsetsDirectional.fromSTEB(
-                                              0.0, 0.0, 0.0, 0.0),
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                          0.0, 0.0, 0.0, 0.0),
                                       iconPadding:
                                           const EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),

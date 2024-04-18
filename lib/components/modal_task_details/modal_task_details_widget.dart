@@ -32,276 +32,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
     with TickerProviderStateMixin {
   late ModalTaskDetailsModel _model;
 
-  final animationsMap = {
-    'textOnPageLoadAnimation1': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.0, 40.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'buttonOnPageLoadAnimation1': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.0, 170.0),
-          end: const Offset(0.0, 0.0),
-        ),
-        ScaleEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.7, 0.7),
-          end: const Offset(1.0, 1.0),
-        ),
-      ],
-    ),
-    'buttonOnPageLoadAnimation2': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.0, 170.0),
-          end: const Offset(0.0, 0.0),
-        ),
-        ScaleEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.7, 0.7),
-          end: const Offset(1.0, 1.0),
-        ),
-      ],
-    ),
-    'textOnPageLoadAnimation2': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.0, 50.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'dividerOnPageLoadAnimation': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.0, 30.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'rowOnPageLoadAnimation': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.0, 40.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'textOnPageLoadAnimation3': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.0, 60.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'textOnPageLoadAnimation4': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.0, 60.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'textOnPageLoadAnimation5': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.0, 60.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'textOnPageLoadAnimation6': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.0, 40.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'containerOnPageLoadAnimation1': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.0, 80.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'textOnPageLoadAnimation7': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.0, 40.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'containerOnPageLoadAnimation2': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.0, 80.0),
-          end: const Offset(0.0, 0.0),
-        ),
-        TiltEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(1.571, 0),
-          end: const Offset(0, 0),
-        ),
-      ],
-    ),
-  };
+  final animationsMap = <String, AnimationInfo>{};
 
   @override
   void setState(VoidCallback callback) {
@@ -314,9 +45,279 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
     super.initState();
     _model = createModel(context, () => ModalTaskDetailsModel());
 
-    _model.updateActivityController ??= TextEditingController();
+    _model.updateActivityTextController ??= TextEditingController();
     _model.updateActivityFocusNode ??= FocusNode();
 
+    animationsMap.addAll({
+      'textOnPageLoadAnimation1': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 40.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'buttonOnPageLoadAnimation1': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 170.0),
+            end: const Offset(0.0, 0.0),
+          ),
+          ScaleEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.7, 0.7),
+            end: const Offset(1.0, 1.0),
+          ),
+        ],
+      ),
+      'buttonOnPageLoadAnimation2': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 170.0),
+            end: const Offset(0.0, 0.0),
+          ),
+          ScaleEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.7, 0.7),
+            end: const Offset(1.0, 1.0),
+          ),
+        ],
+      ),
+      'textOnPageLoadAnimation2': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 50.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'dividerOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 30.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'rowOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 40.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'textOnPageLoadAnimation3': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 60.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'textOnPageLoadAnimation4': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 60.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'textOnPageLoadAnimation5': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 60.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'textOnPageLoadAnimation6': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 40.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation1': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 80.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'textOnPageLoadAnimation7': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 40.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation2': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 80.0),
+            end: const Offset(0.0, 0.0),
+          ),
+          TiltEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(1.571, 0),
+            end: const Offset(0, 0),
+          ),
+        ],
+      ),
+    });
     setupAnimations(
       animationsMap.values.where((anim) =>
           anim.trigger == AnimationTrigger.onActionTrigger ||
@@ -450,10 +451,10 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                           padding:
                                                               const EdgeInsetsDirectional
                                                                   .fromSTEB(
-                                                                  0.0,
-                                                                  0.0,
-                                                                  0.0,
-                                                                  5.0),
+                                                                      0.0,
+                                                                      0.0,
+                                                                      0.0,
+                                                                      5.0),
                                                           child: FFButtonWidget(
                                                             onPressed:
                                                                 () async {
@@ -590,7 +591,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                                     .taskRef
                                                                     ?.reference,
                                                                 note:
-                                                                    'La tarea ha sido movida a \"Complete\"',
+                                                                    'Task has been moved to \"Complete\"',
                                                                 timePosted:
                                                                     getCurrentTimestamp,
                                                               ));
@@ -603,7 +604,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                                             .taskRef
                                                                             ?.reference,
                                                                         note:
-                                                                            'La tarea a sido movida a \"Completado\"',
+                                                                            'Task has been moved to \"Complete\"',
                                                                         timePosted:
                                                                             getCurrentTimestamp,
                                                                       ),
@@ -662,7 +663,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                             text: FFLocalizations
                                                                     .of(context)
                                                                 .getText(
-                                                              'zerfwzgz' /* Mark as Complete */,
+                                                              'zerfwzgz' /* Marcar como completo */,
                                                             ),
                                                             options:
                                                                 FFButtonOptions(
@@ -670,17 +671,17 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                               padding:
                                                                   const EdgeInsetsDirectional
                                                                       .fromSTEB(
-                                                                      20.0,
-                                                                      0.0,
-                                                                      20.0,
-                                                                      0.0),
+                                                                          20.0,
+                                                                          0.0,
+                                                                          20.0,
+                                                                          0.0),
                                                               iconPadding:
                                                                   const EdgeInsetsDirectional
                                                                       .fromSTEB(
-                                                                      0.0,
-                                                                      0.0,
-                                                                      0.0,
-                                                                      0.0),
+                                                                          0.0,
+                                                                          0.0,
+                                                                          0.0,
+                                                                          0.0),
                                                               color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .alternate,
@@ -721,10 +722,10 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                           padding:
                                                               const EdgeInsetsDirectional
                                                                   .fromSTEB(
-                                                                  0.0,
-                                                                  0.0,
-                                                                  0.0,
-                                                                  5.0),
+                                                                      0.0,
+                                                                      0.0,
+                                                                      0.0,
+                                                                      5.0),
                                                           child: FFButtonWidget(
                                                             onPressed:
                                                                 () async {
@@ -842,7 +843,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                                     .taskRef
                                                                     ?.reference,
                                                                 note:
-                                                                    'Tarea ha sido movida a \"En progreso\"',
+                                                                    'Task has been moved to \"In Progress\"',
                                                                 timePosted:
                                                                     getCurrentTimestamp,
                                                               ));
@@ -855,7 +856,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                                             .taskRef
                                                                             ?.reference,
                                                                         note:
-                                                                            'Tarea ha sido movida a \"En progreso\"',
+                                                                            'Task has been moved to \"In Progress\"',
                                                                         timePosted:
                                                                             getCurrentTimestamp,
                                                                       ),
@@ -914,7 +915,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                             text: FFLocalizations
                                                                     .of(context)
                                                                 .getText(
-                                                              'fki0wi86' /* Begin Task */,
+                                                              'fki0wi86' /* Comenzar tarea */,
                                                             ),
                                                             options:
                                                                 FFButtonOptions(
@@ -922,17 +923,17 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                               padding:
                                                                   const EdgeInsetsDirectional
                                                                       .fromSTEB(
-                                                                      20.0,
-                                                                      0.0,
-                                                                      20.0,
-                                                                      0.0),
+                                                                          20.0,
+                                                                          0.0,
+                                                                          20.0,
+                                                                          0.0),
                                                               iconPadding:
                                                                   const EdgeInsetsDirectional
                                                                       .fromSTEB(
-                                                                      0.0,
-                                                                      0.0,
-                                                                      0.0,
-                                                                      0.0),
+                                                                          0.0,
+                                                                          0.0,
+                                                                          0.0,
+                                                                          0.0),
                                                               color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .primary,
@@ -971,8 +972,9 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                               ],
                                             ),
                                           Padding(
-                                            padding: const EdgeInsetsDirectional
-                                                .fromSTEB(16.0, 0.0, 8.0, 0.0),
+                                            padding:
+                                                const EdgeInsetsDirectional.fromSTEB(
+                                                    16.0, 0.0, 8.0, 0.0),
                                             child: FlutterFlowIconButton(
                                               borderColor: Colors.transparent,
                                               borderRadius: 30.0,
@@ -1019,8 +1021,8 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                       ).animateOnPageLoad(animationsMap[
                                           'textOnPageLoadAnimation2']!),
                                       Padding(
-                                        padding: const EdgeInsetsDirectional
-                                            .fromSTEB(0.0, 8.0, 0.0, 0.0),
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 8.0, 0.0, 0.0),
                                         child: FutureBuilder<ProjectsRecord>(
                                           future:
                                               ProjectsRecord.getDocumentOnce(
@@ -1086,7 +1088,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                     padding:
                                                         const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 12.0,
-                                                            0.0, 12.0),
+                                                                0.0, 12.0),
                                                     child: SelectionArea(
                                                         child: Text(
                                                       rowProjectsRecord
@@ -1112,8 +1114,8 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                   Padding(
                                                     padding:
                                                         const EdgeInsetsDirectional
-                                                            .fromSTEB(
-                                                            4.0, 0.0, 0.0, 0.0),
+                                                            .fromSTEB(4.0, 0.0,
+                                                                0.0, 0.0),
                                                     child: Icon(
                                                       Icons
                                                           .keyboard_arrow_right_rounded,
@@ -1144,14 +1146,13 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                         children: [
                                           Expanded(
                                             child: Padding(
-                                              padding:
-                                                  const EdgeInsetsDirectional
-                                                      .fromSTEB(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(
                                                       0.0, 12.0, 0.0, 0.0),
                                               child: Text(
                                                 FFLocalizations.of(context)
                                                     .getText(
-                                                  'pj3j661s' /* Due */,
+                                                  'pj3j661s' /* Pendiente */,
                                                 ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
@@ -1230,12 +1231,10 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                               ),
                                             ),
                                             alignment:
-                                                const AlignmentDirectional(
-                                                    0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Padding(
-                                              padding:
-                                                  const EdgeInsetsDirectional
-                                                      .fromSTEB(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(
                                                       12.0, 0.0, 12.0, 0.0),
                                               child: Text(
                                                 widget.taskRef!.status,
@@ -1265,8 +1264,9 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           Padding(
-                                            padding: const EdgeInsetsDirectional
-                                                .fromSTEB(0.0, 12.0, 0.0, 0.0),
+                                            padding:
+                                                const EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 12.0, 0.0, 0.0),
                                             child: Text(
                                               dateTimeFormat(
                                                 'MMMEd',
@@ -1295,8 +1295,9 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                 'textOnPageLoadAnimation3']!),
                                           ),
                                           Padding(
-                                            padding: const EdgeInsetsDirectional
-                                                .fromSTEB(0.0, 12.0, 0.0, 0.0),
+                                            padding:
+                                                const EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 12.0, 0.0, 0.0),
                                             child: Text(
                                               FFLocalizations.of(context)
                                                   .getText(
@@ -1322,8 +1323,9 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                 'textOnPageLoadAnimation4']!),
                                           ),
                                           Padding(
-                                            padding: const EdgeInsetsDirectional
-                                                .fromSTEB(0.0, 12.0, 0.0, 0.0),
+                                            padding:
+                                                const EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 12.0, 0.0, 0.0),
                                             child: Text(
                                               dateTimeFormat(
                                                 'jm',
@@ -1354,8 +1356,8 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                         ],
                                       ),
                                       Padding(
-                                        padding: const EdgeInsetsDirectional
-                                            .fromSTEB(0.0, 12.0, 0.0, 0.0),
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 12.0, 0.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           mainAxisAlignment:
@@ -1366,7 +1368,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                             Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                '5bz5zdwp' /* Team Members */,
+                                                '5bz5zdwp' /* Miembros del equipo */,
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -1440,9 +1442,8 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                         .secondaryBackground,
                                   ),
                                   child: Padding(
-                                    padding:
-                                        const EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 4.0, 0.0, 4.0),
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 4.0, 0.0, 4.0),
                                     child: Builder(
                                       builder: (context) {
                                         final members =
@@ -1457,9 +1458,8 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                             final membersItem =
                                                 members[membersIndex];
                                             return Padding(
-                                              padding:
-                                                  const EdgeInsetsDirectional
-                                                      .fromSTEB(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(
                                                       12.0, 12.0, 0.0, 12.0),
                                               child: FutureBuilder<UsersRecord>(
                                                 future:
@@ -1542,9 +1542,8 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                                 .circular(12.0),
                                                       ),
                                                       child: Padding(
-                                                        padding:
-                                                            const EdgeInsets
-                                                                .all(12.0),
+                                                        padding: const EdgeInsets.all(
+                                                            12.0),
                                                         child: Row(
                                                           mainAxisSize:
                                                               MainAxisSize.max,
@@ -1572,10 +1571,10 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                                 padding:
                                                                     const EdgeInsetsDirectional
                                                                         .fromSTEB(
-                                                                        16.0,
-                                                                        0.0,
-                                                                        0.0,
-                                                                        0.0),
+                                                                            16.0,
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0),
                                                                 child: Column(
                                                                   mainAxisSize:
                                                                       MainAxisSize
@@ -1603,8 +1602,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                                           ),
                                                                     ),
                                                                     Padding(
-                                                                      padding: const EdgeInsetsDirectional
-                                                                          .fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           4.0,
                                                                           0.0,
@@ -1655,7 +1653,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                     children: [
                                       Text(
                                         FFLocalizations.of(context).getText(
-                                          'hc3gs7ga' /* Activity */,
+                                          'hc3gs7ga' /* Actividad */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
                                             .labelMedium
@@ -1721,8 +1719,9 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                               listViewNotesRecordList[
                                                   listViewIndex];
                                           return Padding(
-                                            padding: const EdgeInsetsDirectional
-                                                .fromSTEB(0.0, 4.0, 0.0, 0.0),
+                                            padding:
+                                                const EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 4.0, 0.0, 0.0),
                                             child: Container(
                                               width: double.infinity,
                                               decoration: BoxDecoration(
@@ -1745,9 +1744,8 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                     BorderRadius.circular(0.0),
                                               ),
                                               child: Padding(
-                                                padding:
-                                                    const EdgeInsetsDirectional
-                                                        .fromSTEB(
+                                                padding: const EdgeInsetsDirectional
+                                                    .fromSTEB(
                                                         16.0, 12.0, 16.0, 12.0),
                                                 child:
                                                     FutureBuilder<UsersRecord>(
@@ -1802,10 +1800,10 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                             padding:
                                                                 const EdgeInsetsDirectional
                                                                     .fromSTEB(
-                                                                    16.0,
-                                                                    0.0,
-                                                                    0.0,
-                                                                    0.0),
+                                                                        16.0,
+                                                                        0.0,
+                                                                        0.0,
+                                                                        0.0),
                                                             child: Column(
                                                               mainAxisSize:
                                                                   MainAxisSize
@@ -1833,9 +1831,8 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                                       ),
                                                                 ),
                                                                 Padding(
-                                                                  padding:
-                                                                      const EdgeInsetsDirectional
-                                                                          .fromSTEB(
+                                                                  padding: const EdgeInsetsDirectional
+                                                                      .fromSTEB(
                                                                           0.0,
                                                                           4.0,
                                                                           0.0,
@@ -1857,9 +1854,8 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                                   ),
                                                                 ),
                                                                 Padding(
-                                                                  padding:
-                                                                      const EdgeInsetsDirectional
-                                                                          .fromSTEB(
+                                                                  padding: const EdgeInsetsDirectional
+                                                                      .fromSTEB(
                                                                           0.0,
                                                                           12.0,
                                                                           0.0,
@@ -1980,11 +1976,11 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                   children: [
                                     Expanded(
                                       child: Padding(
-                                        padding: const EdgeInsetsDirectional
-                                            .fromSTEB(0.0, 0.0, 16.0, 0.0),
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 0.0, 16.0, 0.0),
                                         child: TextFormField(
-                                          controller:
-                                              _model.updateActivityController,
+                                          controller: _model
+                                              .updateActivityTextController,
                                           focusNode:
                                               _model.updateActivityFocusNode,
                                           autofocus: false,
@@ -1993,7 +1989,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                             hintText:
                                                 FFLocalizations.of(context)
                                                     .getText(
-                                              'ru97sguf' /* Leave update here... */,
+                                              'ru97sguf' /* Dejar actualización aquí... */,
                                             ),
                                             hintStyle:
                                                 FlutterFlowTheme.of(context)
@@ -2011,35 +2007,35 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                                       context)
                                                                   .bodySmallFamily),
                                                     ),
-                                            enabledBorder:
-                                                const UnderlineInputBorder(
+                                            enabledBorder: const UnderlineInputBorder(
                                               borderSide: BorderSide(
                                                 color: Color(0x00000000),
                                                 width: 1.0,
                                               ),
-                                              borderRadius: BorderRadius.only(
+                                              borderRadius:
+                                                  BorderRadius.only(
                                                 topLeft: Radius.circular(4.0),
                                                 topRight: Radius.circular(4.0),
                                               ),
                                             ),
-                                            focusedBorder:
-                                                const UnderlineInputBorder(
+                                            focusedBorder: const UnderlineInputBorder(
                                               borderSide: BorderSide(
                                                 color: Color(0x00000000),
                                                 width: 1.0,
                                               ),
-                                              borderRadius: BorderRadius.only(
+                                              borderRadius:
+                                                  BorderRadius.only(
                                                 topLeft: Radius.circular(4.0),
                                                 topRight: Radius.circular(4.0),
                                               ),
                                             ),
-                                            errorBorder:
-                                                const UnderlineInputBorder(
+                                            errorBorder: const UnderlineInputBorder(
                                               borderSide: BorderSide(
                                                 color: Color(0x00000000),
                                                 width: 1.0,
                                               ),
-                                              borderRadius: BorderRadius.only(
+                                              borderRadius:
+                                                  BorderRadius.only(
                                                 topLeft: Radius.circular(4.0),
                                                 topRight: Radius.circular(4.0),
                                               ),
@@ -2050,14 +2046,14 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                 color: Color(0x00000000),
                                                 width: 1.0,
                                               ),
-                                              borderRadius: BorderRadius.only(
+                                              borderRadius:
+                                                  BorderRadius.only(
                                                 topLeft: Radius.circular(4.0),
                                                 topRight: Radius.circular(4.0),
                                               ),
                                             ),
                                             contentPadding:
-                                                const EdgeInsetsDirectional
-                                                    .fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     12.0, 0.0, 0.0, 0.0),
                                           ),
                                           style: FlutterFlowTheme.of(context)
@@ -2075,8 +2071,9 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                             .bodyMediumFamily),
                                               ),
                                           maxLines: 3,
+                                          minLines: 1,
                                           validator: _model
-                                              .updateActivityControllerValidator
+                                              .updateActivityTextControllerValidator
                                               .asValidator(context),
                                         ),
                                       ),
@@ -2085,8 +2082,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                       onPressed: () async {
                                         await _model.content?.animateTo(
                                           0,
-                                          duration:
-                                              const Duration(milliseconds: 200),
+                                          duration: const Duration(milliseconds: 200),
                                           curve: Curves.ease,
                                         );
 
@@ -2097,7 +2093,8 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                           owner: currentUserReference,
                                           taskRef: widget.taskRef?.reference,
                                           note: _model
-                                              .updateActivityController.text,
+                                              .updateActivityTextController
+                                              .text,
                                           timePosted: getCurrentTimestamp,
                                         ));
                                         _model.newNoteDesktop =
@@ -2107,7 +2104,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                   taskRef:
                                                       widget.taskRef?.reference,
                                                   note: _model
-                                                      .updateActivityController
+                                                      .updateActivityTextController
                                                       .text,
                                                   timePosted:
                                                       getCurrentTimestamp,
@@ -2123,14 +2120,15 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                             activityName: 'Note Created',
                                             activityTime: getCurrentTimestamp,
                                             activityDescription: _model
-                                                .updateActivityController.text,
+                                                .updateActivityTextController
+                                                .text,
                                             activityType:
                                                 widget.taskRef?.taskName,
                                             projectRef:
                                                 widget.taskRef?.projectRef,
                                             otherUser: currentUserReference,
                                             activitySubText:
-                                                'Ha dejado una nota en ',
+                                                'has left a note on ',
                                             taskRef: widget.taskRef?.reference,
                                           ),
                                           ...mapToFirestore(
@@ -2148,14 +2146,15 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                             activityName: 'Note Created',
                                             activityTime: getCurrentTimestamp,
                                             activityDescription: _model
-                                                .updateActivityController.text,
+                                                .updateActivityTextController
+                                                .text,
                                             activityType:
                                                 widget.taskRef?.taskName,
                                             projectRef:
                                                 widget.taskRef?.projectRef,
                                             otherUser: currentUserReference,
                                             activitySubText:
-                                                'Ha dejado una nota en',
+                                                'has left a note on ',
                                             taskRef: widget.taskRef?.reference,
                                           ),
                                           ...mapToFirestore(
@@ -2168,21 +2167,22 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                           ),
                                         }, activityRecordReference);
                                         setState(() {
-                                          _model.updateActivityController
+                                          _model.updateActivityTextController
                                               ?.clear();
                                         });
 
                                         setState(() {});
                                       },
                                       text: FFLocalizations.of(context).getText(
-                                        '5xomb4rp' /* Submit */,
+                                        '5xomb4rp' /* Entregar */,
                                       ),
                                       options: FFButtonOptions(
                                         height: 40.0,
-                                        padding: const EdgeInsetsDirectional
-                                            .fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                        iconPadding: const EdgeInsetsDirectional
-                                            .fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            24.0, 0.0, 24.0, 0.0),
+                                        iconPadding:
+                                            const EdgeInsetsDirectional.fromSTEB(
+                                                0.0, 0.0, 0.0, 0.0),
                                         color: FlutterFlowTheme.of(context)
                                             .primary,
                                         textStyle: FlutterFlowTheme.of(context)

@@ -26,10 +26,10 @@ class _CreateProjectWidgetState extends State<CreateProjectWidget> {
     super.initState();
     _model = createModel(context, () => CreateProjectModel());
 
-    _model.taskNameController ??= TextEditingController();
+    _model.taskNameTextController ??= TextEditingController();
     _model.taskNameFocusNode ??= FocusNode();
 
-    _model.descriptionController ??= TextEditingController();
+    _model.descriptionTextController ??= TextEditingController();
     _model.descriptionFocusNode ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
@@ -116,7 +116,7 @@ class _CreateProjectWidgetState extends State<CreateProjectWidget> {
                               padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 16.0, 16.0, 0.0),
                               child: TextFormField(
-                                controller: _model.taskNameController,
+                                controller: _model.taskNameTextController,
                                 focusNode: _model.taskNameFocusNode,
                                 obscureText: false,
                                 decoration: InputDecoration(
@@ -178,8 +178,8 @@ class _CreateProjectWidgetState extends State<CreateProjectWidget> {
                                           .containsKey('Space Grotesk'),
                                     ),
                                 textAlign: TextAlign.start,
-                                minLines: null,
-                                validator: _model.taskNameControllerValidator
+                                validator: _model
+                                    .taskNameTextControllerValidator
                                     .asValidator(context),
                               ),
                             ),
@@ -187,7 +187,7 @@ class _CreateProjectWidgetState extends State<CreateProjectWidget> {
                               padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 16.0, 16.0, 0.0),
                               child: TextFormField(
-                                controller: _model.descriptionController,
+                                controller: _model.descriptionTextController,
                                 focusNode: _model.descriptionFocusNode,
                                 obscureText: false,
                                 decoration: InputDecoration(
@@ -252,9 +252,9 @@ class _CreateProjectWidgetState extends State<CreateProjectWidget> {
                                     ),
                                 textAlign: TextAlign.start,
                                 maxLines: 4,
-                                minLines: null,
                                 keyboardType: TextInputType.multiline,
-                                validator: _model.descriptionControllerValidator
+                                validator: _model
+                                    .descriptionTextControllerValidator
                                     .asValidator(context),
                               ),
                             ),
@@ -275,9 +275,10 @@ class _CreateProjectWidgetState extends State<CreateProjectWidget> {
                                 await ProjectsRecord.collection.doc().set({
                                   ...createProjectsRecordData(
                                     owner: currentUserReference,
-                                    projectName: _model.taskNameController.text,
+                                    projectName:
+                                        _model.taskNameTextController.text,
                                     description:
-                                        _model.descriptionController.text,
+                                        _model.descriptionTextController.text,
                                     numberTasks: 0,
                                     completedTasks: 0,
                                     lastEdited: getCurrentTimestamp,
@@ -296,7 +297,7 @@ class _CreateProjectWidgetState extends State<CreateProjectWidget> {
                                   ...mapToFirestore(
                                     {
                                       'projects': [
-                                        _model.taskNameController.text
+                                        _model.taskNameTextController.text
                                       ],
                                     },
                                   ),
@@ -304,7 +305,7 @@ class _CreateProjectWidgetState extends State<CreateProjectWidget> {
                                 context.pop();
                               },
                               text: FFLocalizations.of(context).getText(
-                                'gql7sgl9' /* Create Project */,
+                                'gql7sgl9' /* Crer proyecto */,
                               ),
                               options: FFButtonOptions(
                                 width: 270.0,

@@ -8,8 +8,8 @@ class CreateNoteModel extends FlutterFlowModel<CreateNoteWidget> {
 
   // State field(s) for shortBio widget.
   FocusNode? shortBioFocusNode;
-  TextEditingController? shortBioController;
-  String? Function(BuildContext, String?)? shortBioControllerValidator;
+  TextEditingController? shortBioTextController;
+  String? Function(BuildContext, String?)? shortBioTextControllerValidator;
   // Stores action output result for [Backend Call - Create Document] action in Button widget.
   NotesRecord? newNote;
   // Stores action output result for [Backend Call - Create Document] action in Button widget.
@@ -21,6 +21,6 @@ class CreateNoteModel extends FlutterFlowModel<CreateNoteWidget> {
   @override
   void dispose() {
     shortBioFocusNode?.dispose();
-    shortBioController?.dispose();
+    shortBioTextController?.dispose();
   }
 }

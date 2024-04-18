@@ -14,6 +14,7 @@ import 'index.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  GoRouter.optionURLReflectsImperativeAPIs = true;
   usePathUrlStrategy();
   await initFirebase();
 
@@ -58,7 +59,7 @@ class _MyAppState extends State<MyApp> {
 
     _appStateNotifier = AppStateNotifier.instance;
     _router = createRouter(_appStateNotifier);
-    userStream = task2FirebaseUserStream()
+    userStream = protaskerFirebaseUserStream()
       ..listen((user) => _appStateNotifier.update(user));
     jwtTokenStream.listen((_) {});
     Future.delayed(
@@ -87,7 +88,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'task2',
+      title: 'protasker',
       localizationsDelegates: const [
         FFLocalizationsDelegate(),
         GlobalMaterialLocalizations.delegate,
@@ -178,7 +179,7 @@ class _NavBarPageState extends State<NavBarPage> {
                 size: 24.0,
               ),
               label: FFLocalizations.of(context).getText(
-                'hmxr55qt' /* Home */,
+                'hmxr55qt' /* Inicio */,
               ),
               tooltip: '',
             ),
@@ -192,7 +193,7 @@ class _NavBarPageState extends State<NavBarPage> {
                 size: 24.0,
               ),
               label: FFLocalizations.of(context).getText(
-                '6mv3j0ec' /* Tracker */,
+                '6mv3j0ec' /* Tareas */,
               ),
               tooltip: '',
             ),
@@ -206,7 +207,7 @@ class _NavBarPageState extends State<NavBarPage> {
                 size: 24.0,
               ),
               label: FFLocalizations.of(context).getText(
-                'h2tjjlou' /* My Team */,
+                'h2tjjlou' /* Mi equipo */,
               ),
               tooltip: '',
             ),
@@ -220,7 +221,7 @@ class _NavBarPageState extends State<NavBarPage> {
                 size: 24.0,
               ),
               label: FFLocalizations.of(context).getText(
-                '3e1n01mf' /* Home */,
+                '3e1n01mf' /* Inicio */,
               ),
               tooltip: '',
             )

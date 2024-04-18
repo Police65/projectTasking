@@ -28,13 +28,13 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
     super.initState();
     _model = createModel(context, () => CreateProfileModel());
 
-    _model.userNameController ??= TextEditingController();
+    _model.userNameTextController ??= TextEditingController();
     _model.userNameFocusNode ??= FocusNode();
 
-    _model.titleRoleController ??= TextEditingController();
+    _model.titleRoleTextController ??= TextEditingController();
     _model.titleRoleFocusNode ??= FocusNode();
 
-    _model.shortBioController ??= TextEditingController();
+    _model.shortBioTextController ??= TextEditingController();
     _model.shortBioFocusNode ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
@@ -225,7 +225,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 16.0, 16.0, 0.0),
                           child: TextFormField(
-                            controller: _model.userNameController,
+                            controller: _model.userNameTextController,
                             focusNode: _model.userNameFocusNode,
                             obscureText: false,
                             decoration: InputDecoration(
@@ -285,8 +285,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                                           .bodyMediumFamily),
                                 ),
                             textAlign: TextAlign.start,
-                            minLines: null,
-                            validator: _model.userNameControllerValidator
+                            validator: _model.userNameTextControllerValidator
                                 .asValidator(context),
                           ),
                         ),
@@ -294,7 +293,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 16.0, 16.0, 0.0),
                           child: TextFormField(
-                            controller: _model.titleRoleController,
+                            controller: _model.titleRoleTextController,
                             focusNode: _model.titleRoleFocusNode,
                             obscureText: false,
                             decoration: InputDecoration(
@@ -354,8 +353,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                                           .bodyMediumFamily),
                                 ),
                             textAlign: TextAlign.start,
-                            minLines: null,
-                            validator: _model.titleRoleControllerValidator
+                            validator: _model.titleRoleTextControllerValidator
                                 .asValidator(context),
                           ),
                         ),
@@ -363,7 +361,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 16.0, 16.0, 0.0),
                           child: TextFormField(
-                            controller: _model.shortBioController,
+                            controller: _model.shortBioTextController,
                             focusNode: _model.shortBioFocusNode,
                             obscureText: false,
                             decoration: InputDecoration(
@@ -424,9 +422,8 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                                 ),
                             textAlign: TextAlign.start,
                             maxLines: 4,
-                            minLines: null,
                             keyboardType: TextInputType.multiline,
-                            validator: _model.shortBioControllerValidator
+                            validator: _model.shortBioTextControllerValidator
                                 .asValidator(context),
                           ),
                         ),
@@ -444,16 +441,16 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
 
                           await currentUserReference!
                               .update(createUsersRecordData(
-                            displayName: _model.userNameController.text,
+                            displayName: _model.userNameTextController.text,
                             photoUrl: _model.uploadedFileUrl,
-                            userRole: _model.titleRoleController.text,
-                            userBio: _model.shortBioController.text,
+                            userRole: _model.titleRoleTextController.text,
+                            userBio: _model.shortBioTextController.text,
                           ));
 
                           context.pushNamed('Main_tracker');
                         },
                         text: FFLocalizations.of(context).getText(
-                          '7ve36dhv' /* Create & Invite User */,
+                          '7ve36dhv' /* Crear & Invitar usuario */,
                         ),
                         options: FFButtonOptions(
                           width: 270.0,

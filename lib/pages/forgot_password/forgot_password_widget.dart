@@ -25,7 +25,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
     super.initState();
     _model = createModel(context, () => ForgotPasswordModel());
 
-    _model.emailAddressController ??=
+    _model.emailAddressTextController ??=
         TextEditingController(text: currentUserEmail);
     _model.emailAddressFocusNode ??= FocusNode();
 
@@ -157,7 +157,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                               4.0, 0.0, 0.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              '5slql49v' /* Back */,
+                              '5slql49v' /* Atras */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .displaySmall
@@ -228,7 +228,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                     child: TextFormField(
-                      controller: _model.emailAddressController,
+                      controller: _model.emailAddressTextController,
                       focusNode: _model.emailAddressFocusNode,
                       obscureText: false,
                       decoration: InputDecoration(
@@ -245,7 +245,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                                           .labelMediumFamily),
                                 ),
                         hintText: FFLocalizations.of(context).getText(
-                          'gegzfze4' /* Enter your email... */,
+                          'gegzfze4' /* Introduce tu email */,
                         ),
                         hintStyle:
                             FlutterFlowTheme.of(context).bodyMedium.override(
@@ -298,8 +298,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                             useGoogleFonts: GoogleFonts.asMap().containsKey(
                                 FlutterFlowTheme.of(context).bodyMediumFamily),
                           ),
-                      minLines: null,
-                      validator: _model.emailAddressControllerValidator
+                      validator: _model.emailAddressTextControllerValidator
                           .asValidator(context),
                     ),
                   ),
@@ -311,7 +310,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                         const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
                     child: FFButtonWidget(
                       onPressed: () async {
-                        if (_model.emailAddressController.text.isEmpty) {
+                        if (_model.emailAddressTextController.text.isEmpty) {
                           ScaffoldMessenger.of(context).showSnackBar(
                             const SnackBar(
                               content: Text(
@@ -322,7 +321,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                           return;
                         }
                         await authManager.resetPassword(
-                          email: _model.emailAddressController.text,
+                          email: _model.emailAddressTextController.text,
                           context: context,
                         );
                         ScaffoldMessenger.of(context).showSnackBar(

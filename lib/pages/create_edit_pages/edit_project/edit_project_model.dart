@@ -9,12 +9,12 @@ class EditProjectModel extends FlutterFlowModel<EditProjectWidget> {
   final formKey = GlobalKey<FormState>();
   // State field(s) for taskName widget.
   FocusNode? taskNameFocusNode;
-  TextEditingController? taskNameController;
-  String? Function(BuildContext, String?)? taskNameControllerValidator;
+  TextEditingController? taskNameTextController;
+  String? Function(BuildContext, String?)? taskNameTextControllerValidator;
   // State field(s) for description widget.
   FocusNode? descriptionFocusNode;
-  TextEditingController? descriptionController;
-  String? Function(BuildContext, String?)? descriptionControllerValidator;
+  TextEditingController? descriptionTextController;
+  String? Function(BuildContext, String?)? descriptionTextControllerValidator;
 
   @override
   void initState(BuildContext context) {}
@@ -23,9 +23,9 @@ class EditProjectModel extends FlutterFlowModel<EditProjectWidget> {
   void dispose() {
     unfocusNode.dispose();
     taskNameFocusNode?.dispose();
-    taskNameController?.dispose();
+    taskNameTextController?.dispose();
 
     descriptionFocusNode?.dispose();
-    descriptionController?.dispose();
+    descriptionTextController?.dispose();
   }
 }

@@ -25,27 +25,7 @@ class _TaskComponentWidgetState extends State<TaskComponentWidget>
     with TickerProviderStateMixin {
   late TaskComponentModel _model;
 
-  final animationsMap = {
-    'containerOnPageLoadAnimation': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.0, 30.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-  };
+  final animationsMap = <String, AnimationInfo>{};
 
   @override
   void setState(VoidCallback callback) {
@@ -58,6 +38,27 @@ class _TaskComponentWidgetState extends State<TaskComponentWidget>
     super.initState();
     _model = createModel(context, () => TaskComponentModel());
 
+    animationsMap.addAll({
+      'containerOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 30.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+    });
     setupAnimations(
       animationsMap.values.where((anim) =>
           anim.trigger == AnimationTrigger.onActionTrigger ||
@@ -224,7 +225,7 @@ class _TaskComponentWidgetState extends State<TaskComponentWidget>
                       children: [
                         Text(
                           FFLocalizations.of(context).getText(
-                            'uuuaezib' /* Completed */,
+                            'uuuaezib' /* Completado */,
                           ),
                           style: FlutterFlowTheme.of(context)
                               .bodyMedium

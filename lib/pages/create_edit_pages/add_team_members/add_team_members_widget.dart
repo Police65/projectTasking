@@ -28,16 +28,16 @@ class _AddTeamMembersWidgetState extends State<AddTeamMembersWidget> {
     super.initState();
     _model = createModel(context, () => AddTeamMembersModel());
 
-    _model.userNameController ??= TextEditingController();
+    _model.userNameTextController ??= TextEditingController();
     _model.userNameFocusNode ??= FocusNode();
 
-    _model.emailAddressController ??= TextEditingController();
+    _model.emailAddressTextController ??= TextEditingController();
     _model.emailAddressFocusNode ??= FocusNode();
 
-    _model.titleRoleController ??= TextEditingController();
+    _model.titleRoleTextController ??= TextEditingController();
     _model.titleRoleFocusNode ??= FocusNode();
 
-    _model.shortBioController ??= TextEditingController();
+    _model.shortBioTextController ??= TextEditingController();
     _model.shortBioFocusNode ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
@@ -239,7 +239,7 @@ class _AddTeamMembersWidgetState extends State<AddTeamMembersWidget> {
                               padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 16.0, 16.0, 0.0),
                               child: TextFormField(
-                                controller: _model.userNameController,
+                                controller: _model.userNameTextController,
                                 focusNode: _model.userNameFocusNode,
                                 obscureText: false,
                                 decoration: InputDecoration(
@@ -304,8 +304,8 @@ class _AddTeamMembersWidgetState extends State<AddTeamMembersWidget> {
                                                   .bodyMediumFamily),
                                     ),
                                 textAlign: TextAlign.start,
-                                minLines: null,
-                                validator: _model.userNameControllerValidator
+                                validator: _model
+                                    .userNameTextControllerValidator
                                     .asValidator(context),
                               ),
                             ),
@@ -313,13 +313,13 @@ class _AddTeamMembersWidgetState extends State<AddTeamMembersWidget> {
                               padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 16.0, 16.0, 0.0),
                               child: TextFormField(
-                                controller: _model.emailAddressController,
+                                controller: _model.emailAddressTextController,
                                 focusNode: _model.emailAddressFocusNode,
                                 obscureText: false,
                                 decoration: InputDecoration(
                                   labelText:
                                       FFLocalizations.of(context).getText(
-                                    '733r7kk8' /* Email */,
+                                    '733r7kk8' /* Correo Electronico */,
                                   ),
                                   hintStyle: FlutterFlowTheme.of(context)
                                       .bodySmall
@@ -378,10 +378,9 @@ class _AddTeamMembersWidgetState extends State<AddTeamMembersWidget> {
                                                   .bodyMediumFamily),
                                     ),
                                 textAlign: TextAlign.start,
-                                minLines: null,
                                 keyboardType: TextInputType.emailAddress,
                                 validator: _model
-                                    .emailAddressControllerValidator
+                                    .emailAddressTextControllerValidator
                                     .asValidator(context),
                               ),
                             ),
@@ -389,7 +388,7 @@ class _AddTeamMembersWidgetState extends State<AddTeamMembersWidget> {
                               padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 16.0, 16.0, 0.0),
                               child: TextFormField(
-                                controller: _model.titleRoleController,
+                                controller: _model.titleRoleTextController,
                                 focusNode: _model.titleRoleFocusNode,
                                 obscureText: false,
                                 decoration: InputDecoration(
@@ -454,8 +453,8 @@ class _AddTeamMembersWidgetState extends State<AddTeamMembersWidget> {
                                                   .bodyMediumFamily),
                                     ),
                                 textAlign: TextAlign.start,
-                                minLines: null,
-                                validator: _model.titleRoleControllerValidator
+                                validator: _model
+                                    .titleRoleTextControllerValidator
                                     .asValidator(context),
                               ),
                             ),
@@ -467,13 +466,13 @@ class _AddTeamMembersWidgetState extends State<AddTeamMembersWidget> {
                                     FormFieldController<String>(null),
                                 options: [
                                   FFLocalizations.of(context).getText(
-                                    '39qfddvg' /* Team 1 */,
+                                    '39qfddvg' /* Equipo 1 */,
                                   ),
                                   FFLocalizations.of(context).getText(
-                                    '0rrub9lg' /* Team 2 */,
+                                    '0rrub9lg' /* Equipo 2 */,
                                   ),
                                   FFLocalizations.of(context).getText(
-                                    '23fglgb8' /* Team 3 */,
+                                    '23fglgb8' /* Equipo 3 */,
                                   )
                                 ],
                                 onChanged: (val) => setState(
@@ -518,7 +517,7 @@ class _AddTeamMembersWidgetState extends State<AddTeamMembersWidget> {
                               padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 16.0, 16.0, 0.0),
                               child: TextFormField(
-                                controller: _model.shortBioController,
+                                controller: _model.shortBioTextController,
                                 focusNode: _model.shortBioFocusNode,
                                 obscureText: false,
                                 decoration: InputDecoration(
@@ -583,9 +582,9 @@ class _AddTeamMembersWidgetState extends State<AddTeamMembersWidget> {
                                     ),
                                 textAlign: TextAlign.start,
                                 maxLines: 4,
-                                minLines: null,
                                 keyboardType: TextInputType.multiline,
-                                validator: _model.shortBioControllerValidator
+                                validator: _model
+                                    .shortBioTextControllerValidator
                                     .asValidator(context),
                               ),
                             ),
@@ -631,11 +630,12 @@ class _AddTeamMembersWidgetState extends State<AddTeamMembersWidget> {
                               );
                               return;
                             }
-                            await launchURL(_model.emailAddressController.text);
+                            await launchURL(
+                                _model.emailAddressTextController.text);
                             context.pop();
                           },
                           text: FFLocalizations.of(context).getText(
-                            'c38hkcs1' /* Create & Invite User */,
+                            'c38hkcs1' /* Crear & Invitar usuario */,
                           ),
                           options: FFButtonOptions(
                             width: 270.0,

@@ -29,33 +29,34 @@ class _TeamMemberDetailsWidgetState extends State<TeamMemberDetailsWidget>
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
-  final animationsMap = {
-    'containerOnPageLoadAnimation': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(0.0, 30.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-  };
+  final animationsMap = <String, AnimationInfo>{};
 
   @override
   void initState() {
     super.initState();
     _model = createModel(context, () => TeamMemberDetailsModel());
 
+    animationsMap.addAll({
+      'containerOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 30.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+    });
     setupAnimations(
       animationsMap.values.where((anim) =>
           anim.trigger == AnimationTrigger.onActionTrigger ||
@@ -248,7 +249,7 @@ class _TeamMemberDetailsWidgetState extends State<TeamMemberDetailsWidget>
                                         8.0, 8.0, 0.0, 0.0),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
-                                        '8lhfh12w' /* 12 Tasks */,
+                                        '8lhfh12w' /* 12 Tareas */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
@@ -279,7 +280,7 @@ class _TeamMemberDetailsWidgetState extends State<TeamMemberDetailsWidget>
                   padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 4.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      'j2ieipip' /* Team Bio */,
+                      'j2ieipip' /* Descripcion de equipo */,
                     ),
                     style: FlutterFlowTheme.of(context).labelMedium.override(
                           fontFamily:
@@ -572,7 +573,7 @@ class _TeamMemberDetailsWidgetState extends State<TeamMemberDetailsWidget>
                                         children: [
                                           Text(
                                             FFLocalizations.of(context).getText(
-                                              '3rwjcoju' /* Due */,
+                                              '3rwjcoju' /* Pendiente */,
                                             ),
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium

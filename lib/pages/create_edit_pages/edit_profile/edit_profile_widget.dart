@@ -28,15 +28,15 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
     super.initState();
     _model = createModel(context, () => EditProfileModel());
 
-    _model.yourNameController ??=
+    _model.yourNameTextController ??=
         TextEditingController(text: currentUserDisplayName);
     _model.yourNameFocusNode ??= FocusNode();
 
-    _model.titleRoleController ??= TextEditingController(
+    _model.titleRoleTextController ??= TextEditingController(
         text: valueOrDefault(currentUserDocument?.userRole, ''));
     _model.titleRoleFocusNode ??= FocusNode();
 
-    _model.myBioController ??= TextEditingController(
+    _model.myBioTextController ??= TextEditingController(
         text: valueOrDefault(currentUserDocument?.userBio, ''));
     _model.myBioFocusNode ??= FocusNode();
 
@@ -199,7 +199,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                       const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 16.0),
                   child: AuthUserStreamWidget(
                     builder: (context) => TextFormField(
-                      controller: _model.yourNameController,
+                      controller: _model.yourNameTextController,
                       focusNode: _model.yourNameFocusNode,
                       obscureText: false,
                       decoration: InputDecoration(
@@ -266,8 +266,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                                 FlutterFlowTheme.of(context).bodyMediumFamily),
                           ),
                       maxLines: null,
-                      minLines: null,
-                      validator: _model.yourNameControllerValidator
+                      validator: _model.yourNameTextControllerValidator
                           .asValidator(context),
                     ),
                   ),
@@ -277,7 +276,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                       const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 16.0),
                   child: AuthUserStreamWidget(
                     builder: (context) => TextFormField(
-                      controller: _model.titleRoleController,
+                      controller: _model.titleRoleTextController,
                       focusNode: _model.titleRoleFocusNode,
                       obscureText: false,
                       decoration: InputDecoration(
@@ -341,8 +340,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                                 FlutterFlowTheme.of(context).bodyMediumFamily),
                           ),
                       textAlign: TextAlign.start,
-                      minLines: null,
-                      validator: _model.titleRoleControllerValidator
+                      validator: _model.titleRoleTextControllerValidator
                           .asValidator(context),
                     ),
                   ),
@@ -352,7 +350,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                       const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 12.0),
                   child: AuthUserStreamWidget(
                     builder: (context) => TextFormField(
-                      controller: _model.myBioController,
+                      controller: _model.myBioTextController,
                       focusNode: _model.myBioFocusNode,
                       obscureText: false,
                       decoration: InputDecoration(
@@ -420,9 +418,8 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                           ),
                       textAlign: TextAlign.start,
                       maxLines: 3,
-                      minLines: null,
-                      validator:
-                          _model.myBioControllerValidator.asValidator(context),
+                      validator: _model.myBioTextControllerValidator
+                          .asValidator(context),
                     ),
                   ),
                 ),
@@ -465,9 +462,9 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                       onPressed: () async {
                         await currentUserReference!
                             .update(createUsersRecordData(
-                          displayName: _model.yourNameController.text,
-                          userBio: _model.myBioController.text,
-                          userRole: _model.titleRoleController.text,
+                          displayName: _model.yourNameTextController.text,
+                          userBio: _model.myBioTextController.text,
+                          userRole: _model.titleRoleTextController.text,
                         ));
                         context.pop();
                       },

@@ -30,16 +30,16 @@ class _LoginWidgetState extends State<LoginWidget>
       length: 2,
       initialIndex: 0,
     )..addListener(() => setState(() {}));
-    _model.emailAddressController ??= TextEditingController();
+    _model.emailAddressTextController ??= TextEditingController();
     _model.emailAddressFocusNode ??= FocusNode();
 
-    _model.passwordController ??= TextEditingController();
+    _model.passwordTextController ??= TextEditingController();
     _model.passwordFocusNode ??= FocusNode();
 
-    _model.emailAddressCreateController ??= TextEditingController();
+    _model.emailAddressCreateTextController ??= TextEditingController();
     _model.emailAddressCreateFocusNode ??= FocusNode();
 
-    _model.passwordCreateController ??= TextEditingController();
+    _model.passwordCreateTextController ??= TextEditingController();
     _model.passwordCreateFocusNode ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
@@ -192,7 +192,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                         20.0, 20.0, 20.0, 0.0),
                                                 child: TextFormField(
                                                   controller: _model
-                                                      .emailAddressController,
+                                                      .emailAddressTextController,
                                                   focusNode: _model
                                                       .emailAddressFocusNode,
                                                   obscureText: false,
@@ -223,7 +223,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                         FFLocalizations.of(
                                                                 context)
                                                             .getText(
-                                                      'vuhwdlzn' /* Email Address */,
+                                                      'vuhwdlzn' /* Correo electronico */,
                                                     ),
                                                     hintStyle: FlutterFlowTheme
                                                             .of(context)
@@ -322,9 +322,8 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                         context)
                                                                     .bodyMediumFamily),
                                                       ),
-                                                  minLines: null,
                                                   validator: _model
-                                                      .emailAddressControllerValidator
+                                                      .emailAddressTextControllerValidator
                                                       .asValidator(context),
                                                 ),
                                               ),
@@ -333,8 +332,8 @@ class _LoginWidgetState extends State<LoginWidget>
                                                     .fromSTEB(
                                                         20.0, 12.0, 20.0, 0.0),
                                                 child: TextFormField(
-                                                  controller:
-                                                      _model.passwordController,
+                                                  controller: _model
+                                                      .passwordTextController,
                                                   focusNode:
                                                       _model.passwordFocusNode,
                                                   obscureText: !_model
@@ -487,9 +486,8 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                         context)
                                                                     .bodyMediumFamily),
                                                       ),
-                                                  minLines: null,
                                                   validator: _model
-                                                      .passwordControllerValidator
+                                                      .passwordTextControllerValidator
                                                       .asValidator(context),
                                                 ),
                                               ),
@@ -507,9 +505,10 @@ class _LoginWidgetState extends State<LoginWidget>
                                                             .signInWithEmail(
                                                       context,
                                                       _model
-                                                          .emailAddressController
+                                                          .emailAddressTextController
                                                           .text,
-                                                      _model.passwordController
+                                                      _model
+                                                          .passwordTextController
                                                           .text,
                                                     );
                                                     if (user == null) {
@@ -634,7 +633,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                         20.0, 20.0, 20.0, 0.0),
                                                 child: TextFormField(
                                                   controller: _model
-                                                      .emailAddressCreateController,
+                                                      .emailAddressCreateTextController,
                                                   focusNode: _model
                                                       .emailAddressCreateFocusNode,
                                                   obscureText: false,
@@ -742,9 +741,8 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                         context)
                                                                     .bodyMediumFamily),
                                                       ),
-                                                  minLines: null,
                                                   validator: _model
-                                                      .emailAddressCreateControllerValidator
+                                                      .emailAddressCreateTextControllerValidator
                                                       .asValidator(context),
                                                 ),
                                               ),
@@ -754,7 +752,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                         20.0, 12.0, 20.0, 0.0),
                                                 child: TextFormField(
                                                   controller: _model
-                                                      .passwordCreateController,
+                                                      .passwordCreateTextController,
                                                   focusNode: _model
                                                       .passwordCreateFocusNode,
                                                   obscureText: !_model
@@ -887,9 +885,8 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                         context)
                                                                     .bodyMediumFamily),
                                                       ),
-                                                  minLines: null,
                                                   validator: _model
-                                                      .passwordCreateControllerValidator
+                                                      .passwordCreateTextControllerValidator
                                                       .asValidator(context),
                                                 ),
                                               ),
@@ -906,10 +903,10 @@ class _LoginWidgetState extends State<LoginWidget>
                                                         .createAccountWithEmail(
                                                       context,
                                                       _model
-                                                          .emailAddressCreateController
+                                                          .emailAddressCreateTextController
                                                           .text,
                                                       _model
-                                                          .passwordCreateController
+                                                          .passwordCreateTextController
                                                           .text,
                                                     );
                                                     if (user == null) {

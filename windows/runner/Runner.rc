@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.mycompany" "\0"
-            VALUE "FileDescription", "project_tasking" "\0"
+            VALUE "CompanyName", "protasker" "\0"
+            VALUE "FileDescription", "A new Flutter project." "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "project_tasking" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2024 com.mycompany. All rights reserved." "\0"
-            VALUE "OriginalFilename", "project_tasking.exe" "\0"
-            VALUE "ProductName", "project_tasking" "\0"
+            VALUE "InternalName", "protasker" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2024 protasker. All rights reserved." "\0"
+            VALUE "OriginalFilename", "protasker.exe" "\0"
+            VALUE "ProductName", "protasker" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

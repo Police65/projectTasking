@@ -30,14 +30,14 @@ class _EditProjectWidgetState extends State<EditProjectWidget> {
     super.initState();
     _model = createModel(context, () => EditProjectModel());
 
-    _model.taskNameController ??= TextEditingController(
+    _model.taskNameTextController ??= TextEditingController(
         text: valueOrDefault<String>(
       widget.projectRef?.projectName,
       'Project Name',
     ));
     _model.taskNameFocusNode ??= FocusNode();
 
-    _model.descriptionController ??= TextEditingController(
+    _model.descriptionTextController ??= TextEditingController(
         text: valueOrDefault<String>(
       widget.projectRef?.description,
       'No Description',
@@ -128,7 +128,7 @@ class _EditProjectWidgetState extends State<EditProjectWidget> {
                               padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 16.0, 16.0, 0.0),
                               child: TextFormField(
-                                controller: _model.taskNameController,
+                                controller: _model.taskNameTextController,
                                 focusNode: _model.taskNameFocusNode,
                                 obscureText: false,
                                 decoration: InputDecoration(
@@ -189,8 +189,8 @@ class _EditProjectWidgetState extends State<EditProjectWidget> {
                                           .containsKey('Space Grotesk'),
                                     ),
                                 textAlign: TextAlign.start,
-                                minLines: null,
-                                validator: _model.taskNameControllerValidator
+                                validator: _model
+                                    .taskNameTextControllerValidator
                                     .asValidator(context),
                               ),
                             ),
@@ -198,12 +198,12 @@ class _EditProjectWidgetState extends State<EditProjectWidget> {
                               padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 16.0, 16.0, 0.0),
                               child: TextFormField(
-                                controller: _model.descriptionController,
+                                controller: _model.descriptionTextController,
                                 focusNode: _model.descriptionFocusNode,
                                 obscureText: false,
                                 decoration: InputDecoration(
                                   hintText: FFLocalizations.of(context).getText(
-                                    'hyz5515g' /* Enter description here... */,
+                                    'hyz5515g' /* Introduce una descripcion aca.... */,
                                   ),
                                   hintStyle: FlutterFlowTheme.of(context)
                                       .bodySmall
@@ -262,9 +262,9 @@ class _EditProjectWidgetState extends State<EditProjectWidget> {
                                     ),
                                 textAlign: TextAlign.start,
                                 maxLines: 4,
-                                minLines: null,
                                 keyboardType: TextInputType.multiline,
-                                validator: _model.descriptionControllerValidator
+                                validator: _model
+                                    .descriptionTextControllerValidator
                                     .asValidator(context),
                               ),
                             ),
@@ -284,9 +284,10 @@ class _EditProjectWidgetState extends State<EditProjectWidget> {
 
                                 await widget.projectRef!.reference
                                     .update(createProjectsRecordData(
-                                  projectName: _model.taskNameController.text,
+                                  projectName:
+                                      _model.taskNameTextController.text,
                                   description:
-                                      _model.descriptionController.text,
+                                      _model.descriptionTextController.text,
                                 ));
                                 ScaffoldMessenger.of(context).showSnackBar(
                                   SnackBar(
@@ -313,7 +314,7 @@ class _EditProjectWidgetState extends State<EditProjectWidget> {
                                 context.pop();
                               },
                               text: FFLocalizations.of(context).getText(
-                                '57dpf0bb' /* Save Changes */,
+                                '57dpf0bb' /* Guardar cambios */,
                               ),
                               options: FFButtonOptions(
                                 width: 270.0,
